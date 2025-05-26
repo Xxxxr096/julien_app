@@ -9,10 +9,10 @@ import branca.colormap as cm
 from folium.plugins import MiniMap
 
 
-# Chargement des données
+# --- Chargement des données ---
 @st.cache_data
 def load_data():
-    return pd.read_csv("data_clean_spp_spv.csv")
+    return pd.read_csv("data_clean_spp_spv_with_type.csv")
 
 
 df = load_data()
@@ -21,13 +21,13 @@ st.title("Application d'Analyse de la Condition Physique et de la Santé")
 
 # --- SIDEBAR ---
 st.sidebar.header("Filtres dynamiques")
-
-# Filtres disponibles
 cie = st.sidebar.multiselect("Cie:", df["Cie_x"].dropna().unique())
 ut = st.sidebar.multiselect("UT:", df["UT_x"].dropna().unique())
 aptitude = st.sidebar.multiselect(
     "Aptitude Générale:", df["Aptitude générale"].unique()
 )
+type_options = st.sidebar.multiselect("Type:", df["type"].dropna().unique())
+
 age_min, age_max = st.sidebar.slider(
     "Tranche d'âge:", int(df["age"].min()), int(df["age"].max()), (20, 60)
 )
@@ -38,13 +38,13 @@ poids_min, poids_max = st.sidebar.slider(
     "Poids:", float(df["poids"].min()), float(df["poids"].max()), (67.0, 80.0)
 )
 palier_min, palier_max = st.sidebar.slider(
-    "Niveau Luc Léger:",
-    int(df["Niveau Luc léger"].min()),
-    int(df["Niveau Luc léger"].max()),
-    (1, int(df["Niveau Luc léger"].max())),
+    "Luc Léger (valeur réelle):",
+    int(df["luc_leger"].min()),
+    int(df["luc_leger"].max()),
+    (int(df["luc_leger"].min()), int(df["luc_leger"].max())),
 )
 
-# Application des filtres
+# --- Application des filtres ---
 df_filtered = df.copy()
 if cie:
     df_filtered = df_filtered[df_filtered["Cie_x"].isin(cie)]
@@ -52,6 +52,9 @@ if ut:
     df_filtered = df_filtered[df_filtered["UT_x"].isin(ut)]
 if aptitude:
     df_filtered = df_filtered[df_filtered["Aptitude générale"].isin(aptitude)]
+if type_options:
+    df_filtered = df_filtered[df_filtered["type"].isin(type_options)]
+
 df_filtered = df_filtered[
     (df_filtered["age"] >= age_min) & (df_filtered["age"] <= age_max)
 ]
@@ -61,18 +64,14 @@ df_filtered = df_filtered[
 df_filtered = df_filtered[
     (df_filtered["poids"] >= poids_min) & (df_filtered["poids"] <= poids_max)
 ]
-
 df_filtered = df_filtered[
-    (df_filtered["Niveau Luc léger"] >= palier_min)
-    & (df_filtered["Niveau Luc léger"] <= palier_max)
+    (df_filtered["luc_leger"] >= palier_min) & (df_filtered["luc_leger"] <= palier_max)
 ]
-
 
 # --- VISUALISATIONS ---
 st.subheader("Statistiques Globales sur les Données Filtrées")
 st.write(f"Nombre d'individus: {df_filtered.shape[0]}")
 
-# Histogrammes
 features = ["imc", "taille", "poids", "tension_sys", "tension_dia"]
 for feature in features:
     st.subheader(f"Distribution de {feature.upper()}")
@@ -84,7 +83,6 @@ for feature in features:
     else:
         st.info(f"Aucune donnée disponible pour {feature.upper()}.")
 
-# Boxplots par Cie
 phys_tests = ["luc_leger", "pompes", "tractions"]
 for test in phys_tests:
     st.subheader(f"{test.replace('_', ' ').title()} par Cie")
@@ -96,20 +94,15 @@ for test in phys_tests:
     else:
         st.info(f"Aucune donnée disponible pour {test}.")
 
-# Moyennes par Cie pour les niveaux
-
-# Moyennes par Cie pour les niveaux
 level_cols = {
-    "Niveau Luc léger": "Palier Luc Léger",
-    "Niveau pompes": "Palier Pompes",
-    "Niveau tractions": "Palier Tractions",
+    "luc_leger": " Palier Luc Léger",
+    "Niveau pompes": "Niveau Pompes",
+    "Niveau tractions": "Niveau Tractions",
 }
-
 for col, label in level_cols.items():
     if col in df_filtered.columns:
         st.subheader(f"{label} moyen par Cie")
         moyenne = df_filtered.groupby("Cie_x")[col].mean().sort_values(ascending=False)
-
         if not moyenne.empty:
             fig, ax = plt.subplots()
             colors = plt.cm.viridis(moyenne.rank() / moyenne.count())
@@ -117,47 +110,126 @@ for col, label in level_cols.items():
             ax.set_ylabel("Niveau moyen")
             ax.set_title(f"{label} moyen par Cie")
             st.pyplot(fig)
-        else:
-            st.info(
-                "Aucune donnée disponible pour ce graphique avec les filtres actuels."
-            )
 
+st.subheader("Analyse par Type")
+if "type" in df_filtered.columns and not df_filtered["type"].dropna().empty:
+    type_counts = df_filtered["type"].value_counts()
+    fig, ax = plt.subplots()
+    type_counts.plot(kind="bar", ax=ax)
+    ax.set_title("Répartition des effectifs par type")
+    ax.set_ylabel("Nombre d'individus")
+    st.pyplot(fig)
 
-# Répartition des paliers Luc Léger par Cie avec couleurs
-st.subheader("Répartition des Paliers Luc Léger par Cie")
-palier_counts = (
-    df_filtered.groupby(["Cie_x", "Niveau Luc léger"]).size().unstack(fill_value=0)
-)
+    indicateurs_physiques = [
+        "imc",
+        "poids",
+        "taille",
+        "luc_leger",
+        "pompes",
+        "tractions",
+    ]
+    for indicateur in indicateurs_physiques:
+        if indicateur in df_filtered.columns:
+            st.subheader(f"{indicateur.upper()} par Type")
+            fig, ax = plt.subplots(figsize=(10, 6))
+            sns.boxplot(x="type", y=indicateur, data=df_filtered, ax=ax, palette="Set3")
+            ax.set_title(f"Distribution de {indicateur.upper()} par Type")
+            ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
+            st.pyplot(fig)
+
+    if "luc_leger" in df_filtered.columns:
+        st.subheader("Niveau moyen Luc Léger par Type")
+        moyennes_type = (
+            df_filtered.groupby("type")["luc_leger"].mean().sort_values(ascending=False)
+        )
+        fig, ax = plt.subplots()
+        moyennes_type.plot(
+            kind="bar",
+            ax=ax,
+            color=plt.cm.plasma(moyennes_type.rank() / len(moyennes_type)),
+        )
+        ax.set_ylabel("Palier moyen")
+        ax.set_title("Luc Léger moyen par Type")
+        st.pyplot(fig)
+# --- NOUVELLES VISUALISATIONS : Luc Léger, Aptitude, Incendie/ARI ---
+
+st.subheader("Luc Léger selon l'Aptitude Générale et l'Exposition Incendie")
+
+# Histogramme Luc Léger par Incendie et port de l'ARI, coloré par aptitude
+if (
+    "luc_leger" in df_filtered.columns
+    and "Aptitude générale" in df_filtered.columns
+    and "Incendie et port de l'ARI Toutes missions_x" in df_filtered.columns
+):
+    fig, ax = plt.subplots(figsize=(10, 6))
+    sns.histplot(
+        df_filtered,
+        x="luc_leger",
+        hue="Aptitude générale",
+        multiple="stack",
+        bins=15,
+        palette="Set2",
+        kde=False,
+    )
+    ax.set_title("Répartition du palier Luc Léger selon l'aptitude générale")
+    ax.set_xlabel("Palier Luc Léger")
+    ax.set_ylabel("Nombre d'individus")
+    st.pyplot(fig)
+
+# Histogramme Luc Léger par aptitude, coloré par type (SPP/SPV)
+if "type" in df_filtered.columns:
+    fig, ax = plt.subplots(figsize=(10, 6))
+    sns.histplot(
+        df_filtered,
+        x="luc_leger",
+        hue="type",
+        multiple="stack",
+        bins=15,
+        palette="Set3",
+        kde=False,
+    )
+    ax.set_title("Répartition du palier Luc Léger selon l'aptitude générale (par type)")
+    ax.set_xlabel("Palier Luc Léger")
+    ax.set_ylabel("Nombre d'individus")
+    st.pyplot(fig)
+
+# Boxplot Luc Léger par aptitude et Incendie/ARI
 fig, ax = plt.subplots(figsize=(12, 6))
-palier_counts.plot(kind="bar", stacked=True, colormap="tab20", ax=ax)
-ax.set_title("Distribution des niveaux Luc Léger par Cie")
-ax.set_ylabel("Nombre d'individus")
-ax.legend(title="Palier")
+sns.boxplot(
+    data=df_filtered,
+    x="Aptitude générale",
+    y="luc_leger",
+    hue="Incendie et port de l'ARI Toutes missions_x",
+    palette="pastel",
+)
+ax.set_title("Luc Léger par Aptitude Générale et Incendie/ARI")
+ax.set_ylabel("Palier Luc Léger")
+ax.set_xlabel("Aptitude Générale")
+ax.tick_params(axis="x", rotation=45)
 st.pyplot(fig)
 
-# Corrélations
-st.subheader("Corrélations entre indicateurs physiques")
-corr_cols = [
-    "imc",
-    "taille",
-    "poids",
-    "tension_sys",
-    "tension_dia",
-    "luc_leger",
-    "pompes",
-    "tractions",
-]
-if not df_filtered[corr_cols].dropna().empty:
-    corr_matrix = df_filtered[corr_cols].corr()
-    fig, ax = plt.subplots(figsize=(10, 8))
-    sns.heatmap(corr_matrix, annot=True, cmap="coolwarm", ax=ax)
-    ax.set_title("Matrice de corrélation")
-    st.pyplot(fig)
-else:
-    st.info("Pas assez de données pour calculer les corrélations.")
+# --- Indicateurs IMC, poids, taille par aptitude ---
+st.subheader("Indicateurs physiques par Aptitude Générale")
+
+indicateurs = ["imc", "poids", "taille"]
+for ind in indicateurs:
+    if ind in df_filtered.columns:
+        fig, ax = plt.subplots(figsize=(8, 5))
+        sns.boxplot(
+            data=df_filtered,
+            x="Aptitude générale",
+            y=ind,
+            palette="coolwarm",
+        )
+        ax.set_title(f"{ind.upper()} par Aptitude Générale")
+        ax.set_ylabel(ind.upper())
+        ax.set_xlabel("Aptitude Générale")
+        ax.tick_params(axis="x", rotation=45)
+        st.pyplot(fig)
 
 
-st.subheader("Carte Interactive des UT filtrées")
+# --- Carte interactive ---
+st.subheader("Carte Interactive des UT")
 
 
 @st.cache_data
@@ -168,7 +240,6 @@ def load_geojson():
 
 try:
     geojson_data = load_geojson()
-
     ut_mapping = {
         "UT STRASBOURG OUEST": "STRASBOURG-3",
         "UT HAGUENAU": "HAGUENAU",
@@ -187,10 +258,13 @@ try:
         "UT STRASBOURG SUD": "STRASBOURG-3",
         "UT BOUXWILLER": "BOUXWILLER",
     }
-
     df_filtered["UT_clean"] = (
         df_filtered["UT_x"].astype(str).str.strip().str.upper().replace(ut_mapping)
     )
+    luc_leger_moyen = df_filtered.groupby("UT_clean")["luc_leger"].mean().reset_index()
+    luc_leger_moyen.columns = ["nom", "luc_leger_moyen"]
+    effectif_ut = df_filtered["UT_clean"].value_counts().reset_index()
+    effectif_ut.columns = ["nom", "effectif"]
 
     geo_features = [
         {**f["properties"], "geometry": f["geometry"]} for f in geojson_data["features"]
@@ -198,31 +272,17 @@ try:
     geo_df = pd.DataFrame(geo_features)
     geo_df["nom"] = geo_df["nom"].str.strip().str.upper()
 
-    luc_leger_moyen = (
-        df_filtered.groupby("UT_clean")["Niveau Luc léger"].mean().reset_index()
-    )
-    luc_leger_moyen.columns = ["nom", "luc_leger_moyen"]
-    charge_par_ut = df_filtered["UT_clean"].value_counts().reset_index()
-    charge_par_ut.columns = ["nom", "effectif"]
-
-    geo_df = geo_df.merge(charge_par_ut, on="nom", how="left")
+    geo_df = geo_df.merge(effectif_ut, on="nom", how="left")
     geo_df = geo_df.merge(luc_leger_moyen, on="nom", how="left")
     geo_df.fillna({"effectif": 0, "luc_leger_moyen": 0}, inplace=True)
-    geo_df["taux_charge"] = (geo_df["effectif"] / geo_df["effectif"].sum() * 100).round(
-        2
-    )
 
-    # --- Création de la carte ---
     m = folium.Map(location=[48.6, 7.6], zoom_start=9, control_scale=True)
-
-    # ColorMap continue
     colormap = cm.linear.YlOrRd_09.scale(
         geo_df["luc_leger_moyen"].min(), geo_df["luc_leger_moyen"].max()
     )
-    colormap.caption = "Palier moyen Luc Léger"
+    colormap.caption = "Luc Léger moyen"
     colormap.add_to(m)
 
-    # Choroplèthe
     folium.Choropleth(
         geo_data=geojson_data,
         data=geo_df,
@@ -231,27 +291,9 @@ try:
         fill_color="YlGnBu",
         fill_opacity=0.6,
         line_opacity=0.5,
-        legend_name="Palier moyen Luc Léger",
+        legend_name="Luc Léger moyen",
     ).add_to(m)
 
-    # GeoJSON avec tooltip stylisé
-    folium.GeoJson(
-        geojson_data,
-        name="Contours",
-        style_function=lambda x: {"color": "black", "weight": 1.2, "fillOpacity": 0},
-        tooltip=folium.GeoJsonTooltip(
-            fields=["nom"],
-            aliases=["UT:"],
-            sticky=True,
-            labels=True,
-            style=(
-                "background-color: white; color: #333; font-family: Arial; "
-                "font-size: 12px; padding: 5px;"
-            ),
-        ),
-    ).add_to(m)
-
-    # Cercle + Tooltip dynamique
     for _, row in geo_df.iterrows():
         if row["effectif"] > 0:
             geom = row["geometry"]
@@ -260,44 +302,38 @@ try:
                 if geom["type"] == "Polygon"
                 else geom["coordinates"][0][0]
             )
-            lon_center = sum(pt[0] for pt in coords) / len(coords)
-            lat_center = sum(pt[1] for pt in coords) / len(coords)
-
-            couleur = colormap(row["luc_leger_moyen"])
-
-            tooltip_text = f"""
-            <b>UT : {row['nom']}</b><br>
-            Effectif : {int(row['effectif'])}<br>
-            Taux de charge : {row['taux_charge']}%<br>
-            Palier moyen : {row['luc_leger_moyen']:.2f}<br>
-            <hr style='margin: 4px 0;'>
-            <b>Filtres actifs</b><br>
-            - Âge : {age_min}-{age_max} ans<br>
-            - IMC : {imc_min:.1f}-{imc_max:.1f}<br>
-            - Poids : {poids_min:.1f}-{poids_max:.1f} kg<br>
-            - Palier : {palier_min}-{palier_max}
-            """
-
+            lon = sum(pt[0] for pt in coords) / len(coords)
+            lat = sum(pt[1] for pt in coords) / len(coords)
             folium.CircleMarker(
-                location=(lat_center, lon_center),
+                location=(lat, lon),
                 radius=8,
-                color=couleur,
+                color=colormap(row["luc_leger_moyen"]),
                 fill=True,
-                fill_color=couleur,
+                fill_color=colormap(row["luc_leger_moyen"]),
                 fill_opacity=0.9,
-                tooltip=folium.Tooltip(tooltip_text, sticky=True),
+                tooltip=folium.Tooltip(
+                    f"""
+<b>UT : {row['nom']}</b><br>
+Effectif : {int(row['effectif'])}<br>
+Luc Léger moyen : {row['luc_leger_moyen']:.2f}<br>
+<hr style='margin: 4px 0;'>
+<b>Filtres actifs</b><br>
+- Âge : {age_min} - {age_max} ans<br>
+- IMC : {imc_min:.1f} - {imc_max:.1f}<br>
+- Poids : {poids_min:.1f} - {poids_max:.1f} kg<br>
+- Luc Léger : {palier_min} - {palier_max}
+""",
+                    sticky=True,
+                ),
             ).add_to(m)
 
-    # Mini-carte en bas à droite
-    MiniMap(toggle_display=True, position="bottomright").add_to(m)
-
-    # Contrôle des couches
+    MiniMap(toggle_display=True).add_to(m)
     folium.LayerControl().add_to(m)
-
-    st_folium(m, use_container_width=True, height=750)
+    st_folium(m, use_container_width=True, height=700)
 
 except Exception as e:
-    st.error(f"Erreur lors du chargement de la carte : {e}")
+    st.error(f"Erreur de chargement de la carte : {e}")
+
 
 st.markdown(
     """
