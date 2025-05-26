@@ -176,6 +176,23 @@ if (
     ax.set_ylabel("Nombre d'individus")
     st.pyplot(fig)
 
+    fig, ax = plt.subplots(figsize=(10, 6))
+    sns.histplot(
+        df_filtered,
+        x="luc_leger",
+        hue="Incendie et port de l'ARI Toutes missions_x",
+        multiple="stack",
+        bins=15,
+        palette="Set2",
+        kde=False,
+    )
+    ax.set_title(
+        "Répartition du palier Luc Léger selon Incendie et port de l'ARI Toutes missions"
+    )
+    ax.set_xlabel("Palier Luc Léger")
+    ax.set_ylabel("Nombre d'individus")
+    st.pyplot(fig)
+
 # Histogramme Luc Léger par aptitude, coloré par type (SPP/SPV)
 if "type" in df_filtered.columns:
     fig, ax = plt.subplots(figsize=(10, 6))
@@ -192,6 +209,7 @@ if "type" in df_filtered.columns:
     ax.set_xlabel("Palier Luc Léger")
     ax.set_ylabel("Nombre d'individus")
     st.pyplot(fig)
+
 
 # Boxplot Luc Léger par aptitude et Incendie/ARI
 fig, ax = plt.subplots(figsize=(12, 6))
@@ -263,6 +281,7 @@ sns.heatmap(
 )
 ax.set_title("Matrice de Corrélation - Indicateurs Physiques et Luc Léger")
 st.pyplot(fig)
+
 
 # --- Carte interactive ---
 st.subheader("Carte Interactive des UT")
