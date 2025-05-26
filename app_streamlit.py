@@ -5,6 +5,8 @@ import seaborn as sns
 import json
 import folium
 from streamlit_folium import st_folium
+import branca.colormap as cm
+from folium.plugins import MiniMap
 
 
 # Chargement des données
@@ -190,14 +192,12 @@ try:
         df_filtered["UT_x"].astype(str).str.strip().str.upper().replace(ut_mapping)
     )
 
-    # Construire le GeoDataFrame
     geo_features = [
         {**f["properties"], "geometry": f["geometry"]} for f in geojson_data["features"]
     ]
     geo_df = pd.DataFrame(geo_features)
     geo_df["nom"] = geo_df["nom"].str.strip().str.upper()
 
-    # Préparer données d'effectif et palier moyen
     luc_leger_moyen = (
         df_filtered.groupby("UT_clean")["Niveau Luc léger"].mean().reset_index()
     )
@@ -212,20 +212,46 @@ try:
         2
     )
 
+    # --- Création de la carte ---
     m = folium.Map(location=[48.6, 7.6], zoom_start=9, control_scale=True)
 
-    folium.GeoJson(
-        geojson_data,
-        name="Contour Alsace",
-        style_function=lambda x: {
-            "fillColor": "none",
-            "color": "black",
-            "weight": 1.5,
-            "fillOpacity": 0.1,
-        },
-        tooltip=folium.GeoJsonTooltip(fields=["nom"], aliases=["UT:"]),
+    # ColorMap continue
+    colormap = cm.linear.YlOrRd_09.scale(
+        geo_df["luc_leger_moyen"].min(), geo_df["luc_leger_moyen"].max()
+    )
+    colormap.caption = "Palier moyen Luc Léger"
+    colormap.add_to(m)
+
+    # Choroplèthe
+    folium.Choropleth(
+        geo_data=geojson_data,
+        data=geo_df,
+        columns=["nom", "luc_leger_moyen"],
+        key_on="feature.properties.nom",
+        fill_color="YlGnBu",
+        fill_opacity=0.6,
+        line_opacity=0.5,
+        legend_name="Palier moyen Luc Léger",
     ).add_to(m)
 
+    # GeoJSON avec tooltip stylisé
+    folium.GeoJson(
+        geojson_data,
+        name="Contours",
+        style_function=lambda x: {"color": "black", "weight": 1.2, "fillOpacity": 0},
+        tooltip=folium.GeoJsonTooltip(
+            fields=["nom"],
+            aliases=["UT:"],
+            sticky=True,
+            labels=True,
+            style=(
+                "background-color: white; color: #333; font-family: Arial; "
+                "font-size: 12px; padding: 5px;"
+            ),
+        ),
+    ).add_to(m)
+
+    # Cercle + Tooltip dynamique
     for _, row in geo_df.iterrows():
         if row["effectif"] > 0:
             geom = row["geometry"]
@@ -237,15 +263,19 @@ try:
             lon_center = sum(pt[0] for pt in coords) / len(coords)
             lat_center = sum(pt[1] for pt in coords) / len(coords)
 
-            niveau = row["luc_leger_moyen"]
-            couleur = "red" if niveau <= 1 else "orange" if niveau <= 3 else "green"
+            couleur = colormap(row["luc_leger_moyen"])
 
             tooltip_text = f"""
-            <b>{row['nom']}</b><br>
-            Effectif filtré : {int(row['effectif'])}<br>
+            <b>UT : {row['nom']}</b><br>
+            Effectif : {int(row['effectif'])}<br>
             Taux de charge : {row['taux_charge']}%<br>
-            Palier moyen : {niveau:.2f}<br>
-            Filtres actifs : {age_min}-{age_max} ans, IMC {imc_min}-{imc_max}, Poids {poids_min}-{poids_max}, Palier {palier_min}-{palier_max}
+            Palier moyen : {row['luc_leger_moyen']:.2f}<br>
+            <hr style='margin: 4px 0;'>
+            <b>Filtres actifs</b><br>
+            - Âge : {age_min}-{age_max} ans<br>
+            - IMC : {imc_min:.1f}-{imc_max:.1f}<br>
+            - Poids : {poids_min:.1f}-{poids_max:.1f} kg<br>
+            - Palier : {palier_min}-{palier_max}
             """
 
             folium.CircleMarker(
@@ -253,18 +283,21 @@ try:
                 radius=8,
                 color=couleur,
                 fill=True,
+                fill_color=couleur,
                 fill_opacity=0.9,
                 tooltip=folium.Tooltip(tooltip_text, sticky=True),
             ).add_to(m)
+
+    # Mini-carte en bas à droite
+    MiniMap(toggle_display=True, position="bottomright").add_to(m)
+
+    # Contrôle des couches
+    folium.LayerControl().add_to(m)
 
     st_folium(m, use_container_width=True, height=750)
 
 except Exception as e:
     st.error(f"Erreur lors du chargement de la carte : {e}")
-
-# Affichage des données filtrées
-if st.checkbox("Afficher les données filtrées"):
-    st.dataframe(df_filtered)
 
 st.markdown(
     """
