@@ -226,7 +226,43 @@ for ind in indicateurs:
         ax.set_xlabel("Aptitude Générale")
         ax.tick_params(axis="x", rotation=45)
         st.pyplot(fig)
+st.subheader("🔗 Corrélations avec le Palier Luc Léger")
 
+# Sélection des colonnes numériques pertinentes
+cols_corr = [
+    "luc_leger",
+    "imc",
+    "poids",
+    "taille",
+    "tension_sys",
+    "tension_dia",
+    "pompes",
+    "tractions",
+    "Niveau Luc léger",
+    "Niveau pompes",
+    "Niveau tractions",
+]
+
+# Filtrage des colonnes existantes dans le dataframe filtré
+cols_corr = [col for col in cols_corr if col in df_filtered.columns]
+df_corr = df_filtered[cols_corr].dropna()
+
+# Calcul de la matrice de corrélation
+corr_matrix = df_corr.corr()
+
+# Affichage d'une heatmap
+fig, ax = plt.subplots(figsize=(10, 8))
+sns.heatmap(
+    corr_matrix,
+    annot=True,
+    cmap="coolwarm",
+    fmt=".2f",
+    linewidths=0.5,
+    square=True,
+    cbar_kws={"shrink": 0.8},
+)
+ax.set_title("Matrice de Corrélation - Indicateurs Physiques et Luc Léger")
+st.pyplot(fig)
 
 # --- Carte interactive ---
 st.subheader("Carte Interactive des UT")
