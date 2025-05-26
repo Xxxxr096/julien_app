@@ -57,9 +57,14 @@ df_filtered = df_filtered[
     (df_filtered["imc"] >= imc_min) & (df_filtered["imc"] <= imc_max)
 ]
 df_filtered = df_filtered[
+    (df_filtered["poids"] >= poids_min) & (df_filtered["poids"] <= poids_max)
+]
+
+df_filtered = df_filtered[
     (df_filtered["Niveau Luc léger"] >= palier_min)
     & (df_filtered["Niveau Luc léger"] <= palier_max)
 ]
+
 
 # --- VISUALISATIONS ---
 st.subheader("Statistiques Globales sur les Données Filtrées")
