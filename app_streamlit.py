@@ -831,7 +831,11 @@ try:
     }
 
     df_filtered["UT_clean"] = (
-        df_filtered["ut_x"].astype(str).str.strip().str.upper().replace(ut_mapping)
+        df_filtered["ut_x"]
+        .astype(str)
+        .str.strip()
+        .str.upper()
+        .replace({k.upper(): v for k, v in ut_mapping.items()})
     )
 
     # Moyenne d'IMC par UT
