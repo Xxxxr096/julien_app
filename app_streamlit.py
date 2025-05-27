@@ -12,7 +12,7 @@ from streamlit_folium import folium_static
 
 
 # --- Chargement des données ---
-@st.cache_data
+@st.cache_data(show_spinner=False)
 def load_data():
     df = pd.read_csv("merged_data_spv.csv")
 
@@ -50,6 +50,35 @@ df.loc[(df["taille"] <= 100) | (df["taille"] > 250), "taille"] = None
 
 # Convertir les tailles en mètres (optionnel, selon ton besoin)
 df["taille"] = df["taille"] / 100
+
+palier_to_vitesse = {
+    0: 8.0,
+    1: 8.5,
+    2: 9.0,
+    3: 9.5,
+    4: 10.0,
+    5: 10.5,
+    6: 11.0,
+    7: 11.5,
+    8: 12.0,
+    9: 12.5,
+    10: 13.0,
+    11: 13.5,
+    12: 14.0,
+    13: 14.5,
+    14: 15.0,
+    15: 15.5,
+    16: 16.0,
+}
+df["vitesse"] = df["luc léger"].map(palier_to_vitesse)
+df["sexe_num"] = df["sexe"].str.upper().map(lambda x: 1 if x == "M" else 0)
+df["vo2max"] = (
+    31.025 + (3.238 * df["vitesse"]) - (3.248 * df["age_x"]) + (6.318 * df["sexe_num"])
+)
+df["vo2max"] = df["vo2max"].clip(lower=0)
+
+df.columns = df.columns.str.strip().str.lower()
+
 
 st.title("Application d'Analyse de la Condition Physique et de la Santé")
 with st.expander("📘 Guide d'utilisation de l'application", expanded=False):
@@ -119,7 +148,34 @@ aptitude = st.sidebar.multiselect(
     options=sorted(df["aptitude générale"].dropna().unique()),
     default=sorted(df["aptitude générale"].dropna().unique()),
 )
+
+# --- Filtre VO2max ---
+if "vo2max" in df.columns:
+    st.sidebar.markdown("**VO2max**")
+    vo2_min, vo2_max = st.sidebar.slider(
+        "Sélectionnez une plage de VO2max :",
+        min_value=float(df["vo2max"].min()),
+        max_value=float(df["vo2max"].max()),
+        value=(float(df["vo2max"].min()), float(df["vo2max"].max())),
+        step=1.0,
+    )
+
 # Slider pour tension artérielle systolique
+# Nettoyage des colonnes de tension artérielle
+if "tension artérielle systol" in df.columns:
+    df["tension artérielle systol"] = (
+        df["tension artérielle systol"].astype(str).str.replace(",", ".").astype(float)
+    )
+    # Correction des valeurs aberrantes : si > 250, on divise par 10
+    df.loc[df["tension artérielle systol"] > 250, "tension artérielle systol"] /= 10
+
+if "tension artérielle diastol" in df.columns:
+    df["tension artérielle diastol"] = (
+        df["tension artérielle diastol"].astype(str).str.replace(",", ".").astype(float)
+    )
+    # Correction des valeurs aberrantes : si > 150, on divise par 10
+    df.loc[df["tension artérielle diastol"] > 150, "tension artérielle diastol"] /= 10
+
 if "tension artérielle systol" in df.columns:
     st.sidebar.markdown("**Tension Artérielle Systolique (mmHg)**")
     sys_min, sys_max = st.sidebar.slider(
@@ -183,6 +239,10 @@ if ut:
 
 if aptitude:
     df_filtered = df_filtered[df_filtered["aptitude générale"].isin(aptitude)]
+if "vo2max" in df_filtered.columns:
+    df_filtered = df_filtered[
+        (df_filtered["vo2max"] >= vo2_min) & (df_filtered["vo2max"] <= vo2_max)
+    ]
 
 # Application des filtres de tension artérielle
 if "tension artérielle systol" in df_filtered.columns:
@@ -424,6 +484,14 @@ else:
     st.warning(
         "La colonne 'périmètre abdominal' ou 'sexe' est manquante dans les données."
     )
+st.subheader("Distribution de la VO2max")
+if "vo2max" in df_filtered.columns and not df_filtered["vo2max"].dropna().empty:
+    fig, ax = plt.subplots(figsize=(10, 6))
+    sns.histplot(df_filtered["vo2max"], kde=True, bins=20, color="purple")
+    ax.set_title("Distribution de la VO2max")
+    ax.set_xlabel("VO2max (ml/kg/min)")
+    ax.set_ylabel("Nombre d'individus")
+    st.pyplot(fig)
 
 features = [
     "imc",
