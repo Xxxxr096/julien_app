@@ -110,13 +110,40 @@ Vous pouvez télécharger les **données filtrées au format CSV** en bas de la 
 st.sidebar.header("Filtres dynamiques")
 cie = st.sidebar.multiselect("Cie:", df["cie_x"].dropna().unique())
 ut = st.sidebar.multiselect("UT:", df["ut_x"].dropna().unique())
-aptitude = st.sidebar.multiselect(
-    "Aptitude Générale:", df["aptitude générale"].unique()
-)
-
 sexe_options = st.sidebar.multiselect(
     "sexe :", df["sexe"].dropna().unique(), default=df["sexe"].dropna().unique()
 )
+st.sidebar.markdown("**Abtitude générale**")
+aptitude = st.sidebar.multiselect(
+    "Aptitude Générale :",
+    options=sorted(df["aptitude générale"].dropna().unique()),
+    default=sorted(df["aptitude générale"].dropna().unique()),
+)
+# Slider pour tension artérielle systolique
+if "tension artérielle systol" in df.columns:
+    st.sidebar.markdown("**Tension Artérielle Systolique (mmHg)**")
+    sys_min, sys_max = st.sidebar.slider(
+        "Sélectionnez une plage pour la tension systolique :",
+        min_value=float(df["tension artérielle systol"].min()),
+        max_value=float(df["tension artérielle systol"].max()),
+        value=(
+            float(df["tension artérielle systol"].min()),
+            float(df["tension artérielle systol"].max()),
+        ),
+    )
+
+# Slider pour tension artérielle diastolique
+if "tension artérielle diastol" in df.columns:
+    st.sidebar.markdown("**Tension Artérielle Diastolique (mmHg)**")
+    dia_min, dia_max = st.sidebar.slider(
+        "Sélectionnez une plage pour la tension diastolique :",
+        min_value=float(df["tension artérielle diastol"].min()),
+        max_value=float(df["tension artérielle diastol"].max()),
+        value=(
+            float(df["tension artérielle diastol"].min()),
+            float(df["tension artérielle diastol"].max()),
+        ),
+    )
 
 
 st.sidebar.markdown("**Age - Catégories**")
@@ -153,8 +180,23 @@ if cie:
     df_filtered = df_filtered[df_filtered["cie_x"].isin(cie)]
 if ut:
     df_filtered = df_filtered[df_filtered["ut_x"].isin(ut)]
+
 if aptitude:
     df_filtered = df_filtered[df_filtered["aptitude générale"].isin(aptitude)]
+
+# Application des filtres de tension artérielle
+if "tension artérielle systol" in df_filtered.columns:
+    df_filtered = df_filtered[
+        (df_filtered["tension artérielle systol"] >= sys_min)
+        & (df_filtered["tension artérielle systol"] <= sys_max)
+    ]
+
+if "tension artérielle diastol" in df_filtered.columns:
+    df_filtered = df_filtered[
+        (df_filtered["tension artérielle diastol"] >= dia_min)
+        & (df_filtered["tension artérielle diastol"] <= dia_max)
+    ]
+
 
 if age_category:
     filtres_age = []
@@ -349,10 +391,12 @@ if "périmètre abdominal" in df_filtered.columns and "sexe" in df_filtered.colu
     df_tour = df_filtered[["périmètre abdominal", "sexe"]].dropna()
 
     def couleur_tour(row):
-        if row["sexe"].lower() == "m":
-            return "green" if row["périmètre abdominal"] < 94 else "red"
-        elif row["sexe"].lower() == "f":
-            return "green" if row["périmètre abdominal"] < 80 else "red"
+        sexe = str(row["sexe"]).lower()
+        tour = row["périmètre abdominal"]
+        if sexe == "m":
+            return "green" if tour < 94 else "red"
+        elif sexe == "f":
+            return "green" if tour < 80 else "red"
         else:
             return "gray"
 
@@ -408,23 +452,6 @@ for test in phys_tests:
         st.pyplot(fig)
     else:
         st.info(f"Aucune donnée disponible pour {test}.")
-
-level_cols = {
-    "luc léger": " Palier luc léger",
-    "niveau pompes": "niveau pompes",
-    "niveau tractions": "niveau tractions",
-}
-for col, label in level_cols.items():
-    if col in df_filtered.columns:
-        st.subheader(f"{label} moyen par Cie")
-        moyenne = df_filtered.groupby("cie_x")[col].mean().sort_values(ascending=False)
-        if not moyenne.empty:
-            fig, ax = plt.subplots()
-            colors = plt.cm.viridis(moyenne.rank() / moyenne.count())
-            moyenne.plot(kind="bar", ax=ax, color=colors)
-            ax.set_ylabel("niveau moyen")
-            ax.set_title(f"{label} moyen par Cie")
-            st.pyplot(fig)
 
 
 # --- NOUVELLES VISUALISATIONS : luc léger, Aptitude, Incendie/ARI ---
@@ -543,24 +570,7 @@ ax.set_xlabel("Aptitude Générale")
 ax.tick_params(axis="x", rotation=45)
 st.pyplot(fig)
 
-# --- Indicateurs imc, poids, taille par aptitude ---
-st.subheader("Indicateurs physiques par Aptitude Générale")
 
-indicateurs = ["imc", "poids", "taille"]
-for ind in indicateurs:
-    if ind in df_filtered.columns:
-        fig, ax = plt.subplots(figsize=(8, 5))
-        sns.boxplot(
-            data=df_filtered,
-            x="aptitude générale",
-            y=ind,
-            palette="coolwarm",
-        )
-        ax.set_title(f"{ind.upper()} par Aptitude Générale")
-        ax.set_ylabel(ind.upper())
-        ax.set_xlabel("Aptitude Générale")
-        ax.tick_params(axis="x", rotation=45)
-        st.pyplot(fig)
 st.subheader("🔗 Corrélations avec le Palier luc léger")
 
 # Sélection des colonnes numériques pertinentes
@@ -576,6 +586,7 @@ cols_corr = [
     "niveau luc léger",
     "niveau pompes",
     "niveau tractions",
+    "périmètre abdominal",
 ]
 
 # Filtrage des colonnes existantes dans le dataframe filtré
