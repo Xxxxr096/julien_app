@@ -100,7 +100,7 @@ Vous pouvez télécharger les **données filtrées au format CSV** en bas de la 
 #### 🆘 En cas de problème
 - Vérifiez les filtres sélectionnés (trop restrictifs = données vides).
 - Si un graphique ou la carte ne s'affiche pas, utilisez le bouton de **rafraîchissement du navigateur**.
-- Contactez l'administrateur si le problème persiste.
+
 
 ---
     """
