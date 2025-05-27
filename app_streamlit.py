@@ -52,6 +52,59 @@ df.loc[(df["taille"] <= 100) | (df["taille"] > 250), "taille"] = None
 df["taille"] = df["taille"] / 100
 
 st.title("Application d'Analyse de la Condition Physique et de la Santé")
+with st.expander("📘 Guide d'utilisation de l'application", expanded=False):
+    st.markdown(
+        """
+### 🧭 Guide d'utilisation
+
+Bienvenue dans l'application d'analyse de la condition physique et de la santé.
+
+---
+
+#### 🔍 1. Filtres (colonne de gauche)
+Utilisez les filtres pour explorer les données :
+- **Cie / UT** : sélectionnez une ou plusieurs compagnies ou unités territoriales.
+- **Sexe, Aptitude générale** : filtrez selon les caractéristiques individuelles.
+- **Âge, IMC, Poids** : ciblez des groupes spécifiques.
+- **Luc Léger - Paliers** : filtrez par niveau d’endurance.
+
+Tous les graphiques et la carte s’adaptent automatiquement aux filtres choisis.
+
+---
+
+#### 📊 2. Visualisations
+Plusieurs types de graphiques sont proposés :
+- **Histogrammes** : IMC, taille, poids.
+- **Boxplots** : luc léger, pompes, tractions par compagnie ou aptitude.
+- **Graphiques empilés** : analyse croisée IMC / luc léger ou tour de taille / sexe.
+- **Matrice de corrélation** : explorez les relations entre les variables.
+
+---
+
+#### 🗺️ 3. Carte Interactive
+La carte affiche l’**IMC moyen** par UT, en fonction des filtres appliqués.
+
+⚠️ **À noter** :
+- La carte peut prendre quelques secondes à se recharger après un déplacement, un zoom ou un changement de filtre.
+- Cela est dû au recalcul dynamique des données.
+- En cas de blocage ou lenteur :
+  - Essayez de **rafraîchir la page** du navigateur.
+
+---
+
+#### 💾 4. Export
+Vous pouvez télécharger les **données filtrées au format CSV** en bas de la page.
+
+---
+
+#### 🆘 En cas de problème
+- Vérifiez les filtres sélectionnés (trop restrictifs = données vides).
+- Si un graphique ou la carte ne s'affiche pas, utilisez le bouton de **rafraîchissement du navigateur**.
+- Contactez l'administrateur si le problème persiste.
+
+---
+    """
+    )
 
 # --- SIDEBAR ---
 st.sidebar.header("Filtres dynamiques")
