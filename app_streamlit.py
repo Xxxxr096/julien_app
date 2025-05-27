@@ -79,6 +79,10 @@ df["vo2max"] = df["vo2max"].clip(lower=0)
 
 df.columns = df.columns.str.strip().str.lower()
 
+df["vo2max_leger"] = 5.857 * df["vitesse"] - 19.458
+df["vo2max_leger"] = df["vo2max_leger"].clip(
+    lower=0
+)  # Facultatif pour éviter les négatifs
 
 st.title("Application d'Analyse de la Condition Physique et de la Santé")
 with st.expander("📘 Guide d'utilisation de l'application", expanded=False):
@@ -169,6 +173,18 @@ if "vo2max" in df.columns:
         step=1.0,
     )
 
+# --- Filtre VO2max Léger ---
+if "vo2max_leger" in df.columns:
+    st.sidebar.markdown("**VO2max Léger (Formule 1988)**")
+    vo2l_min, vo2l_max = st.sidebar.slider(
+        "Plage VO2max (Léger 1988) :",
+        min_value=float(df["vo2max_leger"].min()),
+        max_value=float(df["vo2max_leger"].max()),
+        value=(float(df["vo2max_leger"].min()), float(df["vo2max_leger"].max())),
+        step=1.0,
+    )
+
+
 # Slider pour tension artérielle systolique
 # Nettoyage des colonnes de tension artérielle
 if "tension artérielle systol" in df.columns:
@@ -252,6 +268,12 @@ if "vo2max" in df_filtered.columns:
     df_filtered = df_filtered[
         (df_filtered["vo2max"] >= vo2_min) & (df_filtered["vo2max"] <= vo2_max)
     ]
+if "vo2max_leger" in df_filtered.columns:
+    df_filtered = df_filtered[
+        (df_filtered["vo2max_leger"] >= vo2l_min)
+        & (df_filtered["vo2max_leger"] <= vo2l_max)
+    ]
+
 
 # Application des filtres de tension artérielle
 if "tension artérielle systol" in df_filtered.columns:
@@ -528,6 +550,47 @@ if "vo2max" in df_filtered.columns and "age_x" in df_filtered.columns:
         st.info("Aucune donnée VO2max et âge disponible pour l'affichage.")
 else:
     st.warning("Les colonnes nécessaires 'vo2max' et 'age_x' sont manquantes.")
+
+
+st.subheader("Relation entre l'âge et la VO2max (Formule de Léger 1988)")
+
+if "vo2max_leger" in df_filtered.columns and "age_x" in df_filtered.columns:
+    df_vo2_leger_age = df_filtered[["vo2max_leger", "age_x"]].dropna()
+
+    if not df_vo2_leger_age.empty:
+        fig, ax = plt.subplots(figsize=(10, 6))
+        sns.scatterplot(data=df_vo2_leger_age, x="age_x", y="vo2max_leger", alpha=0.6)
+        sns.regplot(
+            data=df_vo2_leger_age,
+            x="age_x",
+            y="vo2max_leger",
+            scatter=False,
+            color="green",
+            label="Tendance",
+        )
+        ax.set_title("Relation entre l'âge et la VO2max (Formule Léger 1988)")
+        ax.set_xlabel("Âge (ans)")
+        ax.set_ylabel("VO2max (ml/kg/min)")
+        ax.legend()
+        st.pyplot(fig)
+    else:
+        st.info("Aucune donnée disponible pour VO2max (Léger) et âge.")
+else:
+    st.warning("Les colonnes 'vo2max_leger' et 'age_x' sont manquantes.")
+st.subheader("Distribution de la VO2max - Formule de Léger (1988)")
+
+if (
+    "vo2max_leger" in df_filtered.columns
+    and not df_filtered["vo2max_leger"].dropna().empty
+):
+    fig, ax = plt.subplots(figsize=(10, 6))
+    sns.histplot(df_filtered["vo2max_leger"], kde=True, bins=20, color="teal")
+    ax.set_title("Distribution de la VO2max (Formule Léger 1988)")
+    ax.set_xlabel("VO2max Léger (ml/kg/min)")
+    ax.set_ylabel("Nombre d'individus")
+    st.pyplot(fig)
+else:
+    st.info("Aucune donnée VO2max (formule Léger) disponible pour l'affichage.")
 
 features = [
     "imc",
