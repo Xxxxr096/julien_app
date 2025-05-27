@@ -12,7 +12,7 @@ from streamlit_folium import folium_static
 
 
 # --- Chargement des données ---
-@st.cache_data(show_spinner=False)
+@st.cache_data()
 def load_data():
     df = pd.read_csv("merged_data_spv.csv")
 
@@ -44,12 +44,9 @@ if "périmètre abdominal" in df.columns:
         df["périmètre abdominal"].astype(str).str.replace(",", ".").astype(float)
     )
 df["taille"] = df["taille"].astype(str).str.replace(",", ".").astype(float)
-
-# Remplacer les valeurs aberrantes (0 ou > 250 cm) par NaN
 df.loc[(df["taille"] <= 100) | (df["taille"] > 250), "taille"] = None
-
-# Convertir les tailles en mètres (optionnel, selon ton besoin)
 df["taille"] = df["taille"] / 100
+
 
 palier_to_vitesse = {
     0: 8.0,
@@ -70,19 +67,25 @@ palier_to_vitesse = {
     15: 15.5,
     16: 16.0,
 }
-df["vitesse"] = df["luc léger"].map(palier_to_vitesse)
-df["sexe_num"] = df["sexe"].str.upper().map(lambda x: 1 if x == "M" else 0)
+# Convertir sexe en numérique
+df["sexe_num"] = df["sexe"].str.upper().map(lambda x: 1 if x == "M" else 0).fillna(0)
+
+# Convertir palier Luc Léger en vitesse, 0 si NaN
+df["vitesse"] = df["luc léger"].map(palier_to_vitesse).fillna(0)
+
+# Calcul VO2max de la formule avec âge, sexe et vitesse
 df["vo2max"] = (
-    31.025 + (3.238 * df["vitesse"]) - (3.248 * df["age_x"]) + (6.318 * df["sexe_num"])
+    31.025
+    + 3.238 * df["vitesse"]
+    - 3.248 * df["age_x"].fillna(0)
+    + 6.318 * df["sexe_num"]
 )
 df["vo2max"] = df["vo2max"].clip(lower=0)
 
-df.columns = df.columns.str.strip().str.lower()
+# Formule de Léger (1988)
+df["vo2max_leger"] = (5.857 * df["vitesse"]).fillna(0) - 19.458
+df["vo2max_leger"] = df["vo2max_leger"].clip(lower=0)
 
-df["vo2max_leger"] = 5.857 * df["vitesse"] - 19.458
-df["vo2max_leger"] = df["vo2max_leger"].clip(
-    lower=0
-)  # Facultatif pour éviter les négatifs
 
 st.title("Application d'Analyse de la Condition Physique et de la Santé")
 with st.expander("📘 Guide d'utilisation de l'application", expanded=False):
@@ -264,15 +267,14 @@ if ut:
 
 if aptitude:
     df_filtered = df_filtered[df_filtered["aptitude générale"].isin(aptitude)]
-if "vo2max" in df_filtered.columns:
-    df_filtered = df_filtered[
-        (df_filtered["vo2max"] >= vo2_min) & (df_filtered["vo2max"] <= vo2_max)
-    ]
-if "vo2max_leger" in df_filtered.columns:
-    df_filtered = df_filtered[
-        (df_filtered["vo2max_leger"] >= vo2l_min)
-        & (df_filtered["vo2max_leger"] <= vo2l_max)
-    ]
+df_filtered = df_filtered[
+    (df_filtered["vo2max"].fillna(0) >= vo2_min)
+    & (df_filtered["vo2max"].fillna(0) <= vo2_max)
+]
+df_filtered = df_filtered[
+    (df_filtered["vo2max_leger"].fillna(0) >= vo2_min)
+    & (df_filtered["vo2max_leger"].fillna(0) <= vo2_max)
+]
 
 
 # Application des filtres de tension artérielle
