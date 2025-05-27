@@ -90,50 +90,59 @@ Bienvenue dans l'application d'analyse de la condition physique et de la santé.
 
 ---
 
-#### 🔍 1. Filtres (colonne de gauche)
+#### 🔍 1. Filtres dynamiques (colonne de gauche)
 Utilisez les filtres pour explorer les données :
+
 - **Cie / UT** : sélectionnez une ou plusieurs compagnies ou unités territoriales.
-- **Sexe, Aptitude générale** : filtrez selon les caractéristiques individuelles.
-- **Âge, IMC, Poids** : ciblez des groupes spécifiques.
-- **Luc Léger - Paliers** : filtrez par niveau d’endurance.
+- **Sexe** : filtrez par genre.
+- **Aptitude générale** : explorez les performances selon l'aptitude.
+- **Âge** : sélection par tranche d'âge (16–29, 30–39, etc.).
+- **IMC (Indice de Masse Corporelle)** : sélection par catégorie OMS (normal, surpoids...).
+- **Poids** : filtrez les individus selon leur poids (kg).
+- **Luc Léger – Paliers** : filtrez par niveau d’endurance (1 à >6).
+- **Tension artérielle** :
+    - Systolique (mmHg) : filtre par plage personnalisée.
+    - Diastolique (mmHg) : filtre par plage personnalisée.
+- **VO2max (ml/kg/min)** : filtrez selon la capacité cardio-respiratoire estimée.
 
-Tous les graphiques et la carte s’adaptent automatiquement aux filtres choisis.
-
----
-
-#### 📊 2. Visualisations
-Plusieurs types de graphiques sont proposés :
-- **Histogrammes** : IMC, taille, poids.
-- **Boxplots** : luc léger, pompes, tractions par compagnie ou aptitude.
-- **Graphiques empilés** : analyse croisée IMC / luc léger ou tour de taille / sexe.
-- **Matrice de corrélation** : explorez les relations entre les variables.
+⚠️ Tous les graphiques et la carte s’adaptent automatiquement à ces filtres.
 
 ---
 
-#### 🗺️ 3. Carte Interactive
-La carte affiche l’**IMC moyen** par UT, en fonction des filtres appliqués.
+#### 📊 2. Visualisations proposées
+Plusieurs visualisations sont générées à partir des données filtrées :
 
-⚠️ **À noter** :
-- La carte peut prendre quelques secondes à se recharger après un déplacement, un zoom ou un changement de filtre.
-- Cela est dû au recalcul dynamique des données.
-- En cas de blocage ou lenteur :
-- Essayez de **rafraîchir la page** du navigateur.
+- **Histogrammes simples** : poids, taille, IMC, VO2max.
+- **Histogrammes empilés** :
+    - IMC par niveau de Luc Léger.
+    - Luc Léger par catégorie d’IMC.
+- **Histogrammes et boxplots croisés** :
+    - Luc Léger par aptitude ou exposition à l'incendie.
+    - Tension artérielle systolique et diastolique (colorées selon les seuils OMS).
+- **Corrélations** : carte de chaleur (heatmap) des corrélations entre indicateurs physiques.
 
 ---
 
-#### 💾 4. Export
-Vous pouvez télécharger les **données filtrées au format CSV** en bas de la page.
+#### 🗺️ 3. Carte Interactive par UT
+- Affiche **l'IMC moyen** par unité territoriale (UT).
+- Les cercles sont proportionnels à l'effectif par UT et colorés selon l'IMC moyen.
+- Données géographiques automatiquement filtrées selon les sélections ci-dessus.
+
+⚠️ La carte peut prendre quelques secondes à se mettre à jour. Rafraîchissez la page si nécessaire.
+
+---
+
+#### 💾 4. Export des données
+- En bas de page, un bouton vous permet de **télécharger les données filtrées** au format CSV.
 
 ---
 
 #### 🆘 En cas de problème
-- Vérifiez les filtres sélectionnés (trop restrictifs = données vides).
-- Si un graphique ou la carte ne s'affiche pas, utilisez le bouton de **rafraîchissement du navigateur**.
-
-
----
-    """
+- Si un graphique ou une carte ne s'affiche pas, vérifiez que vos filtres ne sont pas trop restrictifs.
+- Essayez de **réinitialiser les filtres** ou **rafraîchir la page** du navigateur.
+"""
     )
+
 
 # --- SIDEBAR ---
 st.sidebar.header("Filtres dynamiques")
@@ -522,7 +531,26 @@ for test in phys_tests:
         st.info(f"Aucune donnée disponible pour {test}.")
 
 
-# --- NOUVELLES VISUALISATIONS : luc léger, Aptitude, Incendie/ARI ---
+st.subheader("Relation entre l'âge et le palier Luc Léger")
+
+if "age_x" in df_filtered.columns and "luc léger" in df_filtered.columns:
+    df_age_luc = df_filtered[["age_x", "luc léger"]].dropna()
+    if not df_age_luc.empty:
+        fig, ax = plt.subplots(figsize=(10, 6))
+        sns.regplot(
+            data=df_age_luc,
+            x="age_x",
+            y="luc léger",
+            scatter_kws={"alpha": 0.5},
+            line_kws={"color": "red"},
+        )
+        ax.set_title("Relation entre l'âge et le palier Luc Léger")
+        ax.set_xlabel("Âge")
+        ax.set_ylabel("Palier Luc Léger")
+        st.pyplot(fig)
+    else:
+        st.info("Pas de données disponibles pour l'âge ou le palier Luc Léger.")
+
 st.subheader("Distribution de la Tension Artérielle (Systolique & Diastolique)")
 
 if (
