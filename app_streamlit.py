@@ -502,6 +502,33 @@ if "vo2max" in df_filtered.columns and not df_filtered["vo2max"].dropna().empty:
     ax.set_ylabel("Nombre d'individus")
     st.pyplot(fig)
 
+
+st.subheader("Nuage de points : VO2max en fonction de l'âge")
+
+if "vo2max" in df_filtered.columns and "age_x" in df_filtered.columns:
+    df_vo2_age = df_filtered[["vo2max", "age_x"]].dropna()
+
+    if not df_vo2_age.empty:
+        fig, ax = plt.subplots(figsize=(10, 6))
+        sns.scatterplot(data=df_vo2_age, x="age_x", y="vo2max", alpha=0.6)
+        sns.regplot(
+            data=df_vo2_age,
+            x="age_x",
+            y="vo2max",
+            scatter=False,
+            color="red",
+            label="Tendance",
+        )
+        ax.set_title("Relation entre l'âge et la VO2max")
+        ax.set_xlabel("Âge (ans)")
+        ax.set_ylabel("VO2max (ml/kg/min)")
+        ax.legend()
+        st.pyplot(fig)
+    else:
+        st.info("Aucune donnée VO2max et âge disponible pour l'affichage.")
+else:
+    st.warning("Les colonnes nécessaires 'vo2max' et 'age_x' sont manquantes.")
+
 features = [
     "imc",
     "taille",
