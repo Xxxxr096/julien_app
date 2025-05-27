@@ -88,7 +88,7 @@ La carte affiche l’**IMC moyen** par UT, en fonction des filtres appliqués.
 - La carte peut prendre quelques secondes à se recharger après un déplacement, un zoom ou un changement de filtre.
 - Cela est dû au recalcul dynamique des données.
 - En cas de blocage ou lenteur :
-  - Essayez de **rafraîchir la page** du navigateur.
+- Essayez de **rafraîchir la page** du navigateur.
 
 ---
 
