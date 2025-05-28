@@ -797,7 +797,7 @@ st.subheader("Carte Interactive des UT")
 
 @st.cache_data
 def load_geojson():
-    with open("alsace_map.geojson", "r", encoding="utf-8") as f:
+    with open("../alsace_map.geojson", "r", encoding="utf-8") as f:
         return json.load(f)
 
 
