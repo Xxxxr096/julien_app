@@ -82,7 +82,7 @@ def age_to_categorie(age):
 
 df = load_data()
 df.columns = df.columns.str.strip().str.lower()
-st.write(df[df["luc léger"] == 0.0])
+
 
 # Ajoute dans le chargement si ce n’est pas fait :
 if "périmètre abdominal" in df.columns:
