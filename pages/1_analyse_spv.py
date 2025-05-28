@@ -14,7 +14,7 @@ from streamlit_folium import folium_static
 # --- Chargement des données ---
 @st.cache_data()
 def load_data():
-    df = pd.read_csv("merged_data_spv.csv")
+    df = pd.read_csv("../merged_data_spv.csv")
 
     # Standardiser les noms de colonnes : minuscules, sans espace
     df.columns = df.columns.str.strip().str.lower()
