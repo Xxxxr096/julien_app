@@ -40,6 +40,45 @@ def load_data():
     return df
 
 
+def niveau_to_couleur(niveau):
+    if pd.isna(niveau):
+        return "Inconnu"
+    if niveau >= 3:
+        return "Vert"
+    elif niveau == 2:
+        return "Orange"
+    elif niveau == 1:
+        return "Rouge"
+    else:
+        return "Inconnu"
+
+
+def score_to_couleur(score):
+    if pd.isna(score):
+        return "Inconnu"
+    if score >= 2.7:
+        return "Vert"
+    elif score >= 1.5:
+        return "Orange"
+    else:
+        return "Rouge"
+
+
+def age_to_categorie(age):
+    if pd.isna(age):
+        return "Inconnu"
+    elif age < 30:
+        return "16-29"
+    elif age < 40:
+        return "30-39"
+    elif age < 50:
+        return "40-49"
+    elif age <= 57:
+        return "50-57"
+    else:
+        return "58+"
+
+
 df = load_data()
 df.columns = df.columns.str.strip().str.lower()
 
@@ -170,6 +209,7 @@ aptitude = st.sidebar.multiselect(
     default=sorted(df["aptitude générale"].dropna().unique()),
 )
 
+
 # --- Filtre VO2max ---
 if "vo2max" in df.columns:
     st.sidebar.markdown("**VO2max**")
@@ -280,6 +320,16 @@ df_filtered = df_filtered[
     (df_filtered["vo2max_leger"].fillna(0) >= vo2_min)
     & (df_filtered["vo2max_leger"].fillna(0) <= vo2_max)
 ]
+df_filtered["couleur_luc"] = df_filtered["niveau luc léger"].apply(niveau_to_couleur)
+df_filtered["couleur_pompes"] = df_filtered["niveau pompes"].apply(niveau_to_couleur)
+df_filtered["couleur_tractions"] = df_filtered["niveau tractions"].apply(
+    niveau_to_couleur
+)
+df_filtered["score_moyen"] = df_filtered[
+    ["niveau luc léger", "niveau pompes", "niveau tractions"]
+].mean(axis=1)
+df_filtered["couleur_globale"] = df_filtered["score_moyen"].apply(score_to_couleur)
+df_filtered["tranche_age"] = df_filtered["age_x"].apply(age_to_categorie)
 
 
 # Application des filtres de tension artérielle
@@ -804,6 +854,19 @@ sns.heatmap(
 )
 ax.set_title("Matrice de Corrélation - Indicateurs Physiques et luc léger")
 st.pyplot(fig)
+
+st.subheader("Répartition des niveaux ICP (Filtres appliqués)")
+
+cols_group = ["couleur_globale", "cie_x", "ut_x", "sexe", "tranche_age"]
+for col in cols_group[1:]:
+    if col in df_filtered.columns:
+        st.markdown(f"#### Répartition par {col}")
+        tab = df_filtered.groupby([col, "couleur_globale"]).size().unstack(fill_value=0)
+        tab["Total"] = tab.sum(axis=1)
+        for color in ["Vert", "Orange", "Rouge"]:
+            if color in tab.columns:
+                tab[f"% {color}"] = round(100 * tab[color] / tab["Total"], 1)
+        st.dataframe(tab)
 
 st.subheader("Carte Interactive des UT")
 
