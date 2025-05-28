@@ -324,7 +324,7 @@ df_filtered = df_filtered[
 st.sidebar.markdown("**Luc Léger - Paliers**")
 luc_leger_categories = st.sidebar.multiselect(
     "Sélectionnez une ou plusieurs catégories de palier Luc Léger :",
-    ["1", "2", "3", "4", "5", "plus de 6"],
+    ["0", "1", "2", "3", "4", "5", "plus de 6"],
 )
 
 if sexe_options:
@@ -360,7 +360,9 @@ if imc_category:
 if luc_leger_categories:
     filtres_luc = []
     for cat in luc_leger_categories:
-        if cat == "1":
+        if cat == "0":
+            filtres_luc.append(df_filtered["luc léger"] == 0)
+        elif cat == "1":
             filtres_luc.append(df_filtered["luc léger"] == 1)
         elif cat == "2":
             filtres_luc.append(df_filtered["luc léger"] == 2)
@@ -903,7 +905,29 @@ IMC moyen : {row['imc_moyen']:.2f}
                 fill=True,
                 fill_color=colormap(row["imc_moyen"]),
                 fill_opacity=0.9,
-                tooltip=folium.Tooltip(tooltip_text, sticky=True),
+            ).add_to(m)
+            lat_offset = lat + 0.01  # décalage vers le nord
+            lon_offset = lon + 0.01
+            folium.map.Marker(
+                [lat_offset, lon_offset],
+                icon=folium.DivIcon(
+                    html=f"""
+                    <div style="
+                        font-size: 11px;
+                        color: white;
+                        background-color: rgba(0, 0, 0, 0.6);
+                        padding: 2px 6px;
+                        border-radius: 4px;
+                        font-weight: bold;
+                        text-align: center;
+                        white-space: nowrap;
+                        box-shadow: 1px 1px 2px rgba(0,0,0,0.5);">
+                        {row['nom']}<br>
+                        Effectif: {int(row['effectif'])}<br>
+                        IMC: {row['imc_moyen']:.1f}
+                    </div>
+                    """
+                ),
             ).add_to(m)
 
     MiniMap(toggle_display=True).add_to(m)
