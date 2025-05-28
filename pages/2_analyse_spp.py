@@ -16,7 +16,7 @@ import os
 @st.cache_data()
 def load_data():
     data_path = os.path.abspath(
-        os.path.join(os.path.dirname(__file__), "..", "merged_spp_data.csv")
+        os.path.join(os.path.dirname(__file__), "..", "spp.csv")
     )
 
     df = pd.read_csv(data_path)
@@ -36,12 +36,53 @@ def load_data():
     for col in cols_to_fix:
         if col in df.columns:
             df[col] = df[col].astype(str).str.replace(",", ".").astype(float)
+    df.loc[df["luc léger"] == 0, "niveau luc léger"] = 0
 
     return df
 
 
+def niveau_to_couleur(niveau):
+    if pd.isna(niveau):
+        return "Inconnu"
+    if niveau >= 3:
+        return "Vert"
+    elif niveau == 2:
+        return "Orange"
+    elif niveau == 1:
+        return "Rouge"
+    else:
+        return "Inconnu"
+
+
+def score_to_couleur(score):
+    if pd.isna(score):
+        return "Inconnu"
+    if score >= 2.7:
+        return "Vert"
+    elif score >= 1.5:
+        return "Orange"
+    else:
+        return "Rouge"
+
+
+def age_to_categorie(age):
+    if pd.isna(age):
+        return "Inconnu"
+    elif age < 30:
+        return "16-29"
+    elif age < 40:
+        return "30-39"
+    elif age < 50:
+        return "40-49"
+    elif age <= 57:
+        return "50-57"
+    else:
+        return "58+"
+
+
 df = load_data()
 df.columns = df.columns.str.strip().str.lower()
+st.write(df[df["luc léger"] == 0.0])
 
 # Ajoute dans le chargement si ce n’est pas fait :
 if "périmètre abdominal" in df.columns:
@@ -52,6 +93,12 @@ df["taille"] = df["taille"].astype(str).str.replace(",", ".").astype(float)
 df.loc[(df["taille"] <= 100) | (df["taille"] > 250), "taille"] = None
 df["taille"] = df["taille"] / 100
 
+# Conversion propre
+df["luc léger"] = df["luc léger"].astype(str).str.replace(",", ".").astype(float)
+
+# Correction des erreurs de saisie (ex : 93 → 9.3)
+df.loc[df["luc léger"] > 20, "luc léger"] = df["luc léger"] / 10
+df["luc_leger_arrondi"] = df["luc léger"].round().astype("Int64")
 
 palier_to_vitesse = {
     0: 8.0,
@@ -263,7 +310,14 @@ poids_min, poids_max = st.sidebar.slider(
     "poids:", float(df["poids"].min()), float(df["poids"].max()), (0.0, 144.0)
 )
 
+st.sidebar.markdown("**Luc Léger - Paliers**")
+luc_leger_categories = st.sidebar.multiselect(
+    "Sélectionnez une ou plusieurs catégories de palier Luc Léger :",
+    ["0", "1", "2", "3", "4", "5", "plus de 6"],
+)
+
 # --- Application des filtres ---
+
 df_filtered = df.copy()
 if cie:
     df_filtered = df_filtered[df_filtered["cie"].isin(cie)]
@@ -272,16 +326,52 @@ if ut:
 
 if aptitude:
     df_filtered = df_filtered[df_filtered["aptitude générale"].isin(aptitude)]
+
+
+# Filtrage VO2max
 df_filtered = df_filtered[
     (df_filtered["vo2max"].fillna(0) >= vo2_min)
     & (df_filtered["vo2max"].fillna(0) <= vo2_max)
 ]
+
+# ✅ Corrigé ici : filtrage VO2max_Léger avec les bonnes valeurs
 df_filtered = df_filtered[
-    (df_filtered["vo2max_leger"].fillna(0) >= vo2_min)
-    & (df_filtered["vo2max_leger"].fillna(0) <= vo2_max)
+    (df_filtered["vo2max_leger"].fillna(0) >= vo2l_min)
+    & (df_filtered["vo2max_leger"].fillna(0) <= vo2l_max)
 ]
 
+df_filtered["couleur_luc"] = df_filtered["niveau luc léger"].apply(niveau_to_couleur)
+df_filtered["couleur_pompes"] = df_filtered["niveau pompes"].apply(niveau_to_couleur)
+df_filtered["couleur_tractions"] = df_filtered["niveau tractions"].apply(
+    niveau_to_couleur
+)
+df_filtered["score_moyen"] = df_filtered[
+    ["niveau luc léger", "niveau pompes", "niveau tractions"]
+].mean(axis=1)
+df_filtered["couleur_globale"] = df_filtered["score_moyen"].apply(score_to_couleur)
+df_filtered["tranche_age"] = df_filtered["age"].apply(age_to_categorie)
 
+
+if luc_leger_categories:
+    filtres_luc = []
+    for cat in luc_leger_categories:
+        if cat == "0":
+            filtres_luc.append(df_filtered["luc léger"] == 0)
+        elif cat == "1":
+            filtres_luc.append(df_filtered["luc léger"] == 1)
+        elif cat == "2":
+            filtres_luc.append(df_filtered["luc léger"] == 2)
+        elif cat == "3":
+            filtres_luc.append(df_filtered["luc léger"] == 3)
+        elif cat == "4":
+            filtres_luc.append(df_filtered["luc léger"] == 4)
+        elif cat == "5":
+            filtres_luc.append(df_filtered["luc léger"] == 5)
+        elif cat == "plus de 6":
+            filtres_luc.append(df_filtered["luc léger"] >= 6)
+
+    if filtres_luc:
+        df_filtered = df_filtered[pd.concat(filtres_luc, axis=1).any(axis=1)]
 # Application des filtres de tension artérielle
 if "tension artérielle systol" in df_filtered.columns:
     df_filtered = df_filtered[
@@ -296,33 +386,10 @@ if "tension artérielle diastol" in df_filtered.columns:
     ]
 
 
-if age_category:
-    filtres_age = []
-    for cat in age_category:
-        if cat == "16 à 29":
-            filtres_age.append((df_filtered["age"] >= 16) & (df_filtered["age"] <= 29))
-        elif cat == "30 à 39":
-            filtres_age.append((df_filtered["age"] >= 30) & (df_filtered["age"] <= 39))
-        elif cat == "40 à 49":
-            filtres_age.append((df_filtered["age"] >= 40) & (df_filtered["age"] <= 49))
-        elif cat == "50 à 57":
-            filtres_age.append((df_filtered["age"] >= 50) & (df_filtered["age"] <= 57))
-        elif cat == "Plus de 57":
-            filtres_age.append(df_filtered["age"] > 57)
-
-    if filtres_age:
-        df_filtered = df_filtered[pd.concat(filtres_age, axis=1).any(axis=1)]
-
-
 df_filtered = df_filtered[
     (df_filtered["poids"] >= poids_min) & (df_filtered["poids"] <= poids_max)
 ]
 
-st.sidebar.markdown("**Luc Léger - Paliers**")
-luc_leger_categories = st.sidebar.multiselect(
-    "Sélectionnez une ou plusieurs catégories de palier Luc Léger :",
-    ["0", "1", "2", "3", "4", "5", "plus de 6"],
-)
 
 if sexe_options:
     df_filtered = df_filtered[df_filtered["sexe"].isin(sexe_options)]
@@ -354,26 +421,6 @@ if imc_category:
     if filtres_imc:
         df_filtered = df_filtered[pd.concat(filtres_imc, axis=1).any(axis=1)]
 
-if luc_leger_categories:
-    filtres_luc = []
-    for cat in luc_leger_categories:
-        if cat == "0":
-            filtres_luc.append(df_filtered["luc léger"] == 0)
-        elif cat == "1":
-            filtres_luc.append(df_filtered["luc léger"] == 1)
-        elif cat == "2":
-            filtres_luc.append(df_filtered["luc léger"] == 2)
-        elif cat == "3":
-            filtres_luc.append(df_filtered["luc léger"] == 3)
-        elif cat == "4":
-            filtres_luc.append(df_filtered["luc léger"] == 4)
-        elif cat == "5":
-            filtres_luc.append(df_filtered["luc léger"] == 5)
-        elif cat == "plus de 6":
-            filtres_luc.append(df_filtered["luc léger"] >= 6)
-
-    if filtres_luc:
-        df_filtered = df_filtered[pd.concat(filtres_luc, axis=1).any(axis=1)]
 
 # --- VISUALISATIONS ---
 st.subheader("Statistiques Globales sur les Données Filtrées")
@@ -796,6 +843,22 @@ sns.heatmap(
 )
 ax.set_title("Matrice de Corrélation - Indicateurs Physiques et luc léger")
 st.pyplot(fig)
+
+st.subheader("🎯 Répartition des niveaux ICP - SPP (Filtres appliqués)")
+
+for group_col in ["cie", "ut", "sexe", "tranche_age"]:
+    if group_col in df_filtered.columns:
+        st.markdown(f"#### Répartition par {group_col}")
+        tab = (
+            df_filtered.groupby([group_col, "couleur_globale"])
+            .size()
+            .unstack(fill_value=0)
+        )
+        tab["Total"] = tab.sum(axis=1)
+        for color in ["Vert", "Orange", "Rouge"]:
+            if color in tab.columns:
+                tab[f"% {color}"] = round(100 * tab[color] / tab["Total"], 1)
+        st.dataframe(tab)
 
 st.subheader("Carte Interactive des UT")
 
