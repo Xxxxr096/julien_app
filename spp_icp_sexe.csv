@@ -1,0 +1,712 @@
+;;;;;;;;;;;;
+;Cie;UT;Matricule;Age;Date derniers ICP;Luc léger;Niveau Luc léger;Pompes;Niveau pompes;Tractions;Niveau tractions;Incendie et port de l'ARI Toutes missions
+;Cie CTA-CODIS;;35702;35;5/22/24;10,0;3;20;3;20;3;Apte
+;Cie CTA-CODIS;;37070;38;10/8/24;11,0;3;40;3;20;3;Apte
+;Cie CTA-CODIS;;37305;37;4/17/24;10,0;3;20;3;15;3;Apte
+;Cie CTA-CODIS;;37378;37;8/5/24;8,2;2;20;3;13;3;Apte
+;Cie CTA-CODIS;;38279;36;5/11/24;9,5;3;20;3;18;3;Apte
+;Cie CTA-CODIS;;39218;34;11/5/24;;;35;3;15;3;Apte
+;Cie CTA-CODIS;;39247;34;9/13/24;10,0;3;20;3;13;3;Apte
+;Cie CTA-CODIS;;39631;34;5/22/24;9,0;3;20;3;13;3;Apte
+;Cie CTA-CODIS;;40606;31;11/22/24;9,0;3;25;3;20;3;Apte
+;Cie CTA-CODIS;;40722;35;6/1/24;9,0;3;20;3;13;3;Apte
+;Cie CTA-CODIS;;40747;32;11/22/24;9,0;3;20;3;10;2;Apte
+;Cie CTA-CODIS;;40980;30;9/26/24;;;25;3;18;3;Apte
+;Cie CTA-CODIS;;41340;30;10/19/24;9,5;3;20;3;13;3;Apte
+;Cie CTA-CODIS;;41920;25;2/27/24;9,5;3;20;3;13;3;Apte
+;Cie CTA-CODIS;;42320;26;12/7/23;12,0;3;40;3;25;3;Apte
+;Cie CTA-CODIS;;90116;43;2/4/23;9,3;3;28;3;10;3;Apte
+;Cie CTA-CODIS;;90126;44;8/27/24;4,3;1;18;3;0;1;Apte
+;Cie CTA-CODIS;;90143;45;7/28/23;5,0;1;16;3;8;2;Apte
+;Cie CTA-CODIS;;90164;47;3/26/24;8,0;3;15;2;10;3;Apte
+;Cie CTA-CODIS;;90179;47;2/4/25;8,0;3;20;3;8;2;Apte
+;Cie CTA-CODIS;;90185;51;5/22/24;7,0;3;15;3;7;3;Apte
+;Cie CTA-CODIS;;90192;45;11/9/23;5,0;2;9;3;1;1;Apte
+;Cie CTA-CODIS;;90505;52;2/14/24;5,5;2;14;3;1;1;Apte
+;Cie CTA-CODIS;;90551;46;11/27/24;10,2;3;20;3;5;2;Apte
+;Cie CTA-CODIS;;90574;44;3/26/24;;;15;2;11;3;Apte
+;Cie CTA-CODIS;;90641;40;4/17/24;8,3;2;20;3;12;3;Apte
+;Cie CTA-CODIS;;90664;40;3/18/25;8,5;3;25;3;14;3;Apte
+;Cie CTA-CODIS;;90668;46;5/21/24;6,0;2;15;2;6;2;Apte
+;Cie CTA-CODIS;;90671;50;1/1/24;7,0;2;20;3;7;2;Apte
+;Cie CTA-CODIS;;90705;41;2/5/25;;;;;;;Apte
+;Cie CTA-CODIS;;90725;46;4/2/24;8,5;3;20;3;7;2;Inapte
+;Cie CTA-CODIS;;90734;44;11/30/24;8,0;3;15;2;10;3;Inapte
+;Cie CTA-CODIS;;90741;39;4/17/24;11,0;3;20;3;20;3;Apte
+;Cie CTA-CODIS;;90776;39;2/18/24;8,5;2;18;3;6;2;Apte
+;Cie CTA-CODIS;;90782;40;4/2/24;9,0;3;;;;;Apte
+;Cie CTA-CODIS;;90784;43;3/26/24;8,5;3;20;3;12;3;Apte
+;Cie CTA-CODIS;;90791;38;4/2/24;8,5;2;;;;;Apte
+;Cie CTA-CODIS;;90806;43;11/7/23;8,0;3;20;3;7;2;Apte
+;Cie CTA-CODIS;;90815;37;3/26/24;9,0;3;;;;;Apte
+;Cie CTA-CODIS;;90830;39;3/18/25;9,0;3;20;3;9;2;Apte
+;Cie CTA-CODIS;;90850;38;4/10/24;6,2;1;20;3;2;1;Apte
+;Cie CTA-CODIS;;90855;37;5/22/24;10,5;3;20;3;13;3;Apte
+;Cie CTA-CODIS;;90864;44;4/2/24;11,0;3;20;3;15;3;Apte
+;Cie CTA-CODIS;;90865;46;3/26/24;8,3;3;19;3;10;3;Apte
+;Cie CTA-CODIS;;90868;38;4/2/24;9,0;3;;;;;Apte
+;Cie CTA-CODIS;;90876;49;4/17/24;8,0;3;20;3;10;3;Apte
+;Cie CTA-CODIS;;90884;37;3/26/24;9,3;3;26;3;14;3;Apte
+;Cie CTA-CODIS;;90904;37;5/22/24;9,5;3;20;3;13;3;Apte
+;Cie CTA-CODIS;;90917;36;3/26/24;9,3;3;21;3;20;3;Apte
+;Cie CTA-CODIS;;90944;41;1/1/21;9,2;3;25;3;17;3;Apte
+;Cie CTA-CODIS;;90982;31;6/1/24;10,0;3;30;3;15;3;Apte
+;Cie CTA-CODIS;;90992;34;4/2/24;8,5;3;20;3;9;3;Apte
+;Cie CTA-CODIS;;91013;36;2/24/24;9,0;3;22;3;14;3;Apte
+;Cie CTA-CODIS;;91014;48;3/18/25;5,0;1;20;3;4;1;Apte
+;Cie CTA-CODIS;;91061;41;4/17/24;9,0;3;20;3;11;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;32370;46;9/28/23;12,0;3;40;3;25;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;35847;46;7/3/24;8,0;3;20;3;21;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;35895;37;3/12/25;11,2;3;20;3;24;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;36635;40;5/6/24;9,5;3;20;3;15;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;38969;39;11/13/24;9,3;3;21;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;40737;35;12/3/24;10,0;3;25;3;20;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;40808;31;10/22/24;11,0;3;20;3;20;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;41051;31;11/6/23;11,0;3;23;3;16;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;41089;30;7/3/24;10,0;3;20;3;20;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;41315;39;10/5/24;11,0;3;30;3;20;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;41349;29;10/19/24;10,0;3;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;41402;29;12/3/24;11,0;3;40;3;21;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;41945;26;4/13/23;10,0;3;40;3;20;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;42207;26;7/3/24;10,0;3;20;3;26;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;42265;24;1/16/25;12,0;3;40;3;22;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;42332;44;10/22/24;9,0;3;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;42336;31;9/30/24;9,0;3;21;3;15;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;42676;22;12/3/24;11,0;3;40;3;22;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;43895;23;11/3/24;10,5;3;20;3;15;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;44378;20;11/3/24;12,2;3;40;3;17;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;45206;24;11/3/24;10,5;3;30;3;15;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;45880;28;3/18/25;8,2;2;32;3;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90016;52;10/24/23;8,0;3;25;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90054;48;12/3/24;11,5;3;35;3;22;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90079;49;11/13/24;7,2;2;21;3;12;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90095;45;5/6/24;8,0;3;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90138;44;12/3/24;7,5;3;16;3;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90153;50;10/22/24;9,0;3;39;3;15;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90159;47;3/24/25;8,2;3;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90163;47;7/3/24;9,0;3;20;3;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90170;46;5/6/24;11,5;3;20;3;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90172;42;7/3/24;9,0;3;20;3;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90187;44;10/22/24;7,0;2;20;3;7;2;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90194;47;7/3/24;9,0;3;20;3;;;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90469;54;3/12/25;9,0;3;20;3;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90513;51;9/30/24;8,0;3;21;3;8;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90519;51;11/28/23;7,0;3;20;3;12;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90535;52;12/3/24;;;15;3;7;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90547;47;5/6/24;9,5;3;20;3;15;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90631;42;5/6/24;10,0;3;20;3;21;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90644;41;9/28/23;11,0;3;40;3;20;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90673;41;11/13/24;;;;;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90681;43;5/6/24;9,0;3;20;3;;;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90683;49;3/12/25;9,0;3;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90693;44;12/3/24;8,0;3;20;3;12;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90711;47;9/28/23;8,0;3;18;3;5;2;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90712;42;11/9/24;9,0;3;20;3;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90737;42;10/22/24;11,0;3;20;3;20;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90750;41;3/12/25;9,0;3;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90752;42;5/6/24;11,0;3;20;3;30;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90775;46;12/3/24;10,0;3;25;3;20;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90793;37;5/6/24;12,0;3;20;3;20;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90812;38;12/3/24;9,0;3;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90849;40;6/19/24;9,5;3;20;3;10;2;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90860;38;12/3/24;9,0;3;21;3;19;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90875;45;3/12/25;6,0;2;20;3;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90883;44;7/3/24;6,0;2;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90892;39;3/12/25;9,0;3;20;3;12;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90912;35;10/18/24;10,0;3;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90948;36;2/17/23;10,0;3;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90955;40;12/3/24;;;34;3;25;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90956;38;9/30/24;9,0;3;21;3;16;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90960;38;12/3/24;9,0;3;20;3;20;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90989;32;11/30/24;11,0;3;20;3;15;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;91008;30;5/6/24;12,0;3;20;3;16;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;91018;34;3/12/25;10,0;3;20;3;14;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;91019;33;9/28/23;10,0;3;46;3;17;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;91021;35;12/3/24;11,0;3;42;3;21;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;91024;33;1/16/25;11,3;3;40;3;18;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;91033;36;7/3/24;10,0;3;20;3;18;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;91053;47;5/6/24;6,0;2;20;3;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;91059;31;;;;;;;;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;91082;34;3/18/25;11,0;3;30;3;15;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;30593;50;1/25/24;7,5;3;20;3;12;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;35849;31;1/25/24;9,5;3;20;3;19;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;35856;35;3/3/25;11,5;3;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;37067;38;2/27/24;9,0;3;18;3;12;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;37352;37;11/4/24;9,5;3;20;3;15;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;37472;36;3/3/25;10,0;3;20;3;14;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;38509;28;1/25/24;9,5;3;20;3;17;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;38515;30;3/3/25;11,0;3;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;38706;26;1/1/24;9,7;3;21;3;9;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;38754;27;11/4/24;;;20;3;15;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;39275;34;12/3/24;10,2;3;40;3;26;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;39276;34;3/3/25;9,3;3;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;39464;33;2/27/24;9,0;3;18;3;12;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;39825;28;3/3/25;11,2;3;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;40063;33;2/27/24;9,0;3;18;3;12;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;40221;33;1/1/24;9,5;3;25;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;40727;34;2/27/24;9,0;3;18;3;12;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;40814;48;1/1/24;10,5;3;20;3;20;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;41154;39;2/27/24;9,0;3;18;3;12;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;41307;29;1/1/25;9,5;3;20;3;14;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;41354;29;9/23/24;10,5;3;21;3;16;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;41396;29;6/19/24;10,0;3;30;3;20;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;41485;32;4/22/24;;;20;3;21;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;41935;26;3/3/25;11,2;3;20;3;19;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;42062;24;1/16/25;9,5;3;40;3;21;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;42104;34;9/23/24;10,5;3;21;3;16;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;42109;24;9/6/24;9,5;3;20;3;14;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;42670;23;1/25/24;9,5;3;20;3;25;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;42794;25;;;;;;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;42824;25;1/1/24;9,5;3;21;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;42937;26;3/3/25;10,0;3;20;3;18;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;43063;22;2/14/25;;;;;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;43459;21;3/18/25;11,0;3;40;3;14;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;43872;24;1/25/24;9,5;3;20;3;26;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;43956;30;4/21/23;10,2;3;25;3;20;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;44213;23;;;;;;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;44693;32;10/14/24;7,2;2;22;3;6;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;44701;28;1/1/25;9,8;3;40;3;23;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;80506;28;2/27/24;9,5;3;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90027;51;11/4/24;6,5;3;15;3;3;2;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90071;50;10/8/24;6,5;3;14;3;7;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90077;47;9/6/24;;;20;3;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90098;43;9/6/24;5,5;2;20;3;6;2;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90099;52;3/3/25;7,3;3;20;3;11;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90115;47;9/6/24;5,0;1;18;3;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90133;51;1/1/24;6,0;2;21;3;6;2;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90135;42;1/25/24;8,5;3;20;3;12;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90144;46;2/27/24;7,5;3;16;3;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90148;44;10/8/24;7,0;2;16;3;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90156;49;1/25/24;7,5;3;20;3;12;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90181;46;3/13/25;;;;;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90189;49;1/25/24;8,0;3;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90435;59;2/27/24;5,5;3;12;3;4;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90458;60;9/6/24;4,0;2;15;3;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90475;54;9/23/24;5,0;2;13;2;4;2;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90487;58;9/23/24;5,5;3;12;3;4;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90493;53;3/3/25;6,3;;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90504;53;2/27/24;6,5;3;14;3;7;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90506;53;1/1/24;11,0;3;21;3;20;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90507;52;3/3/25;7,0;3;20;3;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90521;53;11/4/24;;;15;3;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90522;50;3/3/25;8,0;3;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90566;51;1/25/24;7,5;3;20;3;12;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90581;50;1/25/24;8,0;3;20;3;17;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90591;44;3/3/25;7,3;;20;3;11;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90630;46;3/3/25;8,3;3;20;3;14;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90640;46;9/6/24;6,0;2;18;3;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90652;41;1/25/24;7,5;3;20;3;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90654;41;2/27/24;7,5;3;16;3;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90655;45;7/22/24;10,3;3;20;3;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90695;50;1/1/25;6,5;3;30;3;12;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90701;47;9/23/24;8,0;3;20;3;11;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90713;41;9/23/24;8,0;3;16;3;14;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90742;44;3/3/25;9,2;3;20;3;16;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90746;54;11/4/24;6,8;3;20;3;9;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90773;39;1/1/24;9,0;3;;;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90778;44;9/6/24;93,0;3;20;3;15;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90796;38;3/3/25;11,2;3;20;3;20;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90797;39;1/25/24;9,0;3;20;3;15;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90798;37;11/28/24;10,5;3;30;3;20;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90818;42;1/1/24;10,7;3;21;3;20;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90821;41;1/25/24;9,0;3;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90827;41;6/19/24;11,2;3;30;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90828;36;1/25/24;9,5;3;20;3;16;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90866;39;9/6/24;;;20;3;17;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90905;42;9/6/24;8,0;3;20;3;15;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90913;41;2/27/24;7,5;3;16;3;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90922;48;3/3/25;6,0;2;20;3;12;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90954;36;1/1/24;11,0;3;21;3;10;2;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90962;46;1/1/24;11,0;3;40;3;24;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90968;32;1/1/25;12,0;3;40;3;23;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90987;42;11/4/24;10,0;3;20;3;10;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91001;32;1/5/25;;;;;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91005;31;1/1/24;11,0;3;21;3;25;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91026;25;4/22/24;11,0;3;20;3;21;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91027;27;11/4/24;9,5;3;20;3;15;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91041;34;2/27/24;9,0;3;18;3;12;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91042;25;9/6/24;9,5;3;20;3;15;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91051;32;1/25/24;9,0;3;20;3;13;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91052;22;4/22/24;;;20;3;19;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91054;40;9/23/24;9,0;3;21;3;16;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91065;23;11/3/24;11,2;3;41;3;23;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91066;21;11/3/24;12,0;3;40;3;22;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91081;29;3/18/25;10,0;3;32;3;14;3;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91083;34;;;;;;;;Apte
+;Cie EMS Centre;;41182;29;5/24/24;11,0;3;30;3;16;3;Apte
+;Cie EMS Centre;;90023;48;6/19/24;10,0;3;30;3;21;3;Apte
+;Cie EMS Centre;;90675;44;1/1/25;7,5;3;20;3;13;3;Apte
+;Cie EMS Centre;;91062;29;6/19/24;9,0;3;15;3;5;2;Apte
+;Cie EMS Nord;UT Strasbourg Nord;35906;27;1/1/25;12,0;3;40;3;25;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;36390;39;10/19/24;9,0;3;20;3;13;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;36983;37;11/22/24;10,2;3;20;3;14;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;37370;36;1/1/24;7,7;2;33;3;13;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;38418;29;5/22/24;10,0;3;20;3;20;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;38634;26;1/1/25;8,0;2;40;3;14;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;38654;26;7/19/23;11,0;3;28;3;18;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;38701;26;1/1/25;10,0;3;20;3;20;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;39073;36;1/1/25;9,0;3;20;3;13;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;39540;33;2/5/25;;;;;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;39594;32;2/5/25;;;;;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;39606;34;11/22/24;9,0;3;20;3;13;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;39930;30;11/22/24;11,0;3;30;3;15;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;39953;27;;;;;;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;40402;32;7/19/23;9,0;3;20;3;13;3;Inapte
+;Cie EMS Nord;UT Strasbourg Nord;40557;38;10/19/24;9,0;3;30;3;15;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;40561;31;2/14/25;;;;;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;40816;31;2/14/25;;;;;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;40853;35;7/19/23;12,0;3;20;3;13;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;41293;33;10/19/24;11,0;3;20;3;15;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;41393;29;9/11/24;12,0;3;40;3;21;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;41520;27;;;;;;;;Inapte
+;Cie EMS Nord;UT Strasbourg Nord;42124;23;2/14/25;;;;;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;42201;32;10/19/24;11,0;3;20;3;15;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;42343;25;10/22/24;10,0;3;25;3;15;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;42386;31;10/19/24;11,0;3;20;3;14;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;42717;33;10/19/24;11,0;3;20;3;15;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;43061;23;11/3/24;10,5;3;40;3;16;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;43351;21;11/3/24;10,0;3;26;3;13;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;44240;20;11/3/24;9,0;2;30;3;16;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;44444;30;11/22/24;13,0;3;30;3;20;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;44451;31;1/1/25;11,0;3;20;3;21;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;44472;35;1/1/25;8,3;2;40;3;12;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90073;48;1/1/25;9,3;3;20;3;13;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90076;52;10/19/24;6,5;3;20;3;7;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90080;50;10/19/24;8,0;3;20;3;10;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90113;48;11/22/24;7,0;2;21;3;8;2;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90119;46;9/26/24;9,0;3;16;3;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90145;50;10/19/24;7,5;3;20;3;10;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90150;43;1/1/24;;;16;3;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90190;43;5/22/24;8,0;3;20;3;13;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90191;47;1/1/25;8,0;3;20;3;10;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90478;56;1/1/24;4,7;2;;;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90488;53;1/1/25;6,8;3;20;3;5;2;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90501;53;11/22/24;7,0;3;15;3;3;2;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90544;42;9/26/24;7,5;3;20;3;13;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90558;45;10/19/24;7,5;3;20;3;15;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90562;50;10/19/24;8,0;3;20;3;13;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90565;50;10/19/24;8,0;3;16;3;12;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90575;40;6/19/24;6,2;2;20;3;4;1;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90595;46;10/22/24;10,0;3;30;3;26;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90599;46;1/1/25;;;16;3;7;2;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90602;45;10/19/24;10,0;3;20;3;14;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90610;41;10/19/24;7,5;3;18;3;11;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90638;47;12/7/23;10,0;3;30;3;12;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90674;54;1/1/24;;;15;3;8;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90685;43;11/28/23;8,0;3;16;3;10;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90708;46;1/1/25;7,5;3;20;3;10;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90745;48;12/7/24;;;;;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90747;49;10/19/24;8,0;3;20;3;13;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90762;43;9/26/24;;;20;3;5;2;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90764;47;11/22/24;10,5;3;30;3;15;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90767;43;1/1/25;8,5;3;20;3;10;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90792;37;10/19/24;10,0;3;20;3;15;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90795;38;10/19/24;8,0;3;20;3;13;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90802;45;1/1/23;7,5;3;20;3;12;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90809;39;9/27/24;10,0;3;20;3;21;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90825;43;10/19/24;7,5;3;16;3;11;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90832;44;11/19/24;;;16;3;2;1;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90858;47;1/1/25;8,0;3;16;3;11;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90887;43;1/1/24;8,5;3;20;3;11;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90901;36;11/22/24;11,0;3;40;3;20;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90964;36;11/22/24;10,0;3;20;3;20;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90969;33;10/19/24;10,3;3;20;3;15;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90998;27;1/1/25;12,0;3;30;3;20;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;91003;30;7/19/23;12,0;3;40;3;26;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;91016;34;10/19/24;9,0;3;20;3;13;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;91036;35;10/19/24;10,3;3;20;3;13;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;91040;27;2/14/25;;;;;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;91058;24;2/14/25;;;;;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;91067;24;1/1/25;8,5;3;20;3;9;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;91068;21;11/3/24;10,0;3;40;3;18;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;91070;22;11/3/24;11,5;3;30;3;16;3;Apte
+;Cie EMS Nord;UT Strasbourg Nord;91075;31;2/14/25;;;;;;;Apte
+;Cie EMS Nord;;42147;23;1/1/24;11,0;3;20;3;14;3;Apte
+;Cie EMS Nord;;90546;44;1/1/24;10,5;3;20;3;18;3;Apte
+;Cie EMS Nord;;90656;47;1/1/24;7,5;3;20;3;12;3;Apte
+;Cie EMS Nord;;90949;34;10/21/24;11,0;3;42;3;20;3;Apte
+;Cie EMS Sud;UT Lingolsheim;37072;41;10/21/24;10,0;3;47;3;26;3;Apte
+;Cie EMS Sud;UT Lingolsheim;90470;56;10/21/24;7,3;3;20;3;7;3;Apte
+;Cie EMS Sud;UT Lingolsheim;90472;56;4/10/24;5,0;2;20;3;4;2;Apte
+;Cie EMS Sud;UT Lingolsheim;90570;51;10/21/24;8,0;3;20;3;12;3;Apte
+;Cie EMS Sud;UT Lingolsheim;90622;46;10/21/24;8,0;3;20;3;12;3;Apte
+;Cie EMS Sud;UT Lingolsheim;90689;47;10/21/24;7,5;3;20;3;5;2;Apte
+;Cie EMS Sud;UT Lingolsheim;90831;44;10/21/24;11,5;3;35;3;20;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;35869;28;5/27/24;10,0;3;30;3;15;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;35875;29;5/22/24;10,0;3;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;35898;31;11/4/24;10,0;3;20;3;16;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;36795;38;8/5/24;8,3;2;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;38307;36;5/27/24;9,3;3;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;38419;29;7/6/23;11,0;3;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;38547;27;;;;;;;;Apte
+;Cie EMS Sud;UT Strasbourg Sud;38733;27;11/17/24;7,3;1;40;3;26;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;38786;25;6/19/24;10,0;3;20;3;15;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;39372;35;11/3/24;10,5;3;40;3;17;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;39927;38;5/22/24;9,0;3;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;39948;27;8/5/24;9,0;2;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;40229;33;3/18/25;10,5;3;32;3;17;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;40277;44;12/23/24;10,0;3;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;40519;31;9/18/24;11,0;3;20;3;15;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;40960;30;9/26/23;9,5;3;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;41007;32;9/18/24;9,0;3;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;41065;37;8/5/24;9,0;3;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;41501;29;10/9/24;11,0;3;20;3;20;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;41930;25;11/3/24;9,5;3;40;3;16;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;42005;33;5/22/24;9,0;3;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;42138;35;10/9/24;8,5;2;20;3;12;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;42199;26;5/27/24;12,0;3;40;3;20;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;43698;20;11/3/24;11,2;3;42;3;19;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;43866;22;2/26/23;9,5;3;25;3;20;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;44091;36;5/22/24;10,0;3;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;44379;39;8/5/24;9,3;3;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;44563;25;;;;;;;;Apte
+;Cie EMS Sud;UT Strasbourg Sud;44643;32;10/9/24;11,0;3;20;3;16;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;80417;45;6/19/24;11,2;3;30;3;20;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90094;47;10/4/24;10,0;3;20;3;20;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90096;50;8/5/24;6,5;3;20;3;9;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90112;43;10/9/24;7,5;3;16;3;7;2;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90134;43;10/4/24;9,0;3;20;3;20;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90136;48;5/27/23;5,8;2;16;3;10;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90168;43;4/10/24;8,0;3;20;3;;;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90462;55;11/4/24;8,0;3;20;3;10;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90464;56;8/5/24;6,5;3;14;3;7;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90484;58;5/27/24;7,0;3;20;3;15;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90525;51;9/3/23;7,5;3;14;3;7;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90554;46;5/11/24;8,0;3;21;3;15;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90555;47;11/25/24;9,0;3;20;3;12;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90572;46;10/18/24;8,0;3;20;3;10;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90577;43;5/27/24;9,0;3;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90589;47;5/11/24;10,0;3;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90607;41;5/22/24;9,0;3;20;3;10;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90612;54;10/9/24;5,5;2;15;3;3;2;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90623;41;8/28/24;9,5;3;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90646;44;5/11/24;11,0;3;20;3;20;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90657;48;5/22/24;10,0;3;20;3;12;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90669;47;10/9/24;7,5;3;16;3;10;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90672;47;10/19/24;6,5;2;15;2;8;2;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90687;44;12/7/24;8,0;3;16;3;10;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90688;41;9/18/24;9,5;3;20;3;16;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90710;48;10/4/24;8,0;3;20;3;8;2;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90724;41;11/18/24;8,5;3;20;3;12;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90758;41;5/11/24;9,0;3;21;3;12;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90801;40;10/9/24;11,0;3;20;3;10;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90805;42;11/4/24;12,0;3;;;;;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90826;42;5/11/24;10,0;3;16;3;10;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90829;46;5/22/24;9,0;3;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90836;50;9/18/24;5,0;2;20;3;7;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90837;42;11/14/24;7,5;3;20;3;15;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90853;42;10/18/24;9,0;3;20;3;15;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90886;38;5/22/24;10,0;3;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90891;44;10/18/24;11,0;3;20;3;22;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90925;50;5/11/24;8,0;3;20;3;8;2;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90937;36;5/27/24;9,0;3;30;3;17;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90950;43;5/11/24;9,0;3;20;3;15;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90961;38;5/22/24;9,0;3;20;3;12;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90985;41;10/4/24;8,5;3;20;3;16;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90988;34;11/18/24;10,0;3;20;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90993;44;11/4/24;11,0;3;20;3;18;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90997;31;11/18/24;10,0;3;20;3;8;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90999;27;1/16/25;11,0;3;40;3;20;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91006;37;9/18/24;11,0;3;20;3;12;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91011;36;1/16/25;10,0;3;40;3;19;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91017;32;10/9/24;7,5;3;11;3;7;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91020;27;5/11/24;11,0;3;22;3;15;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91029;30;5/27/24;10,0;3;25;3;13;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91030;30;5/11/24;11,0;3;20;3;15;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91038;29;10/18/24;11,0;3;20;3;16;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91057;29;10/9/24;11,0;3;20;3;20;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91069;33;11/3/24;11,2;3;40;3;19;3;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91074;32;10/14/24;11,3;3;37;3;15;3;Apte
+;Cie EMS Sud;;44452;26;10/3/23;12,0;3;20;3;13;3;Apte
+;Cie EMS Sud;;90049;52;2/14/24;4,5;2;14;3;3;2;Apte
+;Cie EMS Sud;;90639;42;10/8/23;9,3;3;20;3;13;3;Apte
+;Cie EMS Sud;;90768;42;12/23/24;10,0;3;20;3;7;2;Apte
+;Cie Haguenau;UT Brumath;90087;49;1/1/22;7,5;3;20;3;13;3;Apte
+;Cie Haguenau;UT Brumath;90110;44;11/4/24;8,0;3;25;3;15;3;Apte
+;Cie Haguenau;UT Brumath;90122;46;1/24/25;9,0;3;18;3;10;3;Apte
+;Cie Haguenau;UT Brumath;90542;43;11/20/24;11,0;3;30;3;15;3;Apte
+;Cie Haguenau;UT Brumath;90582;44;1/1/21;7,0;2;18;3;7;2;Apte
+;Cie Haguenau;UT Brumath;90714;45;1/8/24;10,0;3;30;3;30;3;Apte
+;Cie Haguenau;UT Brumath;90749;42;11/4/24;8,0;3;25;3;15;3;Apte
+;Cie Haguenau;UT Haguenau;36805;38;2/14/25;;;;;;;Apte
+;Cie Haguenau;UT Haguenau;39031;35;6/25/24;9,0;3;20;3;13;3;Apte
+;Cie Haguenau;UT Haguenau;39178;34;10/9/24;10,0;3;20;3;15;3;Apte
+;Cie Haguenau;UT Haguenau;39482;33;10/25/24;10,3;3;20;3;20;3;Apte
+;Cie Haguenau;UT Haguenau;40507;33;9/12/24;11,0;3;40;3;21;3;Apte
+;Cie Haguenau;UT Haguenau;41155;32;3/16/25;9,3;3;20;3;20;3;Apte
+;Cie Haguenau;UT Haguenau;41431;40;9/10/24;9,0;3;22;3;13;3;Apte
+;Cie Haguenau;UT Haguenau;42380;27;9/28/23;10,3;3;20;3;20;3;Apte
+;Cie Haguenau;UT Haguenau;90031;61;3/16/25;;;;;;;Apte
+;Cie Haguenau;UT Haguenau;90061;50;1/28/25;;;;;;;Apte
+;Cie Haguenau;UT Haguenau;90142;47;8/28/24;8,0;3;20;3;10;3;Apte
+;Cie Haguenau;UT Haguenau;90161;47;11/20/24;7,5;3;18;3;7;2;Apte
+;Cie Haguenau;UT Haguenau;90173;49;11/9/23;7,5;3;20;3;10;3;Inapte
+;Cie Haguenau;UT Haguenau;90177;48;9/30/24;8,0;3;17;3;11;3;Apte
+;Cie Haguenau;UT Haguenau;90178;46;9/30/24;;;20;3;10;3;Apte
+;Cie Haguenau;UT Haguenau;90523;49;10/9/24;7,5;3;20;3;7;2;Apte
+;Cie Haguenau;UT Haguenau;90541;46;10/9/24;7,5;3;17;3;10;3;Apte
+;Cie Haguenau;UT Haguenau;90621;46;10/9/24;8,0;3;21;3;;;Apte
+;Cie Haguenau;UT Haguenau;90648;44;7/23/24;9,5;3;20;3;15;3;Apte
+;Cie Haguenau;UT Haguenau;90661;42;6/19/24;9,0;3;20;3;16;3;Apte
+;Cie Haguenau;UT Haguenau;90667;53;9/30/24;8,5;3;25;3;9;3;Apte
+;Cie Haguenau;UT Haguenau;90678;41;11/4/24;8,0;3;18;3;9;2;Apte
+;Cie Haguenau;UT Haguenau;90694;45;8/28/24;8,0;3;20;3;9;2;Apte
+;Cie Haguenau;UT Haguenau;90697;46;10/9/24;7,5;3;16;3;10;3;Apte
+;Cie Haguenau;UT Haguenau;90698;43;11/20/24;10,0;3;25;3;12;3;Apte
+;Cie Haguenau;UT Haguenau;90700;49;5/22/24;8,0;3;20;3;5;2;Apte
+;Cie Haguenau;UT Haguenau;90735;45;9/20/23;10,0;3;20;3;12;3;Apte
+;Cie Haguenau;UT Haguenau;90738;43;10/9/24;7,5;3;20;3;13;3;Apte
+;Cie Haguenau;UT Haguenau;90760;44;8/28/24;7,5;3;20;3;10;3;Apte
+;Cie Haguenau;UT Haguenau;90761;43;10/9/24;7,5;3;16;3;10;3;Apte
+;Cie Haguenau;UT Haguenau;90779;45;9/30/24;9,0;3;30;3;15;3;Apte
+;Cie Haguenau;UT Haguenau;90824;43;10/9/24;12,3;3;30;3;14;3;Apte
+;Cie Haguenau;UT Haguenau;90843;52;11/20/24;7,5;3;16;3;8;3;Apte
+;Cie Haguenau;UT Haguenau;90857;37;10/24/23;10,0;3;20;3;14;3;Apte
+;Cie Haguenau;UT Haguenau;90921;36;9/30/24;9,5;3;20;3;15;3;Apte
+;Cie Haguenau;UT Haguenau;90923;37;11/20/24;10,0;3;20;3;15;3;Apte
+;Cie Haguenau;UT Haguenau;90996;45;5/30/24;11,0;3;30;3;15;3;Apte
+;Cie Haguenau;UT Haguenau;91056;34;1/16/25;10,0;3;40;3;15;3;Apte
+;Cie Haguenau;UT Haguenau;91073;29;;;;;;;;Apte
+;Cie Haguenau;;34433;48;3/16/25;;;;;;;Apte
+;Cie Haguenau;;90471;55;5/30/24;7,0;3;30;3;5;2;Apte
+;Cie Haguenau;;90499;53;10/25/24;8,5;3;20;3;20;3;Apte
+;Cie Haguenau;;90583;49;;;;;;;;Inapte
+;Cie Haguenau;;90585;47;9/30/24;8,0;3;30;3;12;3;Apte
+;Cie Haguenau;;90838;40;4/22/24;;;20;3;5;1;Apte
+;Cie Molsheim;UT Molsheim;30500;36;11/25/24;10,0;3;40;3;30;3;Apte
+;Cie Molsheim;UT Molsheim;37182;41;10/2/24;9,3;3;24;3;12;3;Apte
+;Cie Molsheim;UT Molsheim;41925;41;10/22/24;7,5;3;20;3;7;2;Apte
+;Cie Molsheim;UT Molsheim;90006;63;1/8/25;4,2;2;10;2;3;3;Apte
+;Cie Molsheim;UT Molsheim;90078;51;9/18/24;9,0;3;30;3;14;3;Apte
+;Cie Molsheim;UT Molsheim;90118;49;10/21/24;7,0;2;14;2;;;Apte
+;Cie Molsheim;UT Molsheim;90121;48;2/9/24;7,5;3;16;3;10;3;Apte
+;Cie Molsheim;UT Molsheim;90124;42;2/25/23;6,0;2;20;3;5;2;Apte
+;Cie Molsheim;UT Molsheim;90127;47;10/21/24;10,5;3;21;3;6;2;Apte
+;Cie Molsheim;UT Molsheim;90129;48;11/4/24;5,5;2;15;2;0;1;Apte
+;Cie Molsheim;UT Molsheim;90486;53;9/12/24;6,0;2;16;3;10;3;Apte
+;Cie Molsheim;UT Molsheim;90557;46;1/1/19;7,5;3;20;3;15;3;Apte
+;Cie Molsheim;UT Molsheim;90569;47;11/25/24;9,0;3;20;3;10;3;Apte
+;Cie Molsheim;UT Molsheim;90571;47;3/10/24;9,2;3;20;3;10;3;Apte
+;Cie Molsheim;UT Molsheim;90573;47;10/21/24;7,5;3;17;3;5;2;Apte
+;Cie Molsheim;UT Molsheim;90584;44;2/9/24;7,5;3;13;3;3;2;Apte
+;Cie Molsheim;UT Molsheim;90606;53;2/11/24;7,0;3;20;3;10;3;Apte
+;Cie Molsheim;UT Molsheim;90629;44;3/10/24;9,2;3;20;3;10;3;Apte
+;Cie Molsheim;UT Molsheim;90706;43;5/21/24;10,0;3;30;3;15;3;Apte
+;Cie Molsheim;UT Molsheim;90753;43;3/10/24;7,5;3;20;3;15;3;Apte
+;Cie Molsheim;UT Molsheim;90807;36;10/21/24;9,5;3;26;3;10;2;Apte
+;Cie Molsheim;UT Molsheim;90842;41;2/11/24;9,5;3;18;3;12;3;Apte
+;Cie Molsheim;UT Molsheim;90878;41;11/6/23;3,5;1;16;3;10;3;Apte
+;Cie Molsheim;UT Molsheim;90910;37;7/31/24;11,0;3;20;3;13;3;Apte
+;Cie Molsheim;UT Molsheim;90920;43;2/9/24;9,8;3;20;3;10;3;Apte
+;Cie Molsheim;UT Molsheim;90924;37;7/31/24;9,5;3;44;3;20;3;Apte
+;Cie Molsheim;UT Molsheim;90940;36;9/26/24;10,0;3;20;3;15;3;Apte
+;Cie Molsheim;UT Molsheim;90986;43;1/16/25;;;;;;;Apte
+;Cie Molsheim;;90114;45;12/5/24;8,0;3;20;3;8;2;Apte
+;Cie Molsheim;;90728;51;5/22/24;6,5;3;20;3;9;3;Apte
+;Cie Molsheim;;90766;51;9/23/24;9,0;3;20;3;10;3;Apte
+;Cie Molsheim;;90959;58;6/5/24;3,8;2;12;3;1;2;Apte
+;Cie Saverne;UT Saverne;39709;36;2/16/24;9,0;3;20;3;12;3;Apte
+;Cie Saverne;UT Saverne;41322;36;6/29/23;14,0;3;40;3;26;3;Apte
+;Cie Saverne;UT Saverne;41923;26;8/25/24;10,0;3;20;3;13;3;Apte
+;Cie Saverne;UT Saverne;90072;48;9/13/24;9,0;3;16;3;20;3;Apte
+;Cie Saverne;UT Saverne;90186;48;9/13/24;8,8;3;20;3;8;2;Apte
+;Cie Saverne;UT Saverne;90474;55;9/18/24;6,5;3;14;3;8;3;Apte
+;Cie Saverne;UT Saverne;90491;55;9/13/24;;;14;3;4;2;Apte
+;Cie Saverne;UT Saverne;90539;55;11/17/23;10,0;3;20;3;12;3;Apte
+;Cie Saverne;UT Saverne;90556;55;9/18/24;;;16;3;8;3;Apte
+;Cie Saverne;UT Saverne;90579;51;1/1/25;9,0;3;30;3;16;3;Apte
+;Cie Saverne;UT Saverne;90647;41;12/16/24;7,5;3;20;3;10;3;Apte
+;Cie Saverne;UT Saverne;90658;42;2/16/24;6,0;2;20;3;6;2;Apte
+;Cie Saverne;UT Saverne;90666;52;9/13/24;7,0;3;15;3;0;1;Apte
+;Cie Saverne;UT Saverne;90690;47;4/9/24;7,5;3;21;3;10;3;Apte
+;Cie Saverne;UT Saverne;90739;54;9/28/23;7,0;3;15;3;7;3;Apte
+;Cie Saverne;UT Saverne;90754;43;2/16/24;8,0;3;26;3;13;3;Apte
+;Cie Saverne;UT Saverne;90814;49;9/13/24;;;16;3;4;1;Apte
+;Cie Saverne;UT Saverne;90820;42;9/18/24;9,0;3;40;3;16;3;Apte
+;Cie Saverne;UT Saverne;90833;45;9/26/23;7,3;;16;3;;;Apte
+;Cie Saverne;UT Saverne;90844;42;9/18/24;8,3;3;20;3;12;3;Apte
+;Cie Saverne;UT Saverne;90862;47;5/6/24;9,5;3;20;3;13;3;Apte
+;Cie Saverne;UT Saverne;90885;45;2/16/24;7,5;3;20;3;12;3;Apte
+;Cie Saverne;UT Saverne;90902;35;2/16/24;9,0;3;20;3;15;3;Apte
+;Cie Saverne;UT Saverne;90928;38;3/18/25;8,0;2;30;3;20;3;Apte
+;Cie Saverne;UT Saverne;90952;37;2/16/24;8,5;2;20;3;13;3;Apte
+;Cie Saverne;UT Saverne;90965;41;9/13/24;9,0;3;20;3;15;3;Apte
+;Cie Saverne;UT Saverne;91010;32;9/13/24;10,0;3;40;3;15;3;Apte
+;Cie Saverne;;90131;44;9/8/24;5,0;1;25;3;5;2;Apte
+;Cie Saverne;;90650;42;11/18/24;10,0;3;20;3;12;3;Apte
+;Cie Saverne;;90677;45;11/12/24;7,5;3;18;3;12;3;Apte
+;Cie Saverne;;90929;38;3/18/25;9,5;3;20;3;14;3;Apte
+;Cie Sélestat;UT Obernai;90035;49;11/20/24;5,0;1;16;3;2;1;Apte
+;Cie Sélestat;UT Obernai;90130;50;11/20/24;6,0;2;20;3;10;3;Apte
+;Cie Sélestat;UT Obernai;90140;46;2/22/24;9,5;3;21;3;13;3;Apte
+;Cie Sélestat;UT Obernai;90494;56;11/23/24;8,5;3;17;3;5;2;Apte
+;Cie Sélestat;UT Obernai;90736;44;11/20/23;9,5;3;20;3;15;3;Apte
+;Cie Sélestat;UT Obernai;91023;30;11/20/24;9,0;2;30;3;20;3;Apte
+;Cie Sélestat;UT Sélestat;40299;32;10/21/24;12,0;3;30;3;20;3;Apte
+;Cie Sélestat;UT Sélestat;90089;45;6/19/24;7,5;3;16;3;1;1;Apte
+;Cie Sélestat;UT Sélestat;90155;49;5/6/24;5,5;2;16;3;10;3;Apte
+;Cie Sélestat;UT Sélestat;90160;48;6/19/24;7,5;3;16;3;10;3;Apte
+;Cie Sélestat;UT Sélestat;90165;45;5/6/24;6,5;2;20;3;13;3;Apte
+;Cie Sélestat;UT Sélestat;90169;44;11/22/24;10,0;3;20;3;15;3;Apte
+;Cie Sélestat;UT Sélestat;90545;50;6/19/24;7,5;3;20;3;10;3;Apte
+;Cie Sélestat;UT Sélestat;90588;51;6/19/24;6,0;2;16;3;0;1;Apte
+;Cie Sélestat;UT Sélestat;90592;44;11/22/24;9,0;3;20;3;12;3;Apte
+;Cie Sélestat;UT Sélestat;90598;48;6/19/24;7,5;3;20;3;10;3;Apte
+;Cie Sélestat;UT Sélestat;90645;40;11/22/24;9,5;3;20;3;14;3;Apte
+;Cie Sélestat;UT Sélestat;90653;49;9/17/23;6,5;2;16;3;10;3;Apte
+;Cie Sélestat;UT Sélestat;90718;46;5/6/24;7,5;3;16;3;10;3;Apte
+;Cie Sélestat;UT Sélestat;90733;43;5/6/24;7,5;3;16;3;10;3;Apte
+;Cie Sélestat;UT Sélestat;90765;54;8/23/24;6,7;3;14;3;7;3;Apte
+;Cie Sélestat;UT Sélestat;90803;39;5/6/24;7,5;3;16;3;10;3;Apte
+;Cie Sélestat;UT Sélestat;90817;44;5/6/24;7,5;3;16;3;10;3;Apte
+;Cie Sélestat;UT Sélestat;90819;41;5/6/24;7,5;3;16;3;15;3;Apte
+;Cie Sélestat;UT Sélestat;90854;38;5/11/24;9,0;3;20;3;16;3;Apte
+;Cie Sélestat;UT Sélestat;90856;37;9/13/24;9,5;3;20;3;20;3;Apte
+;Cie Sélestat;UT Sélestat;90861;37;9/28/23;9,0;3;20;3;10;2;Apte
+;Cie Sélestat;UT Sélestat;90977;51;11/22/24;9,0;3;20;3;10;3;Apte
+;Cie Sélestat;UT Sélestat;91012;42;11/30/24;8,0;3;;;14;3;Apte
+;Cie Sélestat;;90108;53;11/20/23;5,0;2;10;1;4;2;Apte
+;Cie Sélestat;;90123;45;11/20/24;2,0;1;3;1;0;1;Inapte
+;Cie Sélestat;;90151;46;6/7/23;6,5;3;10;3;1;1;Inapte
+;Cie Sélestat;;90154;47;5/2/23;;;20;3;3;1;Inapte
+;Cie Sélestat;;90490;55;11/22/24;7,0;3;16;3;3;2;Apte
+;Cie Sélestat;;90568;42;1/1/19;7,2;2;20;3;9;2;Inapte
+;DIRECTION;;31611;44;11/27/24;5,2;1;7;1;1;1;Apte
+;DIRECTION;;31975;47;1/1/21;7,0;2;16;3;2;1;Apte
+;DIRECTION;;32672;45;5/30/24;9,0;3;40;3;7;2;Apte
+;DIRECTION;;32900;60;2/3/25;6,0;3;14;3;4;3;Apte
+;DIRECTION;;37224;37;10/21/24;12,0;3;50;3;20;3;Apte
+;DIRECTION;;37271;37;3/18/25;9,0;3;20;3;13;3;Apte
+;DIRECTION;;38057;38;10/24/24;7,0;2;20;3;12;3;Apte
+;DIRECTION;;38660;26;;;;;;;;Apte
+;DIRECTION;;38923;36;11/22/24;;;;;;;Apte
+;DIRECTION;;39391;34;8/8/23;12,0;3;40;3;24;3;Apte
+;DIRECTION;;39416;35;1/1/24;10,0;3;20;3;20;3;Apte
+;DIRECTION;;39727;34;1/1/24;10,5;3;33;3;17;3;Apte
+;DIRECTION;;39799;29;;;;;;;;Apte
+;DIRECTION;;41102;31;10/19/23;9,0;3;18;3;10;2;Apte
+;DIRECTION;;41247;44;1/1/21;2,2;1;18;3;2;1;Apte
+;DIRECTION;;41458;53;1/1/19;2,0;1;9;3;;;Apte
+;DIRECTION;;42043;25;2/5/25;;;;;;;Apte
+;DIRECTION;;42366;25;1/19/25;;;;;;;Apte
+;DIRECTION;;42388;25;10/5/24;11,0;3;20;3;16;3;Apte
+;DIRECTION;;42549;23;5/27/24;9,0;2;25;3;13;3;Apte
+;DIRECTION;;42585;23;4/25/24;10,5;3;40;3;22;3;Apte
+;DIRECTION;;42904;22;1/1/22;10,0;3;40;3;14;3;Apte
+;DIRECTION;;43974;26;12/3/24;10,0;3;30;3;17;3;Apte
+;DIRECTION;;44630;29;10/14/24;10,2;3;40;3;16;3;Apte
+;DIRECTION;;44631;31;11/30/24;11,5;3;20;3;17;3;Apte
+;DIRECTION;;45719;22;;;;;;;;Apte
+;DIRECTION;;90014;48;11/27/24;9,0;3;21;3;10;3;Apte
+;DIRECTION;;90020;53;12/7/23;5,3;2;15;3;5;2;Apte
+;DIRECTION;;90039;54;6/5/24;7,0;3;20;3;8;3;Apte
+;DIRECTION;;90041;53;9/28/23;0,0;1;0;1;0;1;Apte
+;DIRECTION;;90063;52;2/26/16;10,0;3;20;3;11;3;Apte
+;DIRECTION;;90064;52;11/7/23;10,5;3;40;3;15;3;Apte
+;DIRECTION;;90067;51;4/17/24;6,0;2;14;3;2;1;Apte
+;DIRECTION;;90074;45;1/31/25;6,3;2;20;3;9;2;Apte
+;DIRECTION;;90075;48;1/1/21;8,0;3;20;3;11;3;Inapte
+;DIRECTION;;90103;55;3/11/20;9,5;3;20;3;8;3;Apte
+;DIRECTION;;90105;48;5/30/24;7,0;2;20;3;12;3;Apte
+;DIRECTION;;90120;43;3/1/23;8,0;3;20;3;7;2;Apte
+;DIRECTION;;90128;48;2/26/16;9,0;3;15;3;2;1;Apte
+;DIRECTION;;90149;44;2/19/25;10,0;3;40;3;17;3;Apte
+;DIRECTION;;90152;51;11/6/24;7,5;3;20;3;9;3;Apte
+;DIRECTION;;90158;46;2/22/25;8,0;3;17;3;6;2;Apte
+;DIRECTION;;90175;42;7/22/24;11,0;3;20;3;11;3;Apte
+;DIRECTION;;90176;49;3/11/20;5,0;1;20;3;6;2;Apte
+;DIRECTION;;90183;54;11/20/24;6,5;3;17;3;13;3;Apte
+;DIRECTION;;90451;56;;;;;;;;Apte
+;DIRECTION;;90453;60;1/1/21;2,0;1;14;3;3;2;Apte
+;DIRECTION;;90460;55;3/12/25;8,0;3;31;3;10;3;Apte
+;DIRECTION;;90467;57;6/19/24;8,0;3;20;3;14;3;Apte
+;DIRECTION;;90468;57;1/1/22;7,0;3;15;3;3;2;Apte
+;DIRECTION;;90476;53;6/5/24;6,5;3;15;3;;;Apte
+;DIRECTION;;90477;57;1/1/21;0,0;1;14;3;4;2;Inapte définitif
+;DIRECTION;;90480;55;12/12/24;;;50;3;13;3;Inapte
+;DIRECTION;;90482;55;;;;;;;;Apte
+;DIRECTION;;90483;55;1/1/21;1,3;1;0;1;0;1;Apte
+;DIRECTION;;90485;56;1/1/21;10,0;3;30;3;6;2;Apte
+;DIRECTION;;90492;57;6/5/24;10,0;3;20;3;10;3;Apte
+;DIRECTION;;90495;55;;;;;;;;Apte
+;DIRECTION;;90500;56;;;;;;;;Inapte
+;DIRECTION;;90503;53;7/22/24;5,0;2;30;3;;;Apte
+;DIRECTION;;90509;58;1/1/19;1,5;1;2;1;;;Inapte
+;DIRECTION;;90511;54;4/10/24;10,2;3;30;3;15;3;Apte
+;DIRECTION;;90517;57;12/15/23;8,0;3;30;3;8;3;Apte
+;DIRECTION;;90520;53;1/1/21;11,0;3;20;3;9;2;Apte
+;DIRECTION;;90552;50;6/5/24;7,0;2;20;3;;;Apte
+;DIRECTION;;90561;52;9/20/24;7,2;3;30;3;10;3;Apte
+;DIRECTION;;90567;42;1/1/19;8,0;2;20;3;12;3;Apte
+;DIRECTION;;90600;49;;;;;;;;Inapte définitif
+;DIRECTION;;90605;55;1/1/22;;;20;3;1;1;Apte
+;DIRECTION;;90613;47;6/19/24;8,5;3;15;2;5;2;Apte
+;DIRECTION;;90614;51;12/5/24;4,0;1;5;1;3;2;Apte
+;DIRECTION;;90615;51;;;;;;;;Apte
+;DIRECTION;;90633;48;6/5/24;8,0;3;17;3;6;2;Apte
+;DIRECTION;;90643;49;1/1/21;8,0;3;21;3;9;2;Apte
+;DIRECTION;;90659;46;7/22/24;6,8;2;20;3;11;3;Apte
+;DIRECTION;;90663;40;9/28/23;9,0;3;18;3;12;3;Inapte
+;DIRECTION;;90665;47;11/18/15;9,0;3;20;3;12;3;Apte
+;DIRECTION;;90676;57;11/28/23;7,0;3;20;3;8;3;Apte
+;DIRECTION;;90686;46;11/18/24;6,0;2;14;2;8;2;Apte
+;DIRECTION;;90691;42;7/22/24;9,5;3;20;3;10;3;Apte
+;DIRECTION;;90699;42;7/22/24;9,0;3;20;3;10;3;Apte
+;DIRECTION;;90715;43;1/1/21;10,3;3;20;3;13;3;Apte
+;DIRECTION;;90723;43;1/1/22;5,0;2;5;1;;;Apte
+;DIRECTION;;90726;41;1/1/24;10,0;3;20;3;13;3;Apte
+;DIRECTION;;90729;45;3/11/20;8,0;3;20;3;10;3;Apte
+;DIRECTION;;90730;43;11/27/24;9,2;3;20;3;4;1;Apte
+;DIRECTION;;90743;50;1/1/21;2,5;1;9;3;0;1;Apte
+;DIRECTION;;90744;47;3/12/25;;;30;3;5;2;Apte
+;DIRECTION;;90756;39;;;;;;;;Apte
+;DIRECTION;;90783;51;10/9/24;1,0;1;11;2;1;1;Apte
+;DIRECTION;;90788;47;11/27/24;7,0;2;25;3;10;3;Apte
+;DIRECTION;;90789;43;6/29/23;9,0;3;20;3;10;3;Apte
+;DIRECTION;;90794;41;7/22/24;7,8;3;25;3;11;3;Apte
+;DIRECTION;;90800;50;12/15/23;9,5;3;20;3;9;2;Apte
+;DIRECTION;;90813;43;7/22/24;8,0;3;40;3;15;3;Apte
+;DIRECTION;;90816;38;1/1/19;9,0;3;20;3;12;3;Apte
+;DIRECTION;;90823;47;1/1/22;8,0;3;35;3;15;3;Apte
+;DIRECTION;;90835;38;10/2/24;9,0;3;20;3;12;3;Apte
+;DIRECTION;;90845;54;1/1/19;5,0;1;20;3;7;2;Inapte
+;DIRECTION;;90847;39;1/1/21;10,0;3;23;3;9;2;Apte
+;DIRECTION;;90851;39;11/27/24;8,0;2;21;3;4;1;Apte
+;DIRECTION;;90877;38;1/1/20;9,3;3;20;3;15;3;Inapte
+;DIRECTION;;90879;48;11/27/24;10,0;3;20;3;13;3;Apte
+;DIRECTION;;90896;39;11/18/15;11,0;3;20;3;15;3;Apte
+;DIRECTION;;90898;38;6/5/24;8,0;2;20;3;20;3;Apte
+;DIRECTION;;90911;38;8/28/24;9,0;3;20;3;15;3;Apte
+;DIRECTION;;90916;55;9/18/24;4,0;1;9;1;1;1;Apte
+;DIRECTION;;90919;36;8/23/24;9,0;3;20;3;14;3;Apte
+;DIRECTION;;90930;54;6/5/24;6,5;3;14;3;7;3;Apte
+;DIRECTION;;90931;38;4/17/24;8,3;2;22;3;9;2;Apte
+;DIRECTION;;90932;37;6/5/24;9,5;3;20;3;13;3;Apte
+;DIRECTION;;90933;40;4/17/24;9,0;3;40;3;15;3;Apte
+;DIRECTION;;90939;35;2/26/16;10,0;3;22;3;13;3;Apte
+;DIRECTION;;90958;47;6/5/24;5,3;2;2;1;0;1;Apte
+;DIRECTION;;90984;42;11/7/23;10,5;3;30;3;20;3;Inapte
+;DIRECTION;;90994;35;1/1/21;11,0;3;20;3;15;3;Apte
+;DIRECTION;;90995;34;3/12/25;9,0;3;40;3;12;3;Apte
+;DIRECTION;;91004;31;7/22/24;12,0;3;40;3;9;2;Apte
+;DIRECTION;;91009;29;3/1/23;10,0;3;20;3;13;3;Apte
+;DIRECTION;;91028;29;1/1/22;11,0;3;20;3;15;3;Apte
+;DIRECTION;;91034;45;6/5/24;8,5;3;17;3;5;2;Apte
+;DIRECTION;;91035;61;;;;;;;;Apte
+;DIRECTION;;91037;57;9/3/23;6,5;3;18;3;0;1;Apte
+;DIRECTION;;91043;27;6/5/24;11,2;3;20;3;13;3;Apte
+;DIRECTION;;91044;31;7/22/24;10,0;3;40;3;14;3;Apte
+;DIRECTION;;91045;34;11/20/24;11,0;3;35;3;8;2;Apte
+;DIRECTION;;91047;52;6/5/24;10,0;3;20;3;10;3;Apte
+;DIRECTION;;91048;31;1/1/22;0,0;1;0;1;0;1;Inapte
+;DIRECTION;;91049;31;5/30/24;12,3;3;20;3;12;3;Apte
+;DIRECTION;;91050;31;11/10/24;8,0;2;22;3;4;1;Apte
+;DIRECTION;;91055;53;3/12/25;;;0;1;0;1;Apte
+;DIRECTION;;91063;51;2/19/25;8,0;3;30;3;10;3;Apte
+;DIRECTION;;91064;40;3/18/25;6,0;2;20;3;5;2;Apte
+;DIRECTION;;91071;44;;;;;;;;Apte
+;DIRECTION;;91076;20;;;;;;;;Apte
+;DIRECTION;;91077;24;;;;;;;;Apte
+;DIRECTION;;91078;34;9/20/24;10,0;3;25;3;12;3;Apte
+;DIRECTION;;91079;45;;;;;;;;Apte
+;DIRECTION;;91080;41;;;;;;;;Apte

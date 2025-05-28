@@ -1,0 +1,713 @@
+;;;;;;;;;;;;;;;;;
+;Cie;UT;Matricule;Age;Aptitude générale;Dernière visite;Date dernière visite;Prochaine visite;Date prochaine visite;Date dernière biométrie;IMC;Taille;Poids;Périmètre abdominal;Tension artérielle systol;Tension artérielle diastol;Incendie et port de l'ARI Toutes missions
+;Cie CTA-CODIS;;90944;41;Apte;Visite de maintien en activité;12/16/24;Visite de maintien en activité;12/16/25;12/16/24;18,21;173,00;54,50;66;102;67;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;44378;20;Apte;Visite de recrutement;6/17/24;Visite de titularisation;6/17/25;6/17/24;18,38;173,00;55,00;72;130;60;Apte
+;DIRECTION;;90520;53;Apte;Visite de maintien en activité;6/26/24;Visite de maintien en activité;6/26/25;6/26/24;18,73;180,00;60,70;76;130;90;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90156;49;Apte;Visite de maintien en activité;2/27/25;Visite de maintien en activité;2/27/26;2/27/25;19,46;175,00;59,60;96;150;96;Apte
+;Cie EMS Sud;UT Strasbourg Sud;43866;22;Apte;Visite de recrutement;3/6/25;Visite de titularisation;3/6/26;3/6/25;19,60;193,00;73,00;70;71;57;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;38509;28;Apte;Visite de maintien en activité;2/18/25;Visite de maintien en activité;2/18/27;2/18/25;19,94;196,00;76,60;74;127;74;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90506;53;Apte;Visite administrative;1/27/25;Visite de maintien en activité;1/6/26;1/6/25;20,05;176,00;62,10;72;135;77;Apte
+;Cie Haguenau;UT Haguenau;90173;49;Inapte temporaire;Visite de contrôle;1/6/25;Visite de contrôle;4/6/25;7/17/23;20,07;170,00;58,00;73;133;84;Inapte
+;Cie EMS Sud;UT Strasbourg Sud;91020;27;Apte;Visite de maintien en activité;10/14/24;Visite de maintien en activité;10/14/25;10/14/24;20,09;168,00;56,70;68;116;72;Apte
+;Cie Sélestat;UT Sélestat;90803;39;Apte;Visite de maintien en activité;4/26/23;Visite de maintien en activité;4/26/25;4/26/23;20,12;162,00;52,80;71;113;67;Apte
+;Cie Haguenau;UT Brumath;90542;43;Apte;Visite administrative;11/12/24;Visite de maintien en activité;9/9/25;9/9/24;20,29;179,00;65,00;;128;83;Apte
+;Cie EMS Nord;UT Strasbourg Nord;42386;31;Apte;Visite corrective;11/12/24;Visite de maintien en activité;11/12/26;11/12/24;20,38;193,00;75,90;83;124;66;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;41315;39;Apte;Visite de contrôle;4/15/24;Visite de maintien en activité;3/31/26;1/25/24;20,42;172,00;60,40;74;104;63;Apte
+;Cie EMS Nord;UT Strasbourg Nord;91058;24;Apte;Visite de maintien en activité;8/23/24;Visite de maintien en activité;8/23/26;8/23/24;20,45;185,00;70,00;85;123;69;Apte
+;Cie Haguenau;UT Haguenau;90923;37;Apte;Visite de maintien en activité;1/31/25;Visite de maintien en activité;1/31/27;1/31/25;20,53;176,00;63,60;83;120;59;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;41935;26;Apte;Visite de recrutement;9/11/24;Visite de titularisation;9/11/25;9/11/24;20,55;168,00;58,00;71;;;Apte
+;DIRECTION;;90723;43;Apte;Visite administrative;12/12/24;Visite de maintien en activité;12/16/25;10/16/24;20,57;175,00;63,00;78;116;74;Apte
+;Cie CTA-CODIS;;40747;32;Apte;Visite de maintien en activité;12/16/24;Visite de maintien en activité;12/16/26;12/16/24;20,62;173,00;61,70;78;127;80;Apte
+;DIRECTION;;43974;26;Apte;Visite de recrutement;6/6/24;Visite de titularisation;6/6/25;6/6/24;20,66;169,00;59,00;70;121;87;Apte
+;DIRECTION;;90600;49;Inapte définitif;Visite de maintien en activité;9/9/24;Visite de maintien en activité;9/9/25;9/9/24;20,67;192,00;76,20;78;118;77;Inapte définitif
+;Cie CTA-CODIS;;41920;25;Apte;Visite de maintien en activité;9/18/23;Visite de maintien en activité;9/18/25;9/18/23;20,67;178,00;65,50;72;120;60;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;35856;35;Apte;Visite de maintien en activité;2/4/25;Visite de maintien en activité;2/4/27;2/4/25;20,72;173,00;62,00;70;123;61;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91057;29;Apte;Visite de maintien en activité;6/20/24;Visite de maintien en activité;6/20/26;6/20/24;20,73;176,00;64,20;80;113;76;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90998;27;Apte;Visite de maintien en activité;3/5/25;Visite de maintien en activité;3/5/27;3/5/25;20,75;177,00;65,00;77;127;80;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;41485;32;Apte;Visite de contrôle;9/3/24;Visite de maintien en activité;7/15/25;6/15/23;20,80;167,00;58,00;73;112;74;Apte
+;Cie CTA-CODIS;;90992;34;Apte;Visite de maintien en activité;12/30/24;Visite de maintien en activité;12/30/26;12/30/24;20,90;175,00;64,00;73;105;65;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90792;37;Apte;Visite de maintien en activité;3/6/25;Visite de maintien en activité;3/6/26;3/6/25;20,92;182,00;69,30;76;118;70;Apte
+;Cie Molsheim;UT Molsheim;90920;43;Apte;Visite de reprise opérationnelle;1/27/25;Visite de maintien en activité;9/17/25;9/17/24;20,92;172,00;61,90;72;119;83;Apte
+;Cie EMS Nord;;42147;23;Apte;Visite de maintien en activité;1/11/24;Visite de maintien en activité;1/11/26;1/11/24;20,96;172,00;62,00;73;138;79;Apte
+;DIRECTION;;90128;48;Apte;Visite de maintien en activité;4/15/24;Visite de maintien en activité;4/15/25;4/15/24;20,98;167,00;58,50;77;;;Apte
+;DIRECTION;;90492;57;Apte;Visite de maintien en activité;3/22/24;Visite de maintien en activité;3/22/25;3/22/24;20,99;180,00;68,00;34;139;92;Apte
+;DIRECTION;;90615;51;Apte;Visite de contrôle;1/15/25;Visite de maintien en activité;9/25/25;9/25/24;21,01;168,00;59,30;74;120;70;Apte
+;Cie EMS Nord;UT Strasbourg Nord;40816;31;Apte;Visite de maintien en activité;11/30/23;Visite de maintien en activité;11/30/25;11/30/23;21,01;186,00;72,70;73;130;70;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90988;34;Apte;Visite de maintien en activité;3/5/25;Visite de maintien en activité;3/5/27;3/5/25;21,02;190,00;75,90;85;123;82;Apte
+;Cie EMS Nord;UT Strasbourg Nord;43061;23;Apte;Visite de contrôle;7/8/24;Visite de titularisation;6/10/25;6/10/24;21,05;180,00;68,20;70;;;Apte
+;DIRECTION;;91076;20;Apte;Visite de recrutement;12/4/24;Visite de titularisation;12/4/25;12/4/24;21,11;180,00;68,40;72;148;94;Apte
+;Cie EMS Nord;UT Strasbourg Nord;44240;20;Apte;Visite de recrutement;6/12/24;Visite de titularisation;6/12/25;6/12/24;21,21;178,00;67,20;80;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;91070;22;Apte;Visite corrective;6/24/24;Visite de titularisation;6/24/25;6/24/24;21,22;186,00;73,40;77;127;79;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91069;33;Apte;Visite de recrutement;6/24/24;Visite de titularisation;6/24/25;6/24/24;21,30;174,00;64,50;74;137;70;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;37352;37;Apte;Visite de maintien en activité;6/19/24;Visite de maintien en activité;6/19/25;6/19/24;21,31;176,00;66,00;80;135;81;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;39825;28;Apte;Visite de maintien en activité;2/13/25;Visite de maintien en activité;2/13/27;2/13/25;21,33;185,00;73,00;78;;;Apte
+;Cie Sélestat;UT Sélestat;90545;50;Apte;Visite de maintien en activité;8/20/24;Visite de maintien en activité;8/20/25;8/20/24;21,35;179,00;68,40;80;120;73;Apte
+;Cie EMS Nord;UT Strasbourg Nord;41393;29;Apte;Visite de maintien en activité;10/14/24;Visite de maintien en activité;10/14/26;10/14/24;21,39;175,00;65,50;77;125;75;Apte
+;Cie CTA-CODIS;;90741;39;Apte;Visite de maintien en activité;6/4/24;Visite de maintien en activité;6/3/25;6/4/24;21,39;180,00;69,30;76;134;81;Apte
+;Cie EMS Sud;UT Lingolsheim;90831;44;Apte;Visite de maintien en activité;10/28/24;Visite de maintien en activité;10/28/25;10/28/24;21,43;182,00;71,00;78;122;80;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;43872;24;Apte;Visite administrative;10/29/24;Visite de maintien en activité;6/14/25;6/14/23;21,44;183,00;71,80;80;120;80;Apte
+;DIRECTION;;90879;48;Apte;Visite administrative;10/29/24;Visite de maintien en activité;6/26/25;6/26/24;21,44;183,00;71,80;78;114;74;Apte
+;Cie EMS Sud;UT Lingolsheim;90570;51;Apte;Visite de maintien en activité;3/24/25;Visite de maintien en activité;3/24/26;3/24/25;21,46;178,00;68,00;86;;;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;35895;37;Apte;Visite de maintien en activité;12/8/23;Visite de contrôle;12/29/25;12/8/23;21,49;181,00;70,40;79;129;77;Apte
+;DIRECTION;;90715;43;Apte;Visite de maintien en activité;9/29/22;Visite de maintien en activité;9/29/24;9/29/22;21,53;179,00;69,00;78;130;90;Apte
+;Cie EMS Sud;;44452;26;Apte;Visite de maintien en activité;8/1/24;Visite de maintien en activité;8/1/26;8/1/24;21,56;182,00;71,40;79;135;85;Apte
+;DIRECTION;;91049;31;Apte;Visite de contrôle;11/27/24;Visite de maintien en activité;5/13/26;5/13/24;21,59;182,00;71,50;80;119;71;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;39275;34;Apte;Visite de maintien en activité;12/3/24;Visite de maintien en activité;11/3/25;12/3/24;21,60;180,00;70,00;70;125;84;Apte
+;Cie Haguenau;UT Haguenau;91073;29;Apte;Visite de recrutement;8/26/24;Visite de titularisation;8/26/25;8/26/24;21,61;190,00;78,00;82;123;72;Apte
+;DIRECTION;;42549;23;Apte;Visite de recrutement;12/4/24;Visite de titularisation;12/4/25;12/4/24;21,62;185,00;74,00;78;125;83;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90073;48;Apte;Visite de maintien en activité;10/3/24;Visite de maintien en activité;10/3/25;10/3/24;21,63;170,00;62,50;68;120;45;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90685;43;Apte;Visite de maintien en activité;2/24/25;Visite de maintien en activité;2/24/26;2/24/25;21,67;192,00;79,90;85;110;80;Apte
+;Cie EMS Nord;UT Strasbourg Nord;41520;27;Apte avec restriction;Visite de contrôle;3/6/25;Visite de contrôle;6/6/25;8/19/24;21,71;169,00;62,00;;110;70;Inapte
+;Cie EMS Sud;UT Strasbourg Sud;35869;28;Apte;Visite de maintien en activité;9/13/24;Visite de maintien en activité;9/13/26;9/13/24;21,72;179,00;69,60;80;124;76;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91052;22;Apte;Visite administrative;10/29/24;Visite de maintien en activité;8/29/26;8/29/24;21,75;193,00;81,00;80;112;75;Apte
+;Cie EMS Nord;UT Strasbourg Nord;39953;27;Apte;Visite de recrutement;8/19/24;Visite de titularisation;8/19/25;8/19/24;21,78;178,00;69,00;81;110;50;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90737;42;Apte;SAL Recrutement et quinquennale;2/6/25;Visite de maintien en activité;2/6/26;2/6/25;21,78;179,00;69,80;80;;;Apte
+;DIRECTION;;91048;31;Apte avec restriction;Visite de reprise opérationnelle;6/29/23;Visite de maintien en activité;6/30/24;1/19/22;21,84;178,00;69,20;82;136;66;Inapte
+;Cie EMS Nord;UT Strasbourg Nord;40853;35;Apte;Visite de maintien en activité;11/30/23;Visite de maintien en activité;11/30/25;11/30/23;21,85;180,00;70,80;76;140;80;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90997;31;Apte;Visite de maintien en activité;5/21/24;Visite de maintien en activité;5/21/25;5/21/24;21,85;165,00;59,50;72;124;80;Apte
+;Cie Sélestat;UT Sélestat;40299;32;Apte;Visite de maintien en activité;10/16/24;Visite de maintien en activité;10/16/26;10/16/24;21,87;170,00;63,20;77;145;90;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91006;37;Apte;Visite de maintien en activité;4/12/23;Visite de maintien en activité;4/12/25;4/12/23;21,88;175,00;67,00;75;135;86;Apte
+;DIRECTION;;90729;45;Apte;Visite de maintien en activité;12/23/24;Visite de maintien en activité;12/23/25;12/23/24;21,88;175,00;67,00;88;121;69;Apte
+;DIRECTION;;90984;42;Inapte temporaire;Visite administrative;4/2/24;;;7/28/23;21,91;180,00;71,00;78;138;87;Inapte
+;Cie EMS Centre;UT Strasbourg Ouest;90655;45;Apte;Visite de maintien en activité;5/27/24;Visite de maintien en activité;5/27/25;5/27/24;21,96;177,00;68,80;78;120;80;Apte
+;DIRECTION;;90063;52;Apte;Visite de maintien en activité;3/24/25;Visite de maintien en activité;3/24/26;3/24/25;22,02;177,00;69,00;76;170;90;Apte
+;DIRECTION;;90789;43;Apte;Visite de maintien en activité;4/9/24;Visite de maintien en activité;4/9/25;4/9/24;22,09;195,00;84,00;89;133;84;Apte
+;DIRECTION;;39799;29;Apte;Visite de recrutement;6/5/24;Visite de titularisation;6/5/25;6/5/24;22,13;174,00;67,00;72;110;60;Apte
+;DIRECTION;;90500;56;Apte avec restriction;Visite de reprise opérationnelle;11/4/24;Visite de maintien en activité;5/29/25;5/29/24;22,16;183,00;74,20;94;114;79;Inapte
+;DIRECTION;;91045;34;Apte;Visite de maintien en activité;10/4/24;Visite de maintien en activité;10/5/26;10/4/24;22,22;187,00;77,70;84;131;81;Apte
+;DIRECTION;;90064;52;Apte;Visite de maintien en activité;10/10/24;Visite de maintien en activité;10/10/25;10/10/24;22,22;180,00;72,00;86;137;79;Apte
+;Cie EMS Nord;UT Strasbourg Nord;39540;33;Apte;Visite de maintien en activité;1/14/25;Visite de maintien en activité;1/14/27;1/14/25;22,23;171,00;65,00;80;122;70;Apte
+;Cie CTA-CODIS;;90551;46;Apte;Visite de maintien en activité;12/3/24;Visite de maintien en activité;12/3/25;12/3/24;22,25;181,00;72,90;74;141;85;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;40221;33;Apte;Visite de maintien en activité;1/15/25;Visite de maintien en activité;1/15/27;1/15/25;22,25;179,00;71,30;78;147;90;Apte
+;Cie EMS Nord;UT Strasbourg Nord;36983;37;Apte;Visite de reprise opérationnelle;4/11/24;Visite de maintien en activité;3/7/26;3/7/24;22,28;181,00;73,00;85;120;70;Apte
+;DIRECTION;;91004;31;Apte;Visite de maintien en activité;10/11/24;Visite de maintien en activité;10/10/26;10/11/24;22,28;179,00;71,40;77;136;95;Apte
+;Cie EMS Nord;UT Strasbourg Nord;91067;24;Apte;Visite de contrôle;9/18/24;Visite de titularisation;6/24/25;6/24/24;22,30;161,00;57,80;69;134;78;Apte
+;Cie Haguenau;UT Haguenau;90824;43;Apte;Visite de maintien en activité;2/6/25;Visite de maintien en activité;2/6/26;2/6/25;22,30;175,00;68,30;77;133;90;Apte
+;Cie Sélestat;UT Sélestat;91012;42;Apte;Visite de maintien en activité;12/10/24;Visite de maintien en activité;12/10/25;12/10/24;22,31;176,00;69,10;83;125;78;Apte
+;Cie Sélestat;UT Sélestat;90854;38;Apte;Visite de maintien en activité;12/12/24;Visite de maintien en activité;12/12/25;12/12/24;22,34;182,00;74,00;83;110;70;Apte
+;Cie EMS Sud;UT Strasbourg Sud;44379;39;Apte;Visite de maintien en activité;6/15/23;Visite de maintien en activité;6/15/25;6/15/23;22,34;177,00;70,00;84;125;70;Apte
+;Cie Molsheim;UT Molsheim;90584;44;Apte;Visite de maintien en activité;5/15/24;Visite de maintien en activité;5/15/25;5/15/24;22,39;163,00;59,50;71;111;75;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90892;39;Apte;Visite de maintien en activité;12/30/24;Visite de maintien en activité;12/30/25;12/30/24;22,40;183,00;75,00;85;137;82;Apte
+;Cie Saverne;UT Saverne;91010;32;Apte;Visite de maintien en activité;6/14/23;Visite de maintien en activité;6/14/25;6/14/23;22,40;175,00;68,60;76;130;80;Apte
+;DIRECTION;;90483;55;Apte;Visite de maintien en activité;11/6/24;Visite de maintien en activité;11/6/25;11/6/24;22,41;169,00;64,00;74;118;74;Apte
+;Cie Sélestat;UT Sélestat;90592;44;Apte;Visite de maintien en activité;1/9/25;Visite de maintien en activité;1/9/26;1/9/25;22,41;172,00;66,30;84;125;85;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;43063;22;Apte;Visite de maintien en activité;8/5/24;Visite de maintien en activité;8/5/26;8/5/24;22,44;180,00;72,70;78;110;70;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90602;45;Apte;Visite de maintien en activité;5/31/24;Visite de maintien en activité;5/31/25;5/31/24;22,47;185,00;76,90;79;112;70;Apte
+;DIRECTION;;90468;57;Apte;Visite de reprise opérationnelle;1/30/25;Visite de maintien en activité;11/25/25;11/4/24;22,50;175,00;68,90;79;141;85;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90827;41;Apte;Visite de maintien en activité;11/28/24;Visite de maintien en activité;11/28/25;11/28/24;22,50;171,00;65,80;76;103;59;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90764;47;Apte;Visite de maintien en activité;9/23/24;Visite de maintien en activité;9/23/25;9/23/24;22,53;180,00;73,00;78;130;80;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90805;42;Apte;Visite de maintien en activité;4/24/24;Visite de maintien en activité;4/24/25;4/24/24;22,53;180,00;73,00;76;125;70;Apte
+;DIRECTION;;39727;34;Apte;Visite de recrutement;6/6/24;Visite de titularisation;6/6/25;6/6/24;22,53;180,00;73,00;81;110;70;Apte
+;Cie EMS Sud;UT Strasbourg Sud;44643;32;Apte;Visite de maintien en activité;6/4/24;Visite de maintien en activité;6/4/25;6/4/24;22,53;179,00;72,20;79;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;41354;29;Apte;Visite de maintien en activité;9/11/24;Visite de maintien en activité;9/11/26;9/11/24;22,56;187,00;78,90;78;118;79;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;91018;34;Apte;Visite de maintien en activité;4/18/24;Visite de maintien en activité;4/18/25;4/18/24;22,60;176,00;70,00;76;108;64;Apte
+;Cie Sélestat;UT Sélestat;90598;48;Apte;Visite de maintien en activité;4/30/24;Visite de maintien en activité;4/30/25;4/30/24;22,64;168,00;63,90;80;127;79;Apte
+;DIRECTION;;90932;37;Apte;Visite administrative;2/12/25;Visite de contrôle;5/12/25;6/20/24;22,64;182,00;75,00;88;123;80;Apte
+;DIRECTION;;44631;31;Apte;Visite de maintien en activité;6/12/24;Visite de maintien en activité;6/10/25;6/10/24;22,66;177,00;71,00;75;140;80;Apte
+;Cie CTA-CODIS;;91061;41;Apte;Visite de maintien en activité;9/2/24;Visite de maintien en activité;9/2/25;9/2/24;22,69;183,00;76,00;83;117;68;Apte
+;Cie Haguenau;UT Haguenau;39482;33;Apte;Visite de reprise opérationnelle;9/18/24;Visite de maintien en activité;9/18/25;10/3/23;22,69;183,00;76,00;79;126;79;Apte
+;Cie EMS Sud;UT Strasbourg Sud;38419;29;Apte;Visite de maintien en activité;9/29/23;Visite de maintien en activité;9/29/25;9/29/23;22,71;192,00;83,70;85;120;80;Apte
+;Cie Saverne;UT Saverne;41923;26;Apte;Visite de recrutement;8/26/24;Visite de titularisation;8/26/25;8/26/24;22,72;178,00;72,00;82;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;43459;21;Apte;Visite de recrutement;3/6/25;Visite de titularisation;3/6/26;3/6/25;22,74;184,00;77,00;77;128;65;Apte
+;DIRECTION;;91047;52;Apte;Visite de maintien en activité;10/14/24;Visite de maintien en activité;10/14/25;10/14/24;22,75;188,00;80,40;84;143;90;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90987;42;Apte;Visite de maintien en activité;12/17/24;Visite de maintien en activité;12/17/25;12/17/24;22,75;200,00;91,00;86;137;88;Apte
+;Cie EMS Sud;UT Strasbourg Sud;44563;25;Apte;Visite de contrôle;1/23/25;Visite de maintien en activité;10/1/26;10/17/23;22,76;169,00;65,00;76;118;80;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;45880;28;Apte;Visite de recrutement;3/6/25;Visite de titularisation;3/6/26;3/6/25;22,76;161,00;59,00;69;131;68;Apte
+;DIRECTION;;90517;57;Apte;Visite de maintien en activité;9/23/24;Visite de maintien en activité;9/23/25;9/23/24;22,78;180,00;73,80;79;140;70;Apte
+;DIRECTION;;90103;55;Apte;Visite de maintien en activité;12/12/24;Visite de maintien en activité;12/12/25;12/12/24;22,81;179,00;73,10;86;136;89;Apte
+;Cie EMS Nord;UT Strasbourg Nord;40402;32;Inapte temporaire;Visite de contrôle;10/7/24;Visite de reprise opérationnelle;1/15/25;10/17/22;22,83;181,00;74,80;90;133;75;Inapte
+;DIRECTION;;42585;23;Apte;Visite de maintien en activité;10/20/23;Visite de maintien en activité;10/20/25;10/20/23;22,84;170,00;66,00;71;134;81;Apte
+;Cie Sélestat;UT Sélestat;90653;49;Apte;Visite administrative;3/7/25;Visite de contrôle;9/9/25;2/18/25;22,84;180,00;74,00;81;124;74;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90099;52;Apte;Visite de maintien en activité;6/3/24;Visite de maintien en activité;6/3/25;6/3/24;22,85;173,00;68,40;73;130;80;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90901;36;Apte;Visite administrative;4/3/23;Visite de maintien en activité;2/1/25;2/1/23;22,86;175,00;70,00;78;133;85;Apte
+;Cie Saverne;UT Saverne;90647;41;Apte;Visite de maintien en activité;10/7/24;Visite de maintien en activité;10/7/25;10/7/24;22,86;175,00;70,00;90;127;77;Apte
+;DIRECTION;;42366;25;Apte;Visite de recrutement;12/12/24;Visite de titularisation;12/12/25;12/12/24;22,86;175,00;70,00;80;110;70;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90145;50;Apte;Visite de maintien en activité;6/27/24;Visite de maintien en activité;6/27/25;6/27/24;22,87;183,00;76,60;83;136;80;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;44213;23;Apte;Visite de recrutement;3/4/25;Visite de maintien en activité;2/4/27;3/4/25;22,87;179,50;73,70;83;120;80;Apte
+;Cie Haguenau;UT Haguenau;90661;42;Apte;Visite de maintien en activité;1/20/25;Visite de maintien en activité;1/20/26;1/20/25;22,88;178,00;72,50;89;80;60;Apte
+;Cie CTA-CODIS;;37070;38;Apte;Visite de maintien en activité;6/15/23;Visite de maintien en activité;6/15/25;6/15/23;22,91;171,00;67,00;85;124;72;Apte
+;Cie Haguenau;UT Haguenau;90178;46;Apte;Visite administrative;11/25/24;Visite de maintien en activité;9/9/25;9/9/24;22,92;172,00;67,80;79;141;87;Apte
+;DIRECTION;;90105;48;Apte;Visite de reprise opérationnelle;12/12/24;Visite de maintien en activité;12/12/25;9/11/24;22,92;177,00;71,80;76;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90080;50;Apte;Visite de maintien en activité;6/27/24;Visite de maintien en activité;6/27/25;6/27/24;22,92;175,00;70,20;80;113;74;Apte
+;DIRECTION;;91043;27;Apte;Visite de maintien en activité;10/30/23;Visite de maintien en activité;10/30/25;10/30/23;22,93;183,00;76,80;87;145;81;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91038;29;Apte;Visite de maintien en activité;4/15/24;Visite de maintien en activité;4/15/25;4/15/24;22,94;182,00;76,00;85;110;72;Apte
+;Cie Molsheim;UT Molsheim;90629;44;Apte;Visite de maintien en activité;5/14/24;Visite de maintien en activité;5/14/25;5/14/24;22,95;188,00;81,10;90;134;82;Apte
+;Cie EMS Nord;UT Strasbourg Nord;39594;32;Apte;Visite de reprise opérationnelle;4/19/23;Visite de maintien en activité;4/19/25;12/8/22;22,96;174,00;69,50;82;120;90;Apte
+;Cie EMS Nord;UT Strasbourg Nord;91068;21;Apte;Visite corrective;6/24/24;Visite de titularisation;6/24/25;6/24/24;22,97;169,00;65,60;77;147;79;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;80506;28;Apte;Visite de maintien en activité;8/1/24;Visite de maintien en activité;8/1/26;8/1/24;22,98;177,00;72,00;82;133;78;Apte
+;DIRECTION;;90149;44;Apte;Visite de maintien en activité;10/10/24;Visite de maintien en activité;10/10/25;10/10/24;22,99;172,00;68,00;80;136;87;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;42794;25;Apte;Visite de recrutement;8/19/24;Visite de titularisation;8/19/25;8/19/24;22,99;183,00;77,00;;120;70;Apte
+;Cie Molsheim;UT Molsheim;90910;37;Apte;Visite de maintien en activité;10/23/23;Visite de maintien en activité;10/23/25;10/23/23;23,00;182,00;76,20;76;130;85;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90522;50;Apte;Visite de maintien en activité;7/9/24;Visite de maintien en activité;7/9/25;7/9/24;23,02;176,00;71,30;80;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90818;42;Apte;Visite de maintien en activité;12/19/24;Visite de maintien en activité;12/19/25;12/19/24;23,03;182,00;76,30;82;126;70;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90646;44;Apte;Visite de maintien en activité;5/23/24;Visite de maintien en activité;5/23/25;5/23/24;23,05;172,00;68,20;82;150;90;Apte
+;Cie Molsheim;;90766;51;Apte;Visite de maintien en activité;10/11/24;Visite de maintien en activité;10/10/25;10/11/24;23,08;181,00;75,60;81;120;800;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;42207;26;Apte;Visite de reprise opérationnelle;10/26/23;Visite de maintien en activité;6/22/25;6/22/23;23,09;175,00;70,70;77;120;70;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91027;27;Apte;Visite de maintien en activité;3/21/24;Visite de maintien en activité;3/21/25;3/21/24;23,10;179,00;74,00;79;138;62;Apte
+;DIRECTION;;32672;45;Apte;Visite de maintien en activité;5/14/24;Visite de maintien en activité;5/14/25;5/14/24;23,10;179,00;74,00;88;144;93;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;41051;31;Apte;Visite de maintien en activité;12/10/24;Visite de maintien en activité;12/10/25;12/10/24;23,11;185,00;79,10;84;141;79;Apte
+;Cie Sélestat;UT Sélestat;90819;41;Apte;Visite de maintien en activité;3/10/25;Visite de maintien en activité;3/10/26;3/10/25;23,14;183,00;77,50;80;166;83;Apte
+;Cie CTA-CODIS;;35702;35;Apte;Visite de maintien en activité;5/6/24;Visite de maintien en activité;5/6/25;5/6/24;23,15;180,00;75,00;82;138;86;Apte
+;Cie EMS Centre;;91062;29;Apte;Visite de maintien en activité;9/9/24;Visite de maintien en activité;9/9/26;9/9/24;23,17;178,00;73,40;73;120;80;Apte
+;Cie EMS Nord;UT Strasbourg Nord;42717;33;Apte;Visite de maintien en activité;9/16/24;Visite de maintien en activité;9/16/26;9/16/24;23,18;170,00;67,00;82;;;Apte
+;Cie Saverne;UT Saverne;90965;41;Apte;Visite de maintien en activité;3/17/25;Visite de maintien en activité;3/17/26;3/17/25;23,20;181,00;76,00;86;110;70;Apte
+;DIRECTION;;90511;54;Apte;Visite de maintien en activité;5/6/24;Visite de maintien en activité;5/6/25;5/6/24;23,20;181,00;76,00;84;128;75;Apte
+;Cie EMS Nord;UT Strasbourg Nord;39606;34;Apte;Visite de maintien en activité;9/17/24;Visite de maintien en activité;9/17/25;9/17/24;23,23;181,00;76,10;87;131;90;Apte
+;Cie CTA-CODIS;;40722;35;Apte;Visite de maintien en activité;2/18/25;Visite de maintien en activité;2/18/27;2/18/25;23,24;189,00;83,00;88;130;90;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90801;40;Apte;Visite de maintien en activité;9/23/24;Visite de maintien en activité;9/23/25;9/23/24;23,24;176,00;72,00;81;111;61;Apte
+;Cie CTA-CODIS;;90806;43;Apte;Visite de maintien en activité;5/16/24;Visite de maintien en activité;5/16/25;5/16/24;23,25;182,00;77,00;87;143;98;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90993;44;Apte;Visite de maintien en activité;11/8/24;Visite de maintien en activité;11/8/25;11/8/24;23,26;171,00;68,00;79;120;80;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90644;41;Apte;Visite de maintien en activité;1/6/25;Visite de maintien en activité;1/6/26;1/6/25;23,26;189,00;83,10;79;150;80;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;41154;39;Apte;Visite de maintien en activité;10/24/24;Visite de maintien en activité;10/24/25;10/24/24;23,30;177,00;73,00;83;132;72;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;91059;31;Apte;Visite de maintien en activité;6/24/24;Visite de maintien en activité;6/24/26;6/24/24;23,30;180,00;75,50;80;110;80;Apte
+;Cie Molsheim;;90114;45;Apte;Visite de maintien en activité;11/22/24;Visite de maintien en activité;11/22/25;11/22/24;23,30;180,00;75,50;84;80;54;Apte
+;Cie Molsheim;UT Molsheim;90569;47;Apte;Visite de maintien en activité;3/4/25;Visite de maintien en activité;3/4/26;3/4/25;23,32;172,00;69,00;86;130;74;Apte
+;DIRECTION;;90039;54;Apte;Visite de maintien en activité;3/22/24;Visite de maintien en activité;3/22/25;3/22/24;23,32;172,00;69,00;34;141;92;Apte
+;Cie Sélestat;UT Sélestat;90169;44;Apte;Visite de maintien en activité;6/25/24;Visite de maintien en activité;6/25/25;6/25/24;23,33;177,50;73,50;83;139;85;Apte
+;Cie CTA-CODIS;;90791;38;Apte;Visite de maintien en activité;6/13/24;Visite de maintien en activité;6/13/26;6/13/24;23,34;188,00;82,50;92;121;76;Apte
+;Cie EMS Nord;UT Strasbourg Nord;91075;31;Apte;Visite de recrutement;12/11/24;Visite de maintien en activité;12/11/25;12/11/24;23,35;175,00;71,50;83;115;73;Apte
+;Cie EMS Sud;UT Strasbourg Sud;44091;36;Apte;Visite de contrôle;9/22/23;Visite de maintien en activité;9/13/25;9/13/23;23,36;186,00;80,80;81;131;93;Apte
+;Cie EMS Nord;UT Strasbourg Nord;38418;29;Apte;Visite de maintien en activité;7/4/24;Visite de maintien en activité;7/4/26;7/4/24;23,38;168,00;66,00;76;108;65;Apte
+;Cie Molsheim;UT Molsheim;90078;51;Apte;Visite corrective;1/6/25;Visite de maintien en activité;1/6/26;1/6/25;23,40;180,00;75,80;83;120;80;Apte
+;DIRECTION;;90691;42;Apte;Visite de maintien en activité;5/30/24;Visite de maintien en activité;5/30/25;5/30/24;23,41;179,00;75,00;85;110;70;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90640;46;Apte;Visite de maintien en activité;12/3/24;Visite de maintien en activité;12/3/25;12/3/24;23,41;157,00;57,70;79;115;64;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91051;32;Apte;Visite administrative;10/29/24;Visite de maintien en activité;5/24/25;5/24/23;23,42;184,00;79,30;86;128;82;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90558;45;Apte;Visite de maintien en activité;10/16/24;Visite de maintien en activité;10/16/25;10/16/24;23,43;180,00;75,90;83;135;91;Apte
+;Cie EMS Nord;UT Strasbourg Nord;42343;25;Apte;Visite de maintien en activité;3/27/24;Visite de maintien en activité;3/27/26;3/27/24;23,44;183,00;78,50;82;127;75;Apte
+;Cie CTA-CODIS;;90116;43;Apte;Visite de maintien en activité;5/17/24;Visite de maintien en activité;5/17/25;5/17/24;23,44;166,00;64,60;72;120;68;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;91033;36;Apte;Visite de maintien en activité;8/29/24;Visite de maintien en activité;8/29/25;8/29/24;23,46;180,00;76,00;84;131;81;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;38706;26;Apte;Visite de reprise opérationnelle;3/18/25;Visite de maintien en activité;8/1/26;8/1/24;23,46;169,00;67,00;72;108;66;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90750;41;Apte;Visite de maintien en activité;12/18/23;Visite de maintien en activité;12/18/25;12/18/23;23,48;184,00;79,50;88;140;90;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;91008;30;Apte;Visite de maintien en activité;10/21/24;Visite de maintien en activité;10/21/26;10/21/24;23,49;177,00;73,60;80;140;67;Apte
+;Cie EMS Sud;UT Strasbourg Sud;80417;45;Apte;Visite de maintien en activité;6/14/24;Visite de maintien en activité;6/14/25;6/14/24;23,50;183,00;78,70;76;115;65;Apte
+;Cie CTA-CODIS;;37305;37;Apte;Visite de maintien en activité;12/9/24;Visite de maintien en activité;12/9/26;12/9/24;23,50;176,00;72,80;83;125;70;Apte
+;Cie Haguenau;;90499;53;Apte;Visite de contrôle;3/24/25;Visite de contrôle;6/24/25;10/30/24;23,51;175,00;72,00;82;136;77;Apte
+;DIRECTION;;90800;50;Apte;Visite de maintien en activité;9/17/24;Visite de maintien en activité;9/17/25;9/17/24;23,51;175,00;72,00;88;134;89;Apte
+;Cie Sélestat;UT Obernai;91023;30;Apte;Visite de maintien en activité;12/9/24;Visite de maintien en activité;12/9/26;12/9/24;23,52;185,00;80,50;86;125;66;Apte
+;Cie EMS Sud;UT Strasbourg Sud;40229;33;Apte;Visite de recrutement;3/6/25;Visite de titularisation;3/6/26;3/6/25;23,53;170,00;68,00;92;130;80;Apte
+;DIRECTION;;90919;36;Apte;Visite corrective;6/7/23;Visite de maintien en activité;6/7/25;6/7/23;23,53;176,00;72,90;80;131;82;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90077;47;Apte;Visite de maintien en activité;1/16/25;Visite de maintien en activité;1/16/26;1/16/25;23,56;186,00;81,50;84;111;73;Apte
+;Cie Molsheim;UT Molsheim;90807;36;Apte;Visite corrective;6/7/23;Visite de maintien en activité;6/7/25;6/7/23;23,56;186,00;81,50;87;125;81;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90565;50;Apte;Visite de maintien en activité;12/9/24;Visite de maintien en activité;12/9/25;12/9/24;23,57;176,00;73,00;85;126;82;Apte
+;Cie Saverne;UT Saverne;41322;36;Apte;Visite de maintien en activité;12/12/24;Visite de maintien en activité;12/12/26;12/12/24;23,57;176,00;73,00;78;127;75;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90713;41;Apte;Visite de maintien en activité;10/2/24;Visite de maintien en activité;10/2/25;10/2/24;23,59;183,00;79,00;89;130;69;Apte
+;DIRECTION;;90120;43;Apte;Visite de contrôle;12/11/24;Visite de maintien en activité;6/15/25;6/14/24;23,59;183,00;79,00;82;118;75;Apte
+;DIRECTION;;90633;48;Apte;Visite de maintien en activité;10/4/24;Visite de maintien en activité;10/4/25;10/4/24;23,59;194,00;88,80;85;116;81;Apte
+;Cie Saverne;UT Saverne;90072;48;Apte;Visite de maintien en activité;7/9/24;Visite de maintien en activité;7/9/25;7/9/24;23,60;170,00;68,20;81;108;73;Apte
+;Cie Sélestat;UT Sélestat;90765;54;Apte;Visite de maintien en activité;3/13/25;Visite de maintien en activité;3/13/26;3/13/25;23,61;185,00;80,80;91;126;80;Apte
+;Cie Haguenau;UT Haguenau;39031;35;Apte;Visite de maintien en activité;1/22/25;Visite de maintien en activité;1/22/27;1/22/25;23,63;184,00;80,00;79;120;70;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;32370;46;Apte;Visite de maintien en activité;9/17/24;Visite de maintien en activité;9/17/25;9/17/24;23,63;169,00;67,50;67;117;79;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90484;58;Apte;Visite de maintien en activité;5/28/24;Visite de maintien en activité;5/28/25;5/28/24;23,64;178,00;74,90;86;114;82;Apte
+;Cie Saverne;UT Saverne;90539;55;Apte;Visite de maintien en activité;11/4/24;Visite de maintien en activité;11/4/25;11/4/24;23,64;180,00;76,60;87;130;80;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;41402;29;Apte;Visite de reprise opérationnelle;12/2/24;Visite de maintien en activité;6/22/25;6/22/23;23,64;186,00;81,80;86;130;81;Apte
+;Cie EMS Nord;UT Strasbourg Nord;44451;31;Apte;Visite de maintien en activité;6/14/23;Visite de maintien en activité;6/14/25;6/14/23;23,66;173,00;70,80;82;130;70;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90964;36;Apte;Visite corrective;5/23/24;Visite de maintien en activité;5/23/26;5/23/24;23,66;172,00;70,00;84;140;90;Apte
+;Cie Sélestat;UT Obernai;90736;44;Apte;Visite de maintien en activité;12/17/24;Visite de maintien en activité;12/17/25;12/17/24;23,66;172,00;70,00;80;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90487;58;Apte;Visite de maintien en activité;12/19/24;Visite de maintien en activité;12/19/25;12/19/24;23,67;178,00;75,00;88;130;87;Apte
+;Cie EMS Sud;UT Strasbourg Sud;38547;27;Apte;Visite de recrutement;8/19/24;Visite de titularisation;8/19/25;8/19/24;23,67;178,00;75,00;77;120;60;Apte
+;Cie CTA-CODIS;;90917;36;Apte;Visite de maintien en activité;5/25/23;Visite de maintien en activité;5/25/25;5/25/23;23,68;188,00;83,70;93;120;80;Apte
+;DIRECTION;;90877;38;Inapte temporaire;Visite corrective;2/13/25;Visite de contrôle;8/13/25;10/7/24;23,69;179,00;75,90;84;;;Inapte
+;Cie Molsheim;UT Molsheim;90924;37;Apte;Visite de contrôle;11/26/24;Visite de maintien en activité;8/1/25;8/1/24;23,70;186,00;82,00;82;114;66;Apte
+;Cie CTA-CODIS;;90868;38;Apte;Visite de maintien en activité;4/17/24;Visite de maintien en activité;4/17/25;4/17/24;23,71;187,00;82,90;80;110;80;Apte
+;Cie Haguenau;UT Haguenau;41155;32;Apte;Visite corrective;6/19/23;Visite de maintien en activité;6/19/25;6/19/23;23,71;190,00;85,60;86;115;70;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90631;42;Apte;Visite de maintien en activité;12/2/24;Visite de maintien en activité;12/2/25;12/2/24;23,73;182,00;78,60;81;138;82;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;38515;30;Apte;Visite de maintien en activité;1/29/25;Visite de maintien en activité;1/29/27;1/29/25;23,73;178,00;75,20;80;133;70;Apte
+;DIRECTION;;90726;41;Apte;Visite de maintien en activité;10/14/24;Visite de maintien en activité;10/14/25;10/14/24;23,73;178,00;75,20;87;134;91;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90172;42;Apte;Visite de maintien en activité;2/25/25;Visite de contrôle;5/25/25;2/25/25;23,74;175,00;72,70;87;123;80;Apte
+;Cie Sélestat;UT Sélestat;90733;43;Apte;Visite de maintien en activité;1/7/25;Visite de maintien en activité;1/7/26;1/7/25;23,77;180,00;77,00;87;160;100;Apte
+;DIRECTION;;91063;51;Apte;Visite corrective;5/30/24;Visite de titularisation;5/30/25;5/30/24;23,77;171,00;69,50;92;132;88;Apte
+;Cie EMS Sud;UT Strasbourg Sud;40960;30;Apte;Visite de reprise opérationnelle;4/5/24;Visite de maintien en activité;6/16/25;6/14/23;23,78;177,00;74,50;86;100;60;Apte
+;Cie CTA-CODIS;;42320;26;Apte;Visite de maintien en activité;9/20/23;Visite de maintien en activité;9/20/25;9/20/23;23,78;174,00;72,00;79;120;75;Apte
+;Cie CTA-CODIS;;90855;37;Apte;Visite de maintien en activité;2/10/25;Visite de maintien en activité;2/10/27;2/10/25;23,80;171,00;69,60;81;133;85;Apte
+;Cie EMS Sud;UT Strasbourg Sud;41501;29;Apte;Visite de maintien en activité;6/14/23;Visite de maintien en activité;6/14/25;6/14/23;23,80;171,00;69,60;79;100;65;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90189;49;Apte;Visite de maintien en activité;5/27/24;Visite de maintien en activité;5/27/25;5/27/24;23,84;175,00;73,00;87;120;60;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90687;44;Apte;Visite de maintien en activité;4/2/24;Visite de maintien en activité;4/2/25;4/2/24;23,87;185,00;81,70;78;120;70;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;35849;31;Apte;Visite administrative;10/29/24;Visite de maintien en activité;5/24/25;5/24/23;23,88;182,00;79,10;86;118;58;Apte
+;Cie EMS Sud;UT Strasbourg Sud;40277;44;Apte;Visite de contrôle;12/2/24;Visite de maintien en activité;9/25/25;9/25/24;23,88;174,00;72,30;75;120;85;Apte
+;Cie EMS Nord;UT Strasbourg Nord;91003;30;Apte;Visite de maintien en activité;3/5/25;Visite de maintien en activité;3/5/27;3/5/25;23,94;177,00;75,00;80;138;99;Apte
+;Cie Molsheim;UT Molsheim;90606;53;Apte;Visite de maintien en activité;6/25/24;Visite de maintien en activité;6/25/25;6/25/24;23,94;177,00;75,00;90;130;78;Apte
+;Cie Sélestat;UT Obernai;90140;46;Apte;Visite de maintien en activité;9/16/24;Visite de maintien en activité;9/16/25;9/16/24;23,98;183,00;80,30;84;130;90;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90809;39;Apte;Visite de maintien en activité;3/20/25;Visite de maintien en activité;3/20/26;3/20/25;23,99;178,00;76,00;80;124;60;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90913;41;Apte;Visite de maintien en activité;3/8/25;Visite de maintien en activité;3/8/26;3/8/25;24,00;172,00;71,00;84;128;80;Apte
+;Cie EMS Nord;UT Strasbourg Nord;41293;33;Apte;Visite de maintien en activité;6/12/23;Visite de maintien en activité;6/12/25;6/12/23;24,03;179,00;77,00;81;110;70;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90701;47;Apte;Visite de maintien en activité;4/11/24;Visite de maintien en activité;4/11/25;4/11/24;24,03;175,00;73,60;85;121;79;Apte
+;Cie EMS Nord;UT Strasbourg Nord;42124;23;Apte;Visite de maintien en activité;8/30/24;Visite de maintien en activité;8/30/26;8/30/24;24,04;183,00;80,50;86;129;75;Apte
+;DIRECTION;;90847;39;Apte;Visite de reprise opérationnelle;6/26/23;Visite de maintien en activité;6/26/24;6/26/23;24,07;180,00;78,00;;139;87;Apte
+;DIRECTION;;91028;29;Apte;Visite administrative;4/3/23;Visite de maintien en activité;3/9/25;3/9/23;24,08;174,00;72,90;81;110;60;Apte
+;DIRECTION;;90075;48;Apte avec restriction;Visite de maintien en activité;4/4/24;Visite de maintien en activité;4/4/25;4/4/24;24,10;177,00;75,50;85;128;79;Inapte
+;Cie CTA-CODIS;;38279;36;Apte;Visite de maintien en activité;2/14/24;Visite de maintien en activité;2/14/26;2/14/24;24,11;171,00;70,50;85;125;69;Apte
+;DIRECTION;;39391;34;Apte;Visite de maintien en activité;6/15/23;Visite de maintien en activité;6/15/25;6/15/23;24,11;181,00;79,00;84;140;71;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90054;48;Apte;Visite de maintien en activité;4/5/24;Visite de maintien en activité;4/5/25;4/5/24;24,13;172,00;71,40;78;125;63;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90654;41;Apte;Visite de maintien en activité;10/21/24;Visite de maintien en activité;10/21/25;10/21/24;24,14;186,00;83,50;86;140;87;Apte
+;Cie Molsheim;UT Molsheim;37182;41;Apte;Visite de maintien en activité;3/7/25;Visite de maintien en activité;3/7/26;3/7/25;24,14;186,00;83,50;90;111;73;Apte
+;DIRECTION;;91077;24;Apte;Visite de recrutement;12/4/24;Visite de titularisation;12/4/25;12/4/24;24,14;171,00;70,60;73;142;82;Apte
+;Cie Molsheim;UT Molsheim;90118;49;Apte;Visite de maintien en activité;10/28/24;Visite de maintien en activité;10/28/25;10/28/24;24,15;182,00;80,00;89;141;87;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;36635;40;Apte;Visite de maintien en activité;11/14/24;Visite de maintien en activité;11/14/25;11/14/24;24,16;169,00;69,00;84;114;73;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90469;54;Apte;Visite de maintien en activité;11/12/24;Visite de maintien en activité;11/12/25;11/12/24;24,16;175,00;74,00;76;102;72;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;39464;33;Apte;Visite de maintien en activité;6/5/23;Visite de maintien en activité;6/5/25;6/5/23;24,16;175,00;74,00;80;105;60;Apte
+;DIRECTION;;90939;35;Apte;Visite de maintien en activité;10/20/16;Visite de maintien en activité;10/20/17;10/20/16;24,19;183,00;81,00;82;135;80;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90912;35;Apte;Visite de maintien en activité;12/17/24;Visite de maintien en activité;12/17/25;12/17/24;24,22;193,00;90,20;81;135;72;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90948;36;Apte;Visite de maintien en activité;1/21/25;Visite de maintien en activité;1/21/26;1/21/25;24,22;170,00;70,00;80;112;73;Apte
+;Cie EMS Sud;UT Lingolsheim;90470;56;Apte;Visite de maintien en activité;9/25/24;Visite de maintien en activité;9/25/25;9/25/24;24,24;176,00;75,10;76;110;74;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;43895;23;Apte;Visite corrective;6/5/24;Visite de titularisation;6/5/25;6/5/24;24,27;181,00;79,50;82;129;77;Apte
+;DIRECTION;;90460;55;Apte;Visite de maintien en activité;4/17/24;Visite de maintien en activité;4/17/25;4/17/24;24,29;180,00;78,70;87;110;70;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91029;30;Apte;Visite corrective;2/14/24;Visite de maintien en activité;2/14/26;2/14/24;24,29;190,00;87,70;88;120;59;Apte
+;Cie CTA-CODIS;;40980;30;Apte;Visite de maintien en activité;11/4/24;Visite de maintien en activité;11/4/26;11/4/24;24,31;185,00;83,20;88;118;83;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;42824;25;Apte;Visite de maintien en activité;2/14/25;Visite de maintien en activité;2/14/27;2/14/25;24,34;172,00;72,00;75;;;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90016;52;Apte;Visite de maintien en activité;10/29/24;Visite de maintien en activité;10/29/25;10/29/24;24,34;176,00;75,40;76;135;87;Apte
+;Cie EMS Sud;;90768;42;Apte;Visite de maintien en activité;4/2/24;Visite de maintien en activité;4/2/25;4/2/24;24,35;180,00;78,90;84;130;75;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90795;38;Apte;Visite de maintien en activité;11/14/24;Visite de maintien en activité;11/10/25;11/14/24;24,37;178,00;77,20;76;;;Apte
+;Cie Sélestat;UT Sélestat;90718;46;Apte;Visite de maintien en activité;4/30/24;Visite de maintien en activité;4/30/25;4/30/24;24,38;180,00;79,00;88;138;90;Apte
+;DIRECTION;;90643;49;Apte;Visite de maintien en activité;11/4/20;Visite de maintien en activité;11/4/21;11/4/20;24,38;180,00;79,00;89;125;67;Apte
+;DIRECTION;;90663;40;Apte avec restriction;Visite de reprise opérationnelle;1/26/24;Visite de reprise opérationnelle;2/11/24;11/17/22;24,40;184,00;82,60;94;125;80;Inapte
+;Cie EMS Nord;;90546;44;Apte;Visite de maintien en activité;2/7/25;Visite de maintien en activité;2/7/26;2/7/25;24,41;174,00;73,90;78;120;70;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91065;23;Apte;Visite de recrutement;6/6/24;Visite de titularisation;6/6/25;6/6/24;24,42;182,00;80,90;86;122;69;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;40063;33;Apte;Visite corrective;5/28/24;Visite de maintien en activité;5/28/25;5/28/24;24,43;183,00;81,80;93;138;85;Apte
+;DIRECTION;;90994;35;Apte;Visite de maintien en activité;2/12/21;Visite de maintien en activité;2/12/22;2/12/21;24,44;174,00;74,00;83;105;70;Apte
+;Cie CTA-CODIS;;41340;30;Apte;Visite administrative;6/4/24;Visite de maintien en activité;6/3/25;6/21/23;24,45;182,00;81,00;86;120;80;Apte
+;Cie EMS Sud;UT Lingolsheim;37072;41;Apte;Visite de maintien en activité;2/25/25;Visite de maintien en activité;2/25/26;2/25/25;24,45;186,00;84,60;82;140;84;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90775;46;Apte;Visite de maintien en activité;6/4/24;Visite de maintien en activité;6/3/25;6/4/24;24,46;183,00;81,90;85;128;73;Apte
+;Cie Haguenau;UT Haguenau;90177;48;Apte;Visite de maintien en activité;6/6/24;Visite de maintien en activité;6/6/25;6/6/24;24,46;163,00;65,00;86;118;80;Apte
+;DIRECTION;;42043;25;Apte;Visite de recrutement;12/12/24;Visite de titularisation;12/12/25;12/12/24;24,48;180,00;79,30;85;145;72;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;41349;29;Apte;Visite corrective;5/31/24;Visite de maintien en activité;5/21/26;5/31/24;24,48;177,00;76,70;83;134;68;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90778;44;Apte;Visite de maintien en activité;5/31/24;Visite de maintien en activité;5/31/25;5/31/24;24,49;183,00;82,00;;140;90;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90191;47;Apte;Visite corrective;5/7/24;Visite de maintien en activité;5/7/25;5/7/24;24,49;190,00;88,40;90;145;91;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90095;45;Apte;SAL Recrutement et quinquennale;6/14/24;Visite de maintien en activité;6/14/25;6/14/24;24,49;175,00;75,00;76;120;70;Apte
+;DIRECTION;;42388;25;Apte;Visite de maintien en activité;2/25/23;Visite de maintien en activité;2/25/25;2/25/23;24,49;175,00;75,00;83;127;83;Apte
+;Cie EMS Centre;;41182;29;Apte;Visite de maintien en activité;4/4/24;Visite de maintien en activité;4/4/25;4/4/24;24,52;178,00;77,70;79;135;86;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90829;46;Apte;Visite de maintien en activité;6/27/24;Visite de maintien en activité;6/27/25;6/27/24;24,55;183,00;82,20;77;140;90;Apte
+;Cie Molsheim;UT Molsheim;90842;41;Apte;Visite de maintien en activité;5/3/24;Visite de maintien en activité;5/3/25;5/3/24;24,56;179,00;78,70;88;130;80;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91074;32;Apte;Visite de recrutement;8/19/24;Visite de titularisation;8/19/25;8/19/24;24,57;170,00;71,00;84;160;80;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90989;32;Apte;Visite de maintien en activité;1/20/24;Visite de maintien en activité;1/20/26;1/20/24;24,57;186,00;85,00;76;139;65;Apte
+;DIRECTION;;39416;35;Apte;Visite de maintien en activité;6/25/24;Visite de maintien en activité;6/25/25;6/25/24;24,57;186,00;85,00;;137;60;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90828;36;Apte;Visite de reprise opérationnelle;9/23/24;Visite de maintien en activité;8/1/25;8/1/24;24,58;177,00;77,00;97;133;79;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90891;44;Apte;Visite de maintien en activité;9/11/24;Visite de maintien en activité;9/11/25;9/11/24;24,62;178,00;78,00;86;130;80;Apte
+;Cie Molsheim;UT Molsheim;90753;43;Apte;Visite de maintien en activité;4/12/24;Visite de maintien en activité;4/12/25;4/12/24;24,62;178,00;78,00;88;120;80;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90695;50;Apte;Visite de maintien en activité;6/3/24;Visite de maintien en activité;6/3/25;6/3/24;24,63;186,00;85,20;88;110;82;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90802;45;Apte;Visite de reprise opérationnelle;2/26/25;Visite de maintien en activité;6/5/25;6/5/24;24,64;170,00;71,20;80;135;85;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90581;50;Apte;Visite de maintien en activité;3/13/23;Visite de maintien en activité;3/13/25;3/13/23;24,65;178,00;78,10;88;;;Apte
+;Cie Haguenau;UT Haguenau;90760;44;Apte;Visite corrective;6/20/24;Visite de maintien en activité;6/20/25;6/20/24;24,65;175,00;75,50;91;135;70;Apte
+;DIRECTION;;37224;37;Apte;Visite de maintien en activité;1/13/25;Visite de maintien en activité;1/13/26;1/13/25;24,66;173,00;73,80;83;140;70;Apte
+;Cie EMS Nord;;90949;34;Apte;Visite de maintien en activité;1/22/24;Visite de maintien en activité;1/22/25;1/22/24;24,66;180,00;79,90;86;141;76;Apte
+;DIRECTION;;41102;31;Apte;Visite administrative;4/3/23;Visite de maintien en activité;12/21/24;12/21/22;24,67;177,00;77,30;83;132;72;Apte
+;Cie EMS Sud;UT Strasbourg Sud;41065;37;Apte;Visite administrative;4/18/24;Visite de maintien en activité;4/20/25;4/20/23;24,69;180,00;80,00;82;110;70;Apte
+;Cie EMS Sud;UT Strasbourg Sud;42199;26;Apte;Visite de maintien en activité;6/15/23;Visite de maintien en activité;6/15/25;6/15/23;24,69;180,00;80,00;81;;;Apte
+;DIRECTION;;91034;45;Apte;Visite de maintien en activité;10/29/24;Visite de maintien en activité;10/29/25;10/29/24;24,69;180,00;80,00;90;;;Apte
+;Cie Sélestat;UT Sélestat;90588;51;Apte;Visite de maintien en activité;8/20/24;Visite de maintien en activité;8/20/25;8/20/24;24,70;176,00;76,50;88;127;83;Apte
+;Cie Molsheim;UT Molsheim;90878;41;Apte;Visite de maintien en activité;11/22/24;Visite de maintien en activité;11/22/25;11/22/24;24,70;191,00;90,10;87;130;80;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90956;38;Apte;Visite de maintien en activité;11/26/24;Visite de maintien en activité;11/25/25;11/26/24;24,71;174,00;74,80;81;133;75;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90094;47;Apte;Visite de maintien en activité;4/18/24;Visite de maintien en activité;4/18/25;4/18/24;24,71;178,00;78,30;80;119;67;Apte
+;Cie Haguenau;UT Haguenau;90996;45;Apte;Visite de maintien en activité;11/27/24;Visite de maintien en activité;11/27/25;11/27/24;24,72;185,00;84,60;81;;;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90985;41;Apte;Visite de maintien en activité;6/20/24;Visite de maintien en activité;6/20/25;6/20/24;24,72;181,00;81,00;86;118;70;Apte
+;DIRECTION;;90898;38;Apte;Visite de maintien en activité;1/10/25;Visite de maintien en activité;1/10/27;1/10/25;24,73;173,00;74,00;76;127;66;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90812;38;Apte;Visite de maintien en activité;12/22/23;Visite de maintien en activité;12/22/25;12/22/23;24,74;177,00;77,50;81;127;72;Apte
+;Cie Sélestat;;90151;46;Inapte temporaire;Visite de maintien en activité;3/12/25;Visite de contrôle;9/12/25;3/12/25;24,74;170,00;71,50;81;;;Inapte
+;Cie CTA-CODIS;;90884;37;Apte;Visite de maintien en activité;3/10/25;Visite de maintien en activité;3/10/26;3/10/25;24,74;172,00;73,20;83;120;80;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90961;38;Apte;Visite de maintien en activité;3/14/24;Visite de maintien en activité;3/14/26;3/14/24;24,77;174,00;75,00;80;127;58;Apte
+;DIRECTION;;91009;29;Apte;Visite de maintien en activité;10/25/24;Visite de maintien en activité;10/25/25;10/25/24;24,77;174,00;75,00;80;128;60;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90954;36;Apte;Visite de maintien en activité;4/8/24;Visite de maintien en activité;4/8/25;4/8/24;24,78;178,00;78,50;87;135;82;Apte
+;Cie EMS Nord;;90656;47;Apte;Visite de maintien en activité;9/16/24;Visite de maintien en activité;9/15/25;9/16/24;24,78;180,00;80,30;92;150;100;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90669;47;Apte;Visite de maintien en activité;4/5/24;Visite de maintien en activité;4/5/25;4/5/24;24,82;182,00;82,20;85;;;Apte
+;Cie Haguenau;UT Brumath;90714;45;Apte;Visite de reprise opérationnelle;8/19/24;Visite de maintien en activité;1/1/25;1/10/24;24,82;175,00;76,00;84;110;60;Apte
+;Cie Molsheim;UT Molsheim;41925;41;Apte;Visite de maintien en activité;12/5/23;Visite de maintien en activité;12/5/25;12/5/23;24,82;175,00;76,00;82;129;81;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90612;54;Apte;Visite de maintien en activité;4/8/24;Visite de maintien en activité;4/8/25;4/8/24;24,83;173,00;74,30;95;125;76;Apte
+;Cie EMS Nord;UT Strasbourg Nord;40561;31;Apte;Visite de maintien en activité;6/5/23;Visite de maintien en activité;6/5/25;6/5/23;24,84;185,00;85,00;86;110;70;Apte
+;Cie Sélestat;UT Sélestat;90977;51;Apte;Visite de maintien en activité;2/25/25;Visite de maintien en activité;2/25/26;2/25/25;24,84;184,00;84,10;86;139;82;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;45206;24;Apte;Visite de recrutement;6/6/24;Visite de titularisation;6/6/25;6/6/24;24,86;176,00;77,00;77;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90638;47;Apte;Visite de maintien en activité;12/19/24;Visite de maintien en activité;12/12/25;12/19/24;24,86;176,00;77,00;91;;;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90163;47;Apte;Visite de maintien en activité;9/13/24;Visite de maintien en activité;9/12/25;9/13/24;24,86;196,00;95,50;84;116;53;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;42670;23;Apte;Visite de reprise opérationnelle;7/29/24;Visite de maintien en activité;9/1/25;9/27/23;24,88;180,00;80,60;82;112;66;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90159;47;Apte;SAL Recrutement et quinquennale;4/17/24;Visite de maintien en activité;4/17/25;4/17/24;24,90;177,00;78,00;82;115;69;Apte
+;Cie Molsheim;UT Molsheim;90486;53;Apte;Visite de maintien en activité;9/25/24;Visite de maintien en activité;9/25/25;9/25/24;24,90;177,00;78,00;87;140;90;Apte
+;Cie EMS Sud;UT Strasbourg Sud;43698;20;Apte;Visite de recrutement;6/17/24;Visite de titularisation;6/17/25;6/17/24;24,90;174,00;75,40;86;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90905;42;Apte;Visite de maintien en activité;3/6/25;Visite de maintien en activité;3/6/26;3/6/25;24,91;179,00;79,80;90;122;76;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90968;32;Apte;Visite de maintien en activité;2/10/25;Visite de maintien en activité;2/10/27;2/10/25;24,91;172,00;73,70;78;132;79;Apte
+;DIRECTION;;44630;29;Apte;Visite de recrutement;9/9/24;Visite de titularisation;9/9/25;9/9/24;24,91;170,00;72,00;86;130;76;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90683;49;Apte;Visite de maintien en activité;4/4/24;Visite de maintien en activité;4/4/25;4/4/24;24,93;178,00;79,00;77;120;66;Apte
+;Cie Haguenau;UT Haguenau;39178;34;Apte;Visite de maintien en activité;6/19/23;Visite de maintien en activité;6/19/25;6/19/23;24,94;179,00;79,90;83;110;60;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90886;38;Apte;Visite de reprise opérationnelle;12/2/24;Visite de maintien en activité;1/8/26;1/8/24;24,95;175,00;76,40;82;0;0;Apte
+;Cie EMS Nord;UT Strasbourg Nord;44444;30;Apte;Visite de maintien en activité;7/4/24;Visite de maintien en activité;7/4/26;7/4/24;24,96;187,00;87,30;82;121;69;Apte
+;Cie Haguenau;;90583;49;Inapte temporaire;Visite de maintien en activité;12/5/24;Visite de maintien en activité;12/5/25;12/5/24;25,00;159,00;63,20;83;;;Inapte
+;Cie Saverne;UT Saverne;90754;43;Apte;Visite de maintien en activité;10/25/24;Visite de maintien en activité;10/25/25;10/25/24;25,00;171,00;73,10;83;128;75;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;91082;34;Apte;Visite de recrutement;3/6/25;Visite de titularisation;3/6/26;3/6/25;25,00;180,00;81,00;83;134;79;Apte
+;Cie Sélestat;UT Sélestat;90089;45;Apte;Visite de maintien en activité;9/17/24;Visite de maintien en activité;9/17/25;9/17/24;25,00;180,00;81,00;92;121;83;Apte
+;DIRECTION;;90756;39;Apte;Visite de maintien en activité;4/24/17;Visite de maintien en activité;4/24/18;4/24/17;25,00;180,00;81,00;85;130;80;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;43956;30;Apte;Visite de maintien en activité;6/4/24;Visite de maintien en activité;6/4/25;6/4/24;25,01;185,00;85,60;86;;;Apte
+;Cie Haguenau;UT Haguenau;36805;38;Apte;Visite corrective;5/4/23;Visite de maintien en activité;5/4/25;5/4/23;25,03;173,00;74,90;83;119;74;Apte
+;Cie CTA-CODIS;;40606;31;Apte;Visite de maintien en activité;4/17/23;Visite de maintien en activité;4/17/25;4/17/23;25,03;181,00;82,00;86;140;85;Apte
+;Cie Haguenau;UT Haguenau;42380;27;Apte;Visite de reprise opérationnelle;2/14/25;Visite de maintien en activité;6/4/26;2/14/25;25,06;173,00;75,00;;123;67;Apte
+;DIRECTION;;90730;43;Apte;Visite de maintien en activité;12/18/23;Visite de maintien en activité;12/18/25;12/18/23;25,06;179,00;80,30;87;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;37472;36;Apte;Visite de maintien en activité;12/3/24;Visite de maintien en activité;12/3/25;12/3/24;25,06;180,00;81,20;82;129;84;Apte
+;Cie Molsheim;UT Molsheim;90940;36;Apte;Visite de maintien en activité;9/20/24;Visite de maintien en activité;9/20/26;9/20/24;25,07;171,00;73,30;81;93;74;Apte
+;Cie Haguenau;UT Haguenau;91056;34;Apte;Visite de maintien en activité;8/5/24;Visite de maintien en activité;8/5/26;8/5/24;25,07;190,00;90,50;79;115;75;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;41945;26;Apte;Visite corrective;8/29/24;Visite de maintien en activité;6/15/25;6/15/23;25,09;182,00;83,10;82;138;54;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;42265;24;Apte;Visite de maintien en activité;6/5/24;Visite de maintien en activité;6/5/26;6/5/24;25,09;177,00;78,60;80;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90652;41;Apte;Visite de maintien en activité;11/8/24;Visite de maintien en activité;11/8/25;11/8/24;25,10;167,00;70,00;77;110;80;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90693;44;Apte;Visite de maintien en activité;4/17/24;Visite de maintien en activité;4/17/25;4/17/24;25,10;171,00;73,40;86;127;79;Apte
+;Cie CTA-CODIS;;90982;31;Apte;Visite de maintien en activité;1/30/25;Visite de maintien en activité;1/30/27;1/30/25;25,11;166,00;69,20;85;130;80;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90962;46;Apte;Visite de maintien en activité;12/16/24;Visite de maintien en activité;12/16/25;12/16/24;25,11;172,00;74,30;82;138;86;Apte
+;Cie EMS Nord;UT Strasbourg Nord;37370;36;Apte;Visite de maintien en activité;11/8/23;Visite de maintien en activité;11/8/25;11/8/23;25,14;183,00;84,20;77;134;72;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90937;36;Apte;Visite de maintien en activité;12/6/24;Visite de maintien en activité;12/6/26;12/6/24;25,15;180,00;81,50;80;137;75;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;44701;28;Apte;Visite administrative;10/29/24;Visite de maintien en activité;6/15/25;6/15/23;25,18;176,00;78,00;82;126;71;Apte
+;DIRECTION;;91044;31;Apte;Visite corrective;11/25/24;Visite de maintien en activité;11/25/26;11/25/24;25,18;172,00;74,50;80;;;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90464;56;Apte;Visite corrective;9/19/24;Visite de maintien en activité;9/19/25;9/19/24;25,19;185,00;86,20;98;128;88;Apte
+;Cie Haguenau;UT Haguenau;90857;37;Apte;Visite de reprise opérationnelle;10/29/24;Visite de maintien en activité;10/9/25;10/9/23;25,22;177,00;79,00;89;110;60;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;40814;48;Apte;Visite de maintien en activité;10/11/24;Visite de maintien en activité;10/10/25;10/11/24;25,22;172,00;74,60;82;128;80;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;42332;44;Apte;Visite de maintien en activité;3/1/24;Visite de maintien en activité;3/1/25;3/1/24;25,22;179,00;80,80;85;120;80;Apte
+;Cie CTA-CODIS;;90864;44;Apte;Visite de maintien en activité;1/28/25;Visite de maintien en activité;1/28/26;1/28/25;25,22;195,00;95,90;89;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;42937;26;Apte;Visite administrative;10/29/24;Visite de maintien en activité;6/15/25;6/15/23;25,24;194,00;95,00;89;127;65;Apte
+;Cie EMS Nord;UT Strasbourg Nord;42201;32;Apte;Visite corrective;6/12/24;Visite de maintien en activité;6/12/26;6/12/24;25,25;176,00;78,20;84;139;64;Apte
+;Cie Saverne;UT Saverne;90928;38;Apte;Visite de maintien en activité;11/22/24;Visite de maintien en activité;11/22/25;11/22/24;25,25;180,00;81,80;80;142;79;Apte
+;Cie EMS Sud;UT Strasbourg Sud;40519;31;Apte;Visite de maintien en activité;10/12/23;Visite de maintien en activité;10/12/25;10/12/23;25,25;178,00;80,00;90;139;91;Apte
+;Cie EMS Nord;UT Strasbourg Nord;35906;27;Apte;Visite de maintien en activité;6/5/23;Visite de maintien en activité;6/5/25;6/5/23;25,27;174,00;76,50;81;110;70;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90153;50;Apte;Visite de maintien en activité;11/18/24;Visite de maintien en activité;11/18/25;11/18/24;25,28;179,00;81,00;93;124;68;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90572;46;Apte;Visite de maintien en activité;3/25/24;Visite de maintien en activité;3/25/25;3/25/24;25,29;183,00;84,70;83;123;85;Apte
+;Cie Haguenau;UT Haguenau;90698;43;Apte;Visite de conduite;9/30/24;Visite de maintien en activité;9/30/25;9/30/24;25,30;174,00;76,60;88;143;100;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;38969;39;Apte;Visite de maintien en activité;4/24/24;Visite de maintien en activité;4/24/25;4/24/24;25,31;187,00;88,50;90;120;80;Apte
+;Cie Molsheim;UT Molsheim;90557;46;Apte;Visite de maintien en activité;3/24/25;Visite de maintien en activité;3/24/26;3/24/25;25,31;180,00;82,00;83;120;80;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91054;40;Apte;Visite de maintien en activité;9/20/24;Visite de maintien en activité;9/20/26;9/20/24;25,34;181,00;83,00;87;144;75;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;39276;34;Apte;Visite de maintien en activité;1/8/24;Visite de maintien en activité;1/8/26;1/8/24;25,37;175,00;77,70;82;;;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90752;42;Apte;Visite de maintien en activité;10/24/24;Visite de maintien en activité;10/24/25;10/24/24;25,38;183,00;85,00;80;134;72;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;40727;34;Apte;Visite de maintien en activité;1/10/25;Visite de maintien en activité;1/10/27;1/10/25;25,41;186,00;87,90;84;153;95;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;40808;31;Apte;Visite de maintien en activité;1/29/25;Visite de maintien en activité;1/29/27;1/29/25;25,43;181,00;83,30;80;130;71;Apte
+;Cie Haguenau;UT Haguenau;90735;45;Apte;Visite de maintien en activité;6/4/24;Visite de maintien en activité;6/4/25;6/4/24;25,43;184,00;86,10;84;135;80;Apte
+;DIRECTION;;45719;22;Apte;Visite de recrutement;6/6/24;Visite de titularisation;6/6/25;6/6/24;25,44;186,00;88,00;90;132;69;Apte
+;Cie Haguenau;UT Haguenau;90161;47;Apte;Visite de maintien en activité;2/14/25;Visite de maintien en activité;2/14/26;2/14/25;25,44;175,00;77,90;94;120;70;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91026;25;Apte;Visite de maintien en activité;4/4/24;Visite de maintien en activité;4/4/25;4/4/24;25,45;187,00;89,00;80;119;79;Apte
+;Cie Sélestat;UT Sélestat;90160;48;Apte;Visite de maintien en activité;12/5/24;Visite de maintien en activité;12/5/25;12/5/24;25,47;175,00;78,00;91;128;88;Apte
+;DIRECTION;;32900;60;Apte;Visite de maintien en activité;12/18/24;Visite de maintien en activité;12/18/25;12/18/24;25,47;178,00;80,70;98;140;80;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;41396;29;Apte;Visite de maintien en activité;1/10/25;Visite de maintien en activité;1/10/27;1/10/25;25,47;176,00;78,90;76;150;85;Apte
+;DIRECTION;;90930;54;Apte;Visite de maintien en activité;2/7/25;Visite de maintien en activité;2/7/26;2/7/25;25,49;181,00;83,50;85;127;69;Apte
+;Cie EMS Sud;UT Lingolsheim;90622;46;Apte;Visite de maintien en activité;10/10/24;Visite de maintien en activité;10/10/25;10/10/24;25,49;184,00;86,30;100;127;81;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;41089;30;Apte;Visite de maintien en activité;5/10/23;Visite de maintien en activité;5/10/25;5/10/23;25,50;174,00;77,20;90;110;70;Apte
+;DIRECTION;;90794;41;Apte;Visite de maintien en activité;1/31/25;Visite de maintien en activité;1/31/26;1/31/25;25,50;170,00;73,70;81;125;80;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;91024;33;Apte;Visite de maintien en activité;5/15/24;Visite de maintien en activité;5/15/25;5/15/24;25,51;168,00;72,00;84;122;70;Apte
+;Cie Haguenau;UT Haguenau;90648;44;Apte;Visite de maintien en activité;12/10/24;Visite de maintien en activité;12/10/25;12/10/24;25,53;183,00;85,50;;128;82;Apte
+;Cie Sélestat;UT Sélestat;90856;37;Apte;Visite corrective;1/23/24;Visite de maintien en activité;1/23/26;1/23/24;25,53;175,00;78,20;90;119;74;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;42104;34;Apte;Visite de conduite;10/11/24;Visite de maintien en activité;10/10/26;10/11/24;25,56;178,00;81,00;88;120;81;Apte
+;Cie EMS Centre;;90023;48;Apte;Visite de maintien en activité;1/23/25;Visite de maintien en activité;1/23/26;1/23/25;25,58;171,00;74,80;90;;;Apte
+;Cie Saverne;;90650;42;Apte;Visite de maintien en activité;3/3/25;Visite de maintien en activité;3/3/26;3/3/25;25,60;182,00;84,80;85;129;86;Apte
+;Cie EMS Sud;UT Strasbourg Sud;36795;38;Apte;Visite corrective;6/12/24;Visite de maintien en activité;6/12/26;6/12/24;25,62;180,00;83,00;84;110;69;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;42109;24;Apte;Visite de maintien en activité;6/24/24;Visite de maintien en activité;6/24/26;6/24/24;25,63;177,00;80,30;80;150;80;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;40737;35;Apte;Visite de maintien en activité;10/14/24;Visite de maintien en activité;10/14/25;10/14/24;25,63;175,00;78,50;81;142;85;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90688;41;Apte;Visite de maintien en activité;12/17/24;Visite de maintien en activité;12/17/25;12/17/24;25,65;183,00;85,90;92;145;81;Apte
+;Cie CTA-CODIS;;90734;44;Apte avec restriction;Visite de reprise opérationnelle;1/29/25;Visite de maintien en activité;4/29/25;9/2/24;25,65;179,00;82,20;91;130;79;Inapte
+;Cie EMS Centre;UT Strasbourg Ouest;91001;32;Apte;Visite de maintien en activité;11/5/24;Visite de maintien en activité;11/5/25;11/5/24;25,66;178,00;81,30;89;132;69;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90525;51;Apte;Visite de maintien en activité;2/14/25;Visite de maintien en activité;2/14/26;2/14/25;25,66;182,00;85,00;94;141;70;Apte
+;Cie CTA-CODIS;;90164;47;Apte;Visite de maintien en activité;10/21/24;Visite de maintien en activité;10/21/25;10/21/24;25,68;180,00;83,20;93;139;87;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91041;34;Apte;Visite corrective;6/5/24;Visite de maintien en activité;6/5/26;6/5/24;25,68;162,00;67,40;80;139;79;Apte
+;Cie Saverne;UT Saverne;90666;52;Apte;Visite de maintien en activité;2/6/25;Visite de maintien en activité;2/6/26;2/6/25;25,70;175,00;78,70;91;144;89;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90742;44;Apte;Visite de maintien en activité;6/12/24;Visite de maintien en activité;6/12/25;6/12/24;25,74;187,00;90,00;86;124;69;Apte
+;Cie Saverne;UT Saverne;90844;42;Apte;Visite de maintien en activité;3/13/25;Visite de maintien en activité;3/13/26;3/13/25;25,75;179,00;82,50;90;125;84;Apte
+;Cie EMS Sud;UT Strasbourg Sud;38786;25;Apte;Visite corrective;6/15/23;Visite de maintien en activité;6/15/25;6/15/23;25,76;189,00;92,00;86;135;84;Apte
+;DIRECTION;;38660;26;Apte;Visite de recrutement;12/5/24;Visite de titularisation;12/5/25;12/5/24;25,76;174,00;78,00;83;128;88;Apte
+;Cie Sélestat;UT Obernai;90494;56;Apte;Visite de maintien en activité;3/10/25;Visite de maintien en activité;3/10/26;3/10/25;25,77;191,00;94,00;95;141;75;Apte
+;Cie Haguenau;UT Brumath;90122;46;Apte;Visite de maintien en activité;9/9/24;Visite de maintien en activité;9/9/25;9/9/24;25,77;180,00;83,50;81;143;88;Apte
+;Cie EMS Nord;UT Strasbourg Nord;39073;36;Apte;Visite de maintien en activité;12/23/24;Visite de maintien en activité;12/23/25;12/23/24;25,79;181,00;84,50;87;123;78;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91081;29;Apte;Visite de recrutement;3/6/25;Visite de titularisation;3/6/26;3/6/25;25,80;175,00;79,00;84;129;68;Apte
+;Cie EMS Nord;UT Strasbourg Nord;91040;27;Apte;Visite de maintien en activité;6/4/24;Visite de maintien en activité;6/4/25;6/4/24;25,80;175,00;79,00;80;133;64;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90623;41;Apte;Visite de maintien en activité;9/12/24;Visite de maintien en activité;9/12/25;9/12/24;25,80;180,00;83,60;88;138;103;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;42062;24;Apte;Visite de maintien en activité;8/30/24;Visite de maintien en activité;8/30/26;8/30/24;25,81;179,00;82,70;84;139;81;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90798;37;Apte;Visite de maintien en activité;1/9/25;Visite de maintien en activité;1/9/26;1/9/25;25,82;167,00;72,00;83;129;85;Apte
+;DIRECTION;;90476;53;Apte;Visite de reprise opérationnelle;11/18/24;Visite de maintien en activité;4/5/25;1/31/24;25,83;180,00;83,70;88;130;80;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90595;46;Apte;Visite de maintien en activité;12/16/24;Visite de maintien en activité;12/16/25;12/16/24;25,86;172,00;76,50;80;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90027;51;Apte;Visite de maintien en activité;3/4/25;Visite de maintien en activité;3/4/26;3/4/25;25,86;168,00;73,00;88;143;93;Apte
+;DIRECTION;;38057;38;Apte;Visite de maintien en activité;11/6/23;Visite de maintien en activité;11/6/25;11/6/23;25,90;189,00;92,50;92;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90566;51;Apte;Visite de maintien en activité;4/9/24;Visite de maintien en activité;4/9/25;4/9/24;25,93;180,00;84,00;94;139;72;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90630;46;Apte;Visite de maintien en activité;3/3/25;Visite de maintien en activité;3/3/26;3/3/25;25,93;180,00;84,00;92;126;80;Apte
+;Cie EMS Nord;UT Strasbourg Nord;39930;30;Apte;Visite de maintien en activité;2/4/25;Visite de maintien en activité;2/4/27;2/4/25;25,95;181,00;85,00;86;132;71;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90462;55;Apte;Visite de maintien en activité;5/30/24;Visite de maintien en activité;5/30/25;5/30/24;25,95;181,00;85,00;95;;;Apte
+;Cie Haguenau;;90471;55;Apte;Visite de maintien en activité;9/25/24;Visite de maintien en activité;9/25/25;9/25/24;25,95;170,00;75,00;90;140;80;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90860;38;Apte;Visite de maintien en activité;11/22/24;Visite de maintien en activité;11/22/25;11/22/24;25,96;186,00;89,80;85;140;80;Apte
+;DIRECTION;;91079;45;Apte;Visite de recrutement;1/16/25;Visite de titularisation;1/16/26;1/16/25;25,96;180,00;84,10;87;134;84;Apte
+;Cie CTA-CODIS;;90725;46;Apte avec restriction;Visite de contrôle;12/31/24;Visite de contrôle;4/30/25;2/15/24;25,96;174,00;78,60;96;100;80;Inapte
+;Cie Saverne;;90929;38;Apte;Visite de maintien en activité;4/30/24;Visite de maintien en activité;4/30/25;4/30/24;25,98;178,00;82,30;85;109;71;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;42676;22;Apte;Visite de maintien en activité;6/3/24;Visite de maintien en activité;6/3/26;6/3/24;26,03;172,00;77,00;80;128;71;Apte
+;Cie EMS Sud;UT Strasbourg Sud;35898;31;Apte;Visite de maintien en activité;4/15/24;Visite de maintien en activité;4/15/25;4/15/24;26,03;185,00;89,10;91;130;75;Apte
+;Cie CTA-CODIS;;90776;39;Apte;Visite de maintien en activité;5/17/24;Visite de maintien en activité;5/17/25;5/17/24;26,04;190,00;94,00;86;129;90;Apte
+;DIRECTION;;42904;22;Apte;Visite de recrutement;11/20/24;Visite de titularisation;11/20/25;11/20/24;26,04;190,00;94,00;85;138;67;Apte
+;DIRECTION;;90699;42;Apte;Visite de maintien en activité;1/13/25;Visite de maintien en activité;1/13/26;1/13/25;26,05;180,00;84,40;92;139;79;Apte
+;DIRECTION;;90743;50;Apte;Visite de maintien en activité;1/13/25;Visite de maintien en activité;1/13/26;1/13/25;26,09;166,00;71,90;77;126;86;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90745;48;Apte;Visite de maintien en activité;12/19/24;Visite de maintien en activité;12/19/25;12/19/24;26,09;174,00;79,00;86;140;89;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90478;56;Apte;Visite de maintien en activité;2/24/25;Visite de contrôle;5/24/25;2/24/25;26,09;171,00;76,30;87;167;97;Apte
+;Cie EMS Sud;;90639;42;Apte;Visite de maintien en activité;3/6/25;Visite de maintien en activité;3/5/26;3/6/25;26,10;178,00;82,70;89;128;74;Apte
+;Cie Saverne;UT Saverne;39709;36;Apte;Visite de contrôle;2/24/25;Visite de maintien en activité;12/15/25;11/23/22;26,11;180,00;84,60;;110;80;Apte
+;Cie Haguenau;UT Brumath;90087;49;Apte;Visite de contrôle;3/10/25;Visite de maintien en activité;12/12/25;12/12/24;26,12;175,00;80,00;86;160;100;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91017;32;Apte;Visite de maintien en activité;6/13/24;Visite de maintien en activité;6/13/26;8/30/24;26,13;166,00;72,00;;;;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90170;46;Apte;SAL Recrutement et quinquennale;11/7/24;Visite de maintien en activité;11/7/25;11/7/24;26,13;178,00;82,80;83;122;70;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90181;46;Apte;Visite de reprise opérationnelle;11/4/24;Visite de maintien en activité;5/29/25;5/29/24;26,16;178,00;82,90;90;120;82;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90708;46;Apte;Visite corrective;2/27/25;Visite de contrôle;9/30/25;2/27/25;26,16;178,00;82,90;95;148;90;Apte
+;Cie Haguenau;;90838;40;Apte;Visite de maintien en activité;1/20/25;Visite de maintien en activité;1/20/26;1/20/25;26,18;189,00;93,50;95;140;80;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90544;42;Apte;Visite de maintien en activité;5/29/24;Visite de maintien en activité;5/29/25;5/29/24;26,18;176,00;81,10;87;145;78;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90134;43;Apte;Visite de maintien en activité;12/6/24;Visite de maintien en activité;12/6/25;12/6/24;26,20;184,00;88,70;91;140;89;Apte
+;Cie Haguenau;UT Haguenau;40507;33;Apte;Visite de contrôle;8/1/24;Visite de maintien en activité;4/15/26;4/15/24;26,21;185,00;89,70;92;125;78;Apte
+;Cie Haguenau;UT Brumath;90749;42;Apte;Visite de maintien en activité;10/7/24;Visite de maintien en activité;10/7/25;10/7/24;26,22;195,00;99,70;96;125;70;Apte
+;Cie EMS Nord;UT Strasbourg Nord;91036;35;Apte;Visite de maintien en activité;5/10/23;Visite de maintien en activité;5/10/25;5/10/23;26,23;173,00;78,50;88;130;80;Apte
+;Cie EMS Sud;UT Strasbourg Sud;39948;27;Apte;Visite de maintien en activité;8/29/24;Visite de maintien en activité;8/29/25;8/29/24;26,23;190,00;94,70;90;109;73;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90657;48;Apte;Visite de maintien en activité;7/5/24;Visite de maintien en activité;7/5/25;7/5/24;26,23;180,00;85,00;94;129;78;Apte
+;Cie Haguenau;UT Haguenau;41431;40;Apte;Visite de reprise opérationnelle;11/12/24;Visite de maintien en activité;5/6/25;11/12/24;26,23;180,00;85,00;86;126;70;Apte
+;DIRECTION;;90911;38;Apte;Visite corrective;4/15/24;Visite de maintien en activité;4/15/25;4/15/24;26,25;176,00;81,30;84;139;91;Apte
+;DIRECTION;;91078;34;Apte;Visite de recrutement;12/11/24;Visite de maintien en activité;12/10/25;12/11/24;26,25;179,00;84,10;85;144;88;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90969;33;Apte;Visite de maintien en activité;5/10/23;Visite de maintien en activité;5/10/25;5/10/23;26,26;169,00;75,00;89;110;70;Apte
+;Cie EMS Nord;UT Strasbourg Nord;38654;26;Apte;Visite de maintien en activité;6/20/24;Visite de maintien en activité;6/20/26;6/20/24;26,26;182,00;87,00;86;145;70;Apte
+;DIRECTION;;90665;47;Apte;Visite de maintien en activité;7/19/17;Visite de maintien en activité;7/19/18;7/19/17;26,26;182,00;87,00;94;150;100;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90712;42;Apte;Visite corrective;5/21/24;Visite de maintien en activité;5/21/25;12/5/22;26,28;183,00;88,00;93;140;80;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90547;47;Apte;Visite de maintien en activité;12/23/24;Visite de maintien en activité;12/24/25;12/23/24;26,29;184,00;89,00;93;131;81;Apte
+;Cie EMS Sud;UT Strasbourg Sud;38307;36;Apte;Visite corrective;6/12/24;Visite de maintien en activité;6/12/26;6/12/24;26,29;178,00;83,30;88;139;90;Apte
+;Cie CTA-CODIS;;90850;38;Apte;Visite de maintien en activité;4/19/23;Visite de maintien en activité;4/19/25;4/19/23;26,30;180,00;85,20;91;120;70;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90138;44;Apte;SAL Recrutement et quinquennale;11/25/24;Visite de maintien en activité;11/25/25;11/25/24;26,30;177,00;82,40;88;123;81;Apte
+;Cie Haguenau;UT Haguenau;90142;47;Apte;Visite de maintien en activité;9/2/24;Visite de maintien en activité;9/2/25;9/2/24;26,31;183,00;88,10;94;140;90;Apte
+;Cie Haguenau;UT Haguenau;90779;45;Apte;Visite de maintien en activité;9/9/24;Visite de maintien en activité;9/9/25;9/9/24;26,31;183,00;88,10;;142;81;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90535;52;Apte;Visite de maintien en activité;10/29/24;Visite de maintien en activité;10/29/25;10/29/24;26,37;191,00;96,20;93;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;40557;38;Apte;Visite de maintien en activité;9/25/24;Visite de maintien en activité;9/25/26;9/25/24;26,41;185,00;90,40;80;127;83;Apte
+;DIRECTION;;31975;47;Apte;Visite de maintien en activité;10/17/24;Visite de maintien en activité;10/17/25;10/17/24;26,43;183,00;88,50;95;129;90;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90849;40;Apte;Visite corrective;1/27/25;Visite de maintien en activité;1/27/26;1/27/25;26,44;185,00;90,50;86;129;85;Apte
+;Cie Molsheim;UT Molsheim;90006;63;Apte;Visite corrective;2/3/25;Visite de maintien en activité;9/17/25;9/17/24;26,45;178,00;83,80;102;129;91;Apte
+;Cie Molsheim;UT Molsheim;30500;36;Apte;Visite de maintien en activité;2/5/25;Visite de maintien en activité;2/5/27;2/5/25;26,45;175,00;81,00;84;116;58;Apte
+;Cie CTA-CODIS;;90641;40;Apte;Visite de maintien en activité;11/27/24;Visite de maintien en activité;11/27/25;11/27/24;26,48;180,00;85,80;82;120;80;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90793;37;Apte;Visite de maintien en activité;10/3/24;Visite de maintien en activité;10/3/25;10/3/24;26,48;180,00;85,80;80;120;80;Apte
+;Cie Molsheim;UT Molsheim;90986;43;Apte;Visite de maintien en activité;11/19/24;Visite de maintien en activité;11/19/25;11/19/24;26,49;177,00;83,00;86;130;80;Apte
+;Cie Saverne;UT Saverne;90556;55;Apte;Visite de maintien en activité;5/21/24;Visite de maintien en activité;5/21/25;5/21/24;26,50;179,00;84,90;94;140;80;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90681;43;Apte;Visite de maintien en activité;3/7/25;Visite de maintien en activité;3/7/26;3/7/25;26,53;185,00;90,80;100;123;81;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90488;53;Apte;Visite de maintien en activité;3/13/24;Visite de maintien en activité;3/13/25;3/13/24;26,54;171,00;77,60;85;122;81;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90113;48;Apte;Visite de maintien en activité;5/13/24;Visite de maintien en activité;5/13/25;5/13/24;26,57;168,00;75,00;94;117;90;Apte
+;Cie CTA-CODIS;;90671;50;Apte;Visite de maintien en activité;10/2/24;Visite de maintien en activité;10/2/25;10/2/24;26,58;184,00;90,00;99;122;80;Apte
+;Cie EMS Nord;UT Strasbourg Nord;43351;21;Apte;Visite de recrutement;6/5/24;Visite de titularisation;6/5/25;6/5/24;26,59;177,00;83,30;85;121;56;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90194;47;Apte;Visite de maintien en activité;11/6/24;Visite de maintien en activité;11/6/25;11/6/24;26,60;188,00;94,00;92;121;89;Apte
+;DIRECTION;;90480;55;Apte avec restriction;Visite de maintien en activité;11/26/24;Visite de maintien en activité;11/26/25;11/26/24;26,60;172,00;78,70;88;134;82;Inapte
+;Cie EMS Centre;UT Strasbourg Finkwi;90955;40;Apte;Visite de maintien en activité;5/29/24;Visite de maintien en activité;5/29/25;5/29/24;26,64;168,00;75,20;90;120;88;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90475;54;Apte;Visite de maintien en activité;1/6/25;Visite de maintien en activité;1/6/26;1/6/25;26,67;183,00;89,30;99;140;70;Apte
+;DIRECTION;;90995;34;Apte;Visite de maintien en activité;1/29/25;Visite de maintien en activité;1/29/27;1/29/25;26,67;178,00;84,50;86;140;79;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90724;41;Apte;Visite de maintien en activité;5/15/24;Visite de maintien en activité;5/15/25;5/15/24;26,70;183,00;89,40;90;145;95;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90821;41;Apte;Visite de maintien en activité;5/30/24;Visite de maintien en activité;5/30/25;5/30/24;26,71;168,00;75,40;83;120;80;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91083;34;Apte;Visite de recrutement;3/6/25;Visite de titularisation;3/6/26;3/6/25;26,73;173,00;80,00;85;137;61;Apte
+;Cie CTA-CODIS;;90876;49;Apte;Visite de maintien en activité;6/20/24;Visite de maintien en activité;6/20/25;6/20/24;26,75;174,00;81,00;104;115;77;Apte
+;Cie Molsheim;UT Molsheim;90124;42;Apte;Visite de maintien en activité;6/11/24;Visite de maintien en activité;6/11/25;6/11/24;26,75;174,00;81,00;104;143;104;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90519;51;Apte;Visite de maintien en activité;3/10/25;Visite de maintien en activité;3/10/26;3/10/25;26,78;179,00;85,80;92;120;70;Apte
+;DIRECTION;;90074;45;Apte;Visite de maintien en activité;1/15/25;Visite de maintien en activité;1/15/26;1/15/25;26,82;174,00;81,20;98;121;85;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91042;25;Apte;Visite de maintien en activité;6/3/24;Visite de maintien en activité;6/3/26;6/3/24;26,84;179,00;86,00;84;132;71;Apte
+;Cie CTA-CODIS;;39218;34;Apte;Visite corrective;12/3/24;Visite de maintien en activité;12/3/26;12/3/24;26,85;185,00;91,90;;117;71;Apte
+;DIRECTION;;90931;38;Apte;Visite de maintien en activité;5/6/24;Visite de maintien en activité;5/6/25;5/6/24;26,85;185,00;91,90;95;126;78;Apte
+;Cie CTA-CODIS;;39631;34;Apte;Visite de maintien en activité;9/26/24;Visite de maintien en activité;9/26/26;9/26/24;26,85;180,00;87,00;88;135;77;Apte
+;DIRECTION;;90175;42;Apte;Visite de maintien en activité;2/3/25;Visite de maintien en activité;2/3/26;2/3/25;26,85;180,00;87,00;91;131;65;Apte
+;Cie EMS Sud;UT Strasbourg Sud;42005;33;Apte;Visite de reprise opérationnelle;1/8/24;Visite de maintien en activité;9/28/25;9/28/23;26,86;181,00;88,00;94;147;80;Apte
+;Cie Saverne;UT Saverne;90862;47;Apte;Visite de maintien en activité;9/18/24;Visite de maintien en activité;9/18/25;9/18/24;26,87;172,00;79,50;87;122;83;Apte
+;DIRECTION;;90896;39;Apte;Visite de maintien en activité;5/18/15;Visite de maintien en activité;5/18/16;5/18/15;26,88;186,00;93,00;91;140;80;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90672;47;Apte;Visite de maintien en activité;11/12/24;Visite de maintien en activité;11/12/25;11/12/24;26,90;179,00;86,20;96;122;76;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90853;42;Apte;Visite de maintien en activité;4/12/24;Visite de maintien en activité;4/12/25;4/12/24;26,93;179,00;86,30;99;130;80;Apte
+;DIRECTION;;90503;53;Apte;Visite de maintien en activité;1/23/25;Visite de maintien en activité;1/23/26;1/23/25;26,94;180,00;87,30;106;140;80;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90758;41;Apte;Visite de maintien en activité;1/31/25;Visite de maintien en activité;1/31/26;1/31/25;26,95;174,00;81,60;85;127;72;Apte
+;DIRECTION;;91055;53;Apte;Visite de maintien en activité;3/7/25;Visite de maintien en activité;3/7/26;3/7/25;26,96;164,00;72,50;88;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;44472;35;Apte;Visite de contrôle;11/25/24;Visite de maintien en activité;10/3/26;10/3/24;26,96;182,00;89,30;83;120;80;Apte
+;Cie CTA-CODIS;;90185;51;Apte;Visite de maintien en activité;1/28/25;Visite de maintien en activité;1/28/26;1/28/25;27,00;186,00;93,40;99;;;Apte
+;DIRECTION;;90823;47;Apte;Visite de maintien en activité;5/12/22;Visite de maintien en activité;5/12/23;5/12/22;27,00;175,00;82,70;90;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90119;46;Apte;Visite de maintien en activité;4/11/24;Visite de maintien en activité;4/11/25;4/11/24;27,02;178,00;85,60;96;;;Apte
+;Cie Haguenau;;90585;47;Apte;Visite de maintien en activité;11/21/24;Visite de maintien en activité;11/21/25;11/21/24;27,02;174,00;81,80;;140;97;Apte
+;DIRECTION;;90613;47;Apte;Visite de maintien en activité;7/3/24;Visite de maintien en activité;7/3/25;7/3/24;27,04;166,00;74,50;;120;80;Apte
+;DIRECTION;;91037;57;Apte;Visite de maintien en activité;1/26/24;Visite de maintien en activité;1/26/25;1/26/24;27,04;175,00;82,80;98;122;88;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91030;30;Apte;Visite de maintien en activité;4/20/23;Visite de maintien en activité;4/20/25;4/20/23;27,04;172,00;80,00;85;120;70;Apte
+;DIRECTION;;90014;48;Apte;Visite de maintien en activité;5/7/24;Visite de maintien en activité;5/7/25;5/7/24;27,05;192,00;99,70;93;117;78;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;91021;35;Apte;Visite de contrôle;1/6/25;Visite de maintien en activité;9/17/25;9/17/24;27,06;173,00;81,00;87;118;76;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90591;44;Apte;Visite de maintien en activité;1/30/25;Visite de maintien en activité;1/30/26;1/30/25;27,06;173,00;81,00;85;127;80;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;44693;32;Apte;Visite de recrutement;8/26/24;Visite de titularisation;8/26/25;8/26/24;27,10;163,00;72,00;80;100;60;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90960;38;Apte;Visite de maintien en activité;11/7/24;Visite de maintien en activité;11/7/25;11/7/24;27,10;175,00;83,00;83;144;80;Apte
+;DIRECTION;;91064;40;Apte;Visite de recrutement;5/30/24;Visite de titularisation;5/30/25;5/30/24;27,11;185,00;92,80;94;115;80;Apte
+;Cie EMS Sud;UT Strasbourg Sud;39372;35;Apte;Visite de recrutement;6/10/24;Visite de titularisation;6/10/25;6/10/24;27,14;178,00;86,00;96;120;80;Apte
+;DIRECTION;;90933;40;Apte;Visite de maintien en activité;9/23/24;Visite de maintien en activité;9/23/25;9/23/24;27,15;179,00;87,00;89;120;70;Apte
+;Cie EMS Sud;UT Strasbourg Sud;41930;25;Apte;Visite de recrutement;6/10/24;Visite de titularisation;6/10/25;6/10/24;27,16;170,00;78,50;80;140;60;Apte
+;DIRECTION;;90813;43;Apte;Visite de maintien en activité;12/9/24;Visite de maintien en activité;12/9/25;12/9/24;27,17;182,00;90,00;92;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91005;31;Apte;Visite de maintien en activité;11/25/24;Visite de maintien en activité;11/25/26;11/25/24;27,18;172,00;80,40;80;137;79;Apte
+;DIRECTION;;90835;38;Apte;Visite de maintien en activité;3/1/24;Visite de maintien en activité;3/1/25;3/1/24;27,19;171,00;79,50;91;131;89;Apte
+;Cie EMS Nord;UT Strasbourg Nord;38701;26;Apte;Visite corrective;11/8/24;Visite de maintien en activité;11/8/26;11/8/24;27,20;184,00;92,10;89;120;80;Apte
+;DIRECTION;;90788;47;Apte;Visite de maintien en activité;12/11/24;Visite de maintien en activité;12/10/25;12/11/24;27,25;168,00;76,90;92;128;93;Apte
+;Cie Molsheim;UT Molsheim;90571;47;Apte;Visite de conduite;3/7/25;Visite de maintien en activité;3/7/26;3/7/25;27,27;175,00;83,50;94;133;78;Apte
+;Cie Saverne;UT Saverne;90739;54;Apte;Visite de maintien en activité;2/18/25;Visite de maintien en activité;2/18/26;2/18/25;27,28;176,00;84,50;95;156;87;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90504;53;Apte;Visite de maintien en activité;5/6/24;Visite de maintien en activité;5/6/25;5/6/24;27,30;178,00;86,50;94;136;82;Apte
+;DIRECTION;;38923;36;Apte;Visite de maintien en activité;1/16/23;Visite de maintien en activité;1/16/24;1/16/23;27,32;189,00;97,60;96;130;80;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90796;38;Apte;Visite de maintien en activité;2/4/25;Visite de maintien en activité;2/4/26;2/4/25;27,33;173,00;81,80;80;132;69;Apte
+;Cie Molsheim;UT Molsheim;90127;47;Apte;Visite de maintien en activité;9/16/24;Visite de maintien en activité;9/16/25;9/16/24;27,35;183,00;91,60;96;130;90;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90555;47;Apte;Visite de contrôle;12/5/24;Visite de maintien en activité;9/24/25;9/24/24;27,35;177,00;85,70;92;130;80;Apte
+;Cie Sélestat;UT Sélestat;90645;40;Apte;Visite de maintien en activité;2/4/25;Visite de maintien en activité;2/4/26;2/4/25;27,38;184,00;92,70;92;137;90;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90562;50;Apte;Visite de maintien en activité;5/31/24;Visite de maintien en activité;5/31/25;5/31/24;27,40;173,00;82,00;95;174;110;Apte
+;DIRECTION;;90659;46;Apte;Visite de maintien en activité;9/23/24;Visite de maintien en activité;9/23/25;9/23/24;27,40;173,00;82,00;83;140;75;Apte
+;DIRECTION;;90485;56;Apte;Visite de maintien en activité;11/6/24;Visite de maintien en activité;11/6/25;11/6/24;27,41;180,00;88,80;96;132;100;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90610;41;Apte;Visite de maintien en activité;10/10/24;Visite de maintien en activité;10/10/25;10/10/24;27,43;175,00;84,00;95;125;94;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90836;50;Apte;Visite de reprise opérationnelle;5/27/24;Visite de maintien en activité;4/30/25;4/30/24;27,43;175,00;84,00;91;142;70;Apte
+;Cie CTA-CODIS;;90904;37;Apte;Visite de maintien en activité;6/7/24;Visite de maintien en activité;6/7/26;6/7/24;27,44;176,00;85,00;87;119;81;Apte
+;DIRECTION;;90495;55;Apte;Visite de maintien en activité;3/10/25;Visite de maintien en activité;3/10/26;3/10/25;27,44;183,00;91,90;86;120;60;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90150;43;Apte;Visite de maintien en activité;3/4/25;Visite de maintien en activité;3/4/26;3/4/25;27,46;186,00;95,00;95;133;80;Apte
+;Cie Saverne;UT Saverne;90186;48;Apte;Visite de reprise opérationnelle;3/3/25;Visite de maintien en activité;7/3/25;7/3/24;27,46;179,00;88,00;;;;Apte
+;Cie CTA-CODIS;;90574;44;Apte;Visite de maintien en activité;11/6/24;Visite de maintien en activité;11/6/25;11/6/24;27,47;183,00;92,00;97;140;91;Apte
+;Cie CTA-CODIS;;90865;46;Apte;Visite de maintien en activité;1/30/25;Visite de maintien en activité;1/30/26;1/30/25;27,47;183,00;92,00;98;131;67;Apte
+;DIRECTION;;90916;55;Apte;Visite de maintien en activité;9/17/24;Visite de maintien en activité;9/17/25;9/17/24;27,49;186,00;95,10;104;119;85;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90513;51;Apte;Visite de maintien en activité;10/3/24;Visite de maintien en activité;10/3/25;10/3/24;27,51;174,00;83,30;92;120;70;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90875;45;Apte;Visite de maintien en activité;1/29/25;Visite de maintien en activité;1/29/26;1/29/25;27,51;172,00;81,40;91;139;99;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;37067;38;Apte;Visite de maintien en activité;12/5/24;Visite de contrôle;3/1/25;12/5/24;27,52;186,00;95,20;93;;;Apte
+;Cie EMS Sud;UT Strasbourg Sud;35875;29;Apte;Visite de maintien en activité;10/10/23;Visite de maintien en activité;10/10/25;10/10/23;27,55;165,00;75,00;;;;Apte
+;DIRECTION;;90958;47;Apte;Visite de maintien en activité;10/23/24;Visite de maintien en activité;10/23/25;10/23/24;27,61;167,00;77,00;97;120;80;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90797;39;Apte;Visite de maintien en activité;10/21/24;Visite de maintien en activité;10/21/25;10/21/24;27,62;181,00;90,50;101;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90887;43;Apte;Visite de maintien en activité;11/25/24;Visite de maintien en activité;11/25/25;11/25/24;27,62;187,00;96,60;96;127;75;Apte
+;Cie CTA-CODIS;;90784;43;Apte;Visite corrective;4/26/24;Visite de maintien en activité;4/26/25;4/26/24;27,65;174,00;83,70;98;151;90;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90866;39;Apte;Visite de maintien en activité;2/1/24;Visite de maintien en activité;2/2/25;2/1/24;27,70;176,00;85,80;97;143;85;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90554;46;Apte;Visite de contrôle;9/11/24;Visite de maintien en activité;3/1/25;3/16/24;27,74;183,00;92,90;92;136;72;Apte
+;DIRECTION;;91050;31;Apte;Visite de maintien en activité;4/5/23;Visite de maintien en activité;4/5/25;4/5/23;27,75;179,00;88,90;91;138;89;Apte
+;Cie Molsheim;UT Molsheim;90121;48;Apte;Visite de maintien en activité;3/18/25;Visite de maintien en activité;3/18/26;3/18/25;27,77;177,00;87,00;100;137;81;Apte
+;Cie Sélestat;UT Sélestat;90155;49;Apte;Visite de maintien en activité;1/7/25;Visite de maintien en activité;1/7/26;1/7/25;27,77;177,00;87,00;101;140;85;Apte
+;Cie Molsheim;;90728;51;Apte;Visite de contrôle;12/19/24;Visite de maintien en activité;4/15/25;4/22/24;27,78;180,00;90,00;93;162;110;Apte
+;Cie Saverne;UT Saverne;90579;51;Apte;Visite de maintien en activité;6/26/24;Visite de maintien en activité;6/26/25;6/26/24;27,79;172,00;82,20;91;133;81;Apte
+;Cie CTA-CODIS;;91013;36;Apte;Visite de maintien en activité;5/24/23;Visite de maintien en activité;5/24/25;5/24/23;27,79;167,00;77,50;91;125;86;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90773;39;Apte;Visite administrative;4/2/24;Visite de maintien en activité;5/17/25;5/17/23;27,86;186,00;96,40;104;120;80;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90577;43;Apte;Visite de maintien en activité;4/4/24;Visite de maintien en activité;4/4/25;4/4/24;27,91;171,00;81,60;87;120;80;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;30593;50;Apte;Visite de maintien en activité;12/17/24;Visite de maintien en activité;12/17/25;12/17/24;27,99;177,00;87,70;90;;;Apte
+;Cie Haguenau;UT Haguenau;90700;49;Apte;Visite de maintien en activité;1/31/25;Visite de maintien en activité;1/31/26;1/31/25;27,99;180,00;90,70;;149;90;Apte
+;DIRECTION;;90851;39;Apte;Visite de contrôle;6/17/24;Visite de maintien en activité;3/11/25;3/11/24;27,99;180,00;90,70;97;145;104;Apte
+;DIRECTION;;90552;50;Apte;Visite de maintien en activité;12/9/24;Visite de maintien en activité;12/9/25;12/9/24;28,00;178,00;88,70;93;143;95;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90187;44;Apte;SAL Recrutement et quinquennale;11/21/24;Visite de maintien en activité;11/21/25;11/21/24;28,02;181,00;91,80;98;145;96;Apte
+;DIRECTION;;90482;55;Apte;Visite de maintien en activité;5/7/24;Visite de maintien en activité;5/7/25;5/7/24;28,05;185,00;96,00;107;149;90;Apte
+;Cie CTA-CODIS;;37378;37;Apte;Visite de maintien en activité;11/8/24;Visite de maintien en activité;11/8/26;11/8/24;28,06;184,00;95,00;;135;73;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90112;43;Apte;Visite de maintien en activité;10/2/24;Visite de maintien en activité;10/2/25;10/2/24;28,06;184,00;95,00;92;125;72;Apte
+;Cie EMS Nord;UT Strasbourg Nord;91016;34;Apte;Visite de reprise opérationnelle;1/10/25;Visite de maintien en activité;1/17/26;1/17/24;28,08;174,00;85,00;89;124;71;Apte
+;Cie Saverne;UT Saverne;90820;42;Apte;Visite de maintien en activité;10/25/24;Visite de maintien en activité;10/25/25;10/25/24;28,09;180,00;91,00;92;124;58;Apte
+;Cie CTA-CODIS;;90705;41;Apte;Visite de maintien en activité;3/12/25;Visite de contrôle;7/1/25;3/12/25;28,12;172,00;83,20;90;147;100;Apte
+;DIRECTION;;90451;56;Apte;Visite de maintien en activité;1/29/25;Visite de maintien en activité;1/29/26;1/29/25;28,17;187,00;98,50;107;144;89;Apte
+;Cie Molsheim;UT Molsheim;90706;43;Apte;Visite de contrôle;11/25/24;Visite de maintien en activité;4/2/25;4/2/24;28,18;177,00;88,30;89;145;100;Apte
+;DIRECTION;;37271;37;Apte;Visite de maintien en activité;9/26/24;Visite de maintien en activité;9/26/26;9/26/24;28,22;178,00;89,40;98;146;86;Apte
+;DIRECTION;;90561;52;Apte;Visite de maintien en activité;9/20/24;Visite de maintien en activité;9/20/25;9/20/24;28,24;175,00;86,50;94;139;90;Apte
+;Cie Molsheim;;90959;58;Apte;Visite de maintien en activité;3/21/24;Visite de maintien en activité;3/21/25;3/21/24;28,30;180,00;91,70;102;139;59;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90493;53;Apte;Visite de maintien en activité;9/25/24;Visite de maintien en activité;9/25/25;9/25/24;28,31;183,00;94,80;87;127;92;Apte
+;Cie Saverne;UT Saverne;90491;55;Apte;Visite de maintien en activité;6/13/24;Visite de maintien en activité;6/13/25;6/13/24;28,31;187,00;99,00;97;132;85;Apte
+;DIRECTION;;90152;51;Apte;Visite de maintien en activité;11/8/24;Visite de maintien en activité;11/8/25;11/8/24;28,33;186,00;98,00;93;140;90;Apte
+;DIRECTION;;90158;46;Apte;Visite de maintien en activité;9/25/24;Visite de maintien en activité;9/25/25;9/25/24;28,36;184,00;96,00;100;115;80;Apte
+;DIRECTION;;90614;51;Apte;Visite de maintien en activité;10/7/24;Visite de maintien en activité;10/7/25;10/7/24;28,36;181,00;92,90;98;150;90;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90435;59;Apte;Visite de conduite;1/15/25;Visite de maintien en activité;1/15/26;1/15/25;28,39;181,00;93,00;98;149;94;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90168;43;Apte;Visite de maintien en activité;4/30/24;Visite de maintien en activité;4/30/25;4/30/24;28,39;181,00;93,00;102;150;74;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90710;48;Apte;Visite de maintien en activité;9/24/24;Visite de maintien en activité;9/24/25;9/24/24;28,39;172,00;84,00;93;126;78;Apte
+;DIRECTION;;90467;57;Apte;Visite administrative;1/30/25;Visite de maintien en activité;11/21/25;11/21/24;28,41;174,00;86,00;87;129;74;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90148;44;Apte;Visite de maintien en activité;12/23/24;Visite de maintien en activité;9/30/25;12/23/24;28,41;177,00;89,00;90;121;78;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90133;51;Apte;Visite de maintien en activité;11/22/24;Visite de maintien en activité;11/22/25;11/22/24;28,45;187,00;99,50;102;120;75;Apte
+;Cie Saverne;UT Saverne;90902;35;Apte;Visite de maintien en activité;1/31/25;Visite de maintien en activité;1/31/27;1/31/25;28,47;174,00;86,20;88;125;59;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90589;47;Apte;Visite de maintien en activité;9/16/24;Visite de maintien en activité;9/16/25;9/16/24;28,51;176,00;88,30;97;140;90;Apte
+;Cie CTA-CODIS;;90815;37;Apte;Visite de maintien en activité;7/9/24;Visite de maintien en activité;7/9/26;7/9/24;28,52;188,00;100,80;96;133;90;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90950;43;Apte;Visite de maintien en activité;2/20/25;Visite de maintien en activité;2/20/26;2/20/25;28,53;173,00;85,40;90;120;70;Apte
+;Cie Haguenau;UT Haguenau;90761;43;Apte;Visite de maintien en activité;5/14/24;Visite de maintien en activité;5/14/25;5/14/24;28,57;177,00;89,50;98;135;87;Apte
+;DIRECTION;;31611;44;Apte;Visite de maintien en activité;9/26/24;Visite de maintien en activité;9/26/25;9/26/24;28,59;186,00;98,90;101;137;87;Apte
+;Cie Haguenau;UT Brumath;90582;44;Apte;Visite de contrôle;3/12/25;Visite de contrôle;6/12/25;11/21/24;28,59;178,00;90,60;102;161;117;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90858;47;Apte;Visite de maintien en activité;11/8/24;Visite de maintien en activité;11/8/25;11/8/24;28,60;172,00;84,60;89;120;80;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90071;50;Apte;Visite de maintien en activité;3/20/25;Visite de maintien en activité;3/20/26;3/20/25;28,61;183,00;95,80;104;139;88;Apte
+;Cie Sélestat;;90108;53;Apte;Visite de maintien en activité;6/24/24;Visite de maintien en activité;6/24/25;6/24/24;28,70;173,00;85,90;99;;;Apte
+;Cie Haguenau;UT Haguenau;90738;43;Apte;Visite administrative;1/31/25;Visite de maintien en activité;11/6/25;11/6/24;28,70;180,00;93,00;90;120;60;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90458;60;Apte;Visite de maintien en activité;3/12/25;Visite de maintien en activité;3/12/26;3/12/25;28,73;183,00;96,20;101;;;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90076;52;Apte;Visite de maintien en activité;2/10/25;Visite de maintien en activité;2/10/26;2/10/25;28,73;177,00;90,00;95;144;88;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90925;50;Apte;Visite de maintien en activité;4/29/24;Visite de maintien en activité;4/29/25;4/29/24;28,73;177,00;90,00;99;129;83;Apte
+;DIRECTION;;91071;44;Apte;Visite administrative;2/10/25;Visite de maintien en activité;9/26/25;9/26/24;28,73;177,00;90,00;94;142;80;Apte
+;Cie EMS Nord;UT Strasbourg Nord;36390;39;Apte;Visite de conduite;12/5/24;Visite de maintien en activité;12/5/25;12/5/24;28,73;176,00;89,00;92;;;Apte
+;Cie Sélestat;UT Sélestat;90861;37;Apte;Visite de maintien en activité;1/6/24;Visite de maintien en activité;1/6/26;1/6/24;28,73;176,00;89,00;84;139;92;Apte
+;Cie EMS Sud;UT Strasbourg Sud;38733;27;Apte;Visite de maintien en activité;3/10/23;Visite de maintien en activité;3/10/25;3/10/23;28,73;175,00;88,00;92;126;79;Apte
+;Cie Saverne;UT Saverne;90833;45;Apte;Visite de maintien en activité;1/27/25;Visite de maintien en activité;1/27/26;1/27/25;28,83;180,00;93,40;93;158;98;Apte
+;Cie Saverne;;90677;45;Apte;Visite de maintien en activité;6/26/24;Visite de maintien en activité;6/26/25;6/26/24;28,83;175,00;88,30;92;134;90;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90837;42;Apte;Visite de maintien en activité;11/14/24;Visite de maintien en activité;11/14/25;11/14/24;28,85;178,00;91,40;92;130;80;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;42336;31;Apte;Visite de conduite;10/11/24;Visite de conduite;10/10/26;10/11/24;28,87;179,00;92,50;93;129;58;Apte
+;Cie EMS Centre;;90675;44;Apte;Visite de maintien en activité;5/6/24;Visite de maintien en activité;5/6/25;5/6/24;28,90;171,00;84,50;88;133;78;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;91019;33;Apte;Visite de maintien en activité;4/11/24;Visite de maintien en activité;4/11/25;4/11/24;28,94;178,00;91,70;90;132;81;Apte
+;Cie CTA-CODIS;;91014;48;Apte;Visite de maintien en activité;9/23/24;Visite de maintien en activité;9/23/25;9/23/24;28,98;177,00;90,80;98;120;80;Apte
+;Cie Haguenau;UT Haguenau;90621;46;Apte;Visite de maintien en activité;2/6/25;Visite de maintien en activité;2/6/26;2/6/25;29,03;175,00;88,90;99;130;80;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;91053;47;Apte;Visite de maintien en activité;9/18/24;Visite de maintien en activité;9/18/25;9/18/24;29,04;178,00;92,00;96;174;1150;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90144;46;Apte;Visite de maintien en activité;1/10/25;Visite de maintien en activité;1/10/26;1/10/25;29,06;175,00;89,00;95;125;80;Apte
+;Cie CTA-CODIS;;39247;34;Apte;Visite de maintien en activité;10/1/24;Visite de maintien en activité;10/1/26;10/1/24;29,07;174,00;88,00;99;133;78;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;38754;27;Apte;Visite corrective;12/14/23;Visite de maintien en activité;2/6/25;12/14/23;29,07;172,00;86,00;;124;86;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90115;47;Apte;Visite de contrôle;8/26/24;Visite de maintien en activité;4/22/25;9/16/24;29,07;172,00;86,00;;;;Apte
+;Cie Saverne;UT Saverne;90885;45;Apte;Visite de maintien en activité;6/13/24;Visite de maintien en activité;6/13/25;6/13/24;29,12;179,00;93,30;94;125;81;Apte
+;Cie Haguenau;UT Haguenau;90678;41;Apte;Visite de reprise opérationnelle;5/13/24;Visite de maintien en activité;5/13/25;5/3/23;29,24;184,00;99,00;100;130;77;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90825;43;Apte;Visite de maintien en activité;1/20/25;Visite de maintien en activité;1/20/26;1/20/25;29,25;187,00;102,30;94;135;78;Apte
+;DIRECTION;;90183;54;Apte;Visite de maintien en activité;9/26/24;Visite de contrôle;12/26/24;9/26/24;29,29;175,00;89,70;102;125;81;Apte
+;Cie Sélestat;UT Sélestat;90817;44;Apte;Visite de maintien en activité;9/17/24;Visite de maintien en activité;9/17/25;9/17/24;29,31;176,00;90,80;102;123;73;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;41307;29;Apte;Visite de maintien en activité;2/7/25;Visite de maintien en activité;2/7/27;2/7/25;29,33;174,00;88,80;88;137;71;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90507;52;Apte;Visite de maintien en activité;12/9/24;Visite de maintien en activité;12/9/25;12/9/24;29,34;169,00;83,80;87;;;Apte
+;DIRECTION;;90686;46;Apte;Visite de maintien en activité;12/16/24;Visite de maintien en activité;12/16/25;12/16/24;29,36;175,00;89,90;93;160;80;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90135;42;Apte;Visite de maintien en activité;11/20/24;Visite de maintien en activité;11/20/25;11/20/24;29,36;163,00;78,00;90;110;80;Apte
+;Cie Saverne;UT Saverne;90814;49;Apte;Visite administrative;7/8/24;Visite de maintien en activité;6/5/25;6/5/24;29,37;188,00;103,80;106;133;101;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;35847;46;Apte;Visite de maintien en activité;5/17/24;Visite de maintien en activité;5/17/25;5/17/24;29,39;175,00;90,00;89;143;87;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90922;48;Apte;Visite de maintien en activité;9/13/24;Visite de maintien en activité;9/13/25;9/13/24;29,41;170,00;85,00;99;131;87;Apte
+;Cie Haguenau;UT Haguenau;90921;36;Apte;Visite de conduite;3/3/25;Visite de maintien en activité;3/3/26;3/3/25;29,43;188,00;104,00;97;140;70;Apte
+;Cie CTA-CODIS;;90664;40;Apte;Visite de maintien en activité;3/13/25;Visite de maintien en activité;3/13/26;3/13/25;29,43;182,00;97,50;102;134;98;Apte
+;Cie Haguenau;UT Haguenau;90843;52;Apte;Visite de maintien en activité;12/3/24;Visite de maintien en activité;12/3/25;12/3/24;29,44;172,00;87,10;95;;;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90673;41;Apte;Visite de maintien en activité;4/24/24;Visite de maintien en activité;4/24/25;4/24/24;29,45;187,00;103,00;105;140;85;Apte
+;Cie EMS Sud;UT Lingolsheim;90689;47;Apte;Visite de maintien en activité;12/30/24;Visite de maintien en activité;12/30/25;12/30/24;29,45;187,00;103,00;104;136;82;Apte
+;DIRECTION;;90605;55;Apte;Visite de maintien en activité;1/13/25;Visite de maintien en activité;1/13/26;1/13/25;29,47;182,00;97,60;99;131;88;Apte
+;DIRECTION;;90676;57;Apte;Visite de maintien en activité;1/6/25;Visite de maintien en activité;1/6/26;1/6/25;29,51;163,00;78,40;98;120;80;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90999;27;Apte;Visite de maintien en activité;1/28/25;Visite de maintien en activité;1/28/27;1/28/25;29,51;172,00;87,30;80;119;71;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90674;54;Apte;Visite corrective;12/2/24;Visite de maintien en activité;12/2/25;12/2/24;29,51;168,00;83,30;100;187;127;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90079;49;Apte;Visite de maintien en activité;11/26/24;Visite de maintien en activité;11/26/25;11/26/24;29,59;182,00;98,00;101;138;92;Apte
+;Cie Saverne;UT Saverne;90474;55;Apte;Visite de maintien en activité;12/17/24;Visite de maintien en activité;12/17/25;12/17/24;29,61;190,00;106,90;103;166;73;Apte
+;Cie EMS Sud;UT Strasbourg Sud;42138;35;Apte;Visite de reprise opérationnelle;2/13/25;Visite de maintien en activité;6/4/26;6/4/24;29,65;177,00;92,90;94;135;89;Apte
+;Cie Sélestat;UT Obernai;90130;50;Apte;Visite de maintien en activité;9/2/24;Visite de maintien en activité;9/2/25;9/2/24;29,68;177,00;93,00;97;142;82;Apte
+;Cie EMS Sud;UT Lingolsheim;90472;56;Apte;Visite de maintien en activité;1/21/25;Visite de maintien en activité;1/21/26;1/21/25;29,73;174,00;90,00;102;163;105;Apte
+;DIRECTION;;90816;38;Apte;Visite de maintien en activité;9/27/19;Visite de maintien en activité;9/27/20;9/27/19;29,73;174,00;90,00;95;125;80;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90711;47;Apte;Visite de maintien en activité;4/17/24;Visite de maintien en activité;4/17/25;4/17/24;29,75;202,00;121,40;107;115;74;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90190;43;Apte;Visite de maintien en activité;3/10/25;Visite de maintien en activité;3/10/26;3/10/25;29,75;171,00;87,00;92;120;70;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90747;49;Apte;Visite de maintien en activité;1/14/25;Visite de maintien en activité;1/14/26;1/14/25;29,76;188,00;105,20;100;139;95;Apte
+;Cie EMS Sud;UT Strasbourg Sud;39927;38;Apte;Visite de maintien en activité;4/10/24;Visite de maintien en activité;4/10/26;4/10/24;29,77;184,00;100,80;100;128;79;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90767;43;Apte;Visite de maintien en activité;2/18/25;Visite de maintien en activité;2/18/26;2/18/25;29,78;180,00;96,50;101;137;89;Apte
+;DIRECTION;;90567;42;Apte;Visite de maintien en activité;5/20/19;Visite de maintien en activité;5/20/20;5/20/19;29,84;192,00;110,00;100;130;80;Apte
+;DIRECTION;;91035;61;Apte;Visite de maintien en activité;12/6/24;Visite de maintien en activité;12/6/25;12/6/24;29,86;183,00;100,00;108;118;88;Apte
+;Cie EMS Sud;UT Strasbourg Sud;91011;36;Apte;Visite de maintien en activité;4/15/24;Visite de maintien en activité;4/15/25;4/15/24;29,92;174,00;90,60;94;130;90;Apte
+;Cie CTA-CODIS;;90143;45;Apte;Visite administrative;2/21/24;Visite de maintien en activité;9/18/24;11/27/23;29,96;179,00;96,00;;135;100;Apte
+;Cie Sélestat;;90154;47;Apte avec restriction;Visite de maintien en activité;12/16/24;Visite de contrôle;4/1/25;12/16/24;30,00;187,00;104,90;105;142;87;Inapte
+;Cie EMS Nord;UT Strasbourg Nord;90501;53;Apte;Visite de maintien en activité;3/7/25;Visite de maintien en activité;3/7/26;3/7/25;30,04;175,00;92,00;90;126;80;Apte
+;Cie CTA-CODIS;;90192;45;Apte;Visite de maintien en activité;9/11/24;Visite de maintien en activité;9/11/25;9/11/24;30,12;164,00;81,00;88;140;87;Apte
+;DIRECTION;;90477;57;Inapte définitif;Visite corrective;2/10/25;Visite de maintien en activité;2/3/26;2/3/25;30,12;165,00;82,00;105;160;90;Inapte définitif
+;Cie Haguenau;UT Brumath;90110;44;Apte;Visite de maintien en activité;11/19/24;Visite de maintien en activité;11/19/25;11/19/24;30,15;179,00;96,60;100;120;80;Apte
+;Cie Saverne;UT Saverne;90690;47;Apte;Visite de maintien en activité;1/10/25;Visite de maintien en activité;1/10/26;1/10/25;30,16;177,00;94,50;99;130;90;Apte
+;Cie Haguenau;UT Haguenau;90523;49;Apte;Visite de maintien en activité;2/3/25;Visite de maintien en activité;2/3/26;2/3/25;30,25;180,00;98,00;100;145;99;Apte
+;Cie Haguenau;UT Haguenau;90541;46;Apte;Visite corrective;2/27/25;Visite de contrôle;9/27/25;2/27/25;30,25;162,00;79,40;99;160;104;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90762;43;Apte;Visite de maintien en activité;4/8/24;Visite de maintien en activité;4/8/25;4/8/24;30,39;177,00;95,20;95;120;80;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90607;41;Apte;Visite de maintien en activité;5/13/24;Visite de maintien en activité;5/13/25;5/13/24;30,40;180,00;98,50;92;121;75;Apte
+;DIRECTION;;90067;51;Apte;Visite de maintien en activité;5/16/24;Visite de maintien en activité;5/16/25;5/16/24;30,43;187,00;106,40;107;150;1000;Apte
+;Cie CTA-CODIS;;90505;52;Apte;Visite de reprise opérationnelle;2/20/25;Visite de maintien en activité;8/19/25;8/19/24;30,48;167,00;85,00;94;137;64;Apte
+;Cie Haguenau;UT Haguenau;90697;46;Apte;Visite de maintien en activité;10/22/24;Visite de maintien en activité;10/22/25;10/22/24;30,65;174,00;92,80;93;148;83;Apte
+;Cie Sélestat;UT Obernai;90035;49;Apte;Visite de maintien en activité;3/21/24;Visite de maintien en activité;3/21/25;3/21/24;30,67;176,00;95,00;105;173;104;Apte
+;Cie Molsheim;UT Molsheim;90129;48;Apte;Visite de maintien en activité;4/9/24;Visite de maintien en activité;4/9/25;4/9/24;30,69;175,00;94,00;106;113;88;Apte
+;DIRECTION;;90744;47;Apte;Visite de contrôle;2/3/25;Visite de maintien en activité;11/6/25;11/6/24;30,71;177,00;96,20;98;132;94;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90832;44;Apte;Visite de maintien en activité;9/20/24;Visite de maintien en activité;9/20/25;9/20/24;30,76;183,00;103,00;100;150;98;Apte
+;Cie EMS Sud;UT Strasbourg Sud;41007;32;Apte;Visite de maintien en activité;11/20/24;Visite de maintien en activité;11/20/26;11/20/24;30,86;180,00;100,00;94;130;90;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90599;46;Apte;Visite de maintien en activité;4/18/24;Visite de maintien en activité;4/18/25;4/18/24;30,93;189,00;110,50;110;130;80;Apte
+;DIRECTION;;41458;53;Apte;Visite de maintien en activité;9/18/24;Visite de maintien en activité;9/18/25;9/18/24;31,02;175,00;95,00;101;170;90;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90746;54;Apte;Visite de maintien en activité;10/2/24;Visite de maintien en activité;10/2/25;10/2/24;31,05;174,00;94,00;107;132;69;Apte
+;Cie Sélestat;;90490;55;Apte;Visite de maintien en activité;7/12/24;Visite de maintien en activité;7/12/25;7/12/24;31,15;179,00;99,80;103;119;84;Apte
+;Cie CTA-CODIS;;90830;39;Apte;Visite de maintien en activité;11/8/24;Visite de maintien en activité;11/8/25;11/8/24;31,32;183,00;104,90;100;120;80;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90826;42;Apte;Visite de maintien en activité;3/18/25;Visite de maintien en activité;3/18/26;3/18/25;31,40;187,00;109,80;107;160;100;Apte
+;DIRECTION;;90783;51;Apte;Visite de maintien en activité;1/24/24;Visite de maintien en activité;1/24/25;1/24/24;31,49;182,00;104,30;106;130;80;Apte
+;Cie Haguenau;UT Haguenau;90667;53;Apte;Visite de maintien en activité;9/12/24;Visite de maintien en activité;9/12/25;9/12/24;31,56;178,00;100,00;102;130;70;Apte
+;Cie Saverne;UT Saverne;90952;37;Apte;Visite de reprise opérationnelle;3/13/25;Visite de maintien en activité;6/19/25;6/19/23;31,64;182,00;104,80;103;110;70;Apte
+;Cie Sélestat;;90568;42;Inapte temporaire;Visite de maintien en activité;3/24/25;Visite de contrôle;9/1/25;3/24/25;31,65;183,00;106,00;103;146;87;Inapte
+;Cie Haguenau;UT Haguenau;90031;61;Apte;Visite de maintien en activité;5/30/24;Visite de maintien en activité;5/30/25;5/30/24;31,70;182,00;105,00;110;153;90;Apte
+;DIRECTION;;91080;41;Apte;Visite de recrutement;2/25/25;Visite de contrôle;5/25/25;2/25/25;31,80;176,00;98,50;102;143;95;Apte
+;DIRECTION;;41247;44;Apte;Visite de maintien en activité;11/19/24;Visite de maintien en activité;11/19/25;11/19/24;31,86;176,00;98,70;109;140;90;Apte
+;DIRECTION;;90845;54;Inapte temporaire;Visite administrative;1/3/24;;;10/20/21;31,98;167,00;89,20;106;120;80;Inapte
+;Cie EMS Sud;UT Strasbourg Sud;90096;50;Apte;Visite de maintien en activité;9/16/24;Visite de maintien en activité;9/15/25;9/16/24;32,10;178,00;101,70;101;145;86;Apte
+;DIRECTION;;90041;53;Apte;Visite de reprise opérationnelle;8/31/23;Visite de maintien en activité;4/13/24;11/27/23;32,21;169,00;92,00;;;;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90098;43;Apte;Visite de maintien en activité;3/6/25;Visite de maintien en activité;3/6/26;3/6/25;32,32;165,00;88,00;102;117;80;Apte
+;Cie CTA-CODIS;;90782;40;Apte;Visite de maintien en activité;4/22/24;Visite de maintien en activité;4/22/25;4/22/24;32,41;180,00;105,00;102;149;93;Apte
+;Cie Haguenau;UT Haguenau;90694;45;Apte;Visite de maintien en activité;2/6/25;Visite de contrôle;5/6/25;2/6/25;32,58;190,00;117,60;114;166;114;Apte
+;Cie EMS Sud;;90049;52;Apte;Visite de maintien en activité;5/21/24;Visite de maintien en activité;6/21/25;5/21/24;32,60;182,00;108,00;112;;;Apte
+;Cie EMS Sud;UT Strasbourg Sud;90136;48;Apte;Visite de contrôle;11/6/24;Visite de maintien en activité;5/7/25;5/7/24;32,70;174,00;99,00;104;144;95;Apte
+;Cie CTA-CODIS;;90179;47;Apte;Visite de maintien en activité;11/20/24;Visite de maintien en activité;11/20/25;11/20/24;32,72;180,00;106,00;103;140;70;Apte
+;Cie Sélestat;UT Sélestat;90165;45;Apte;Visite de maintien en activité;9/13/24;Visite de maintien en activité;9/13/25;9/13/24;32,80;170,00;94,80;99;132;84;Apte
+;Cie Haguenau;;34433;48;Apte;Visite de maintien en activité;3/17/25;Visite de maintien en activité;3/17/26;3/17/25;32,89;187,00;115,00;117;145;91;Apte
+;Cie EMS Centre;UT Strasbourg Finkwi;90883;44;Apte;Visite de maintien en activité;1/14/25;Visite de maintien en activité;1/14/26;1/14/25;32,96;190,00;119,00;111;138;91;Apte
+;Cie Haguenau;UT Haguenau;90061;50;Apte;Visite de maintien en activité;4/15/24;Visite de maintien en activité;4/15/25;4/15/24;33,08;173,00;99,00;106;141;90;Apte
+;Cie CTA-CODIS;;90668;46;Apte;Visite de maintien en activité;10/28/24;Visite de maintien en activité;10/28/25;10/28/24;33,24;186,00;115,00;113;138;100;Apte
+;Cie EMS Nord;UT Strasbourg Nord;90575;40;Apte;Visite administrative;4/19/24;Visite de maintien en activité;4/2/25;4/2/24;33,24;190,00;120,00;111;152;95;Apte
+;Cie Molsheim;UT Molsheim;90573;47;Apte;Visite de maintien en activité;1/16/25;Visite de maintien en activité;1/16/26;1/16/25;33,30;190,00;120,20;110;165;102;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;90521;53;Apte;Visite corrective;11/13/24;Visite de maintien en activité;11/13/25;11/13/24;34,01;170,00;98,30;115;;;Apte
+;Cie Saverne;;90131;44;Apte;Visite de maintien en activité;12/19/24;Visite de maintien en activité;12/19/25;12/19/24;34,02;174,00;103,00;102;129;81;Apte
+;DIRECTION;;90453;60;Apte;Visite corrective;7/30/21;Visite de maintien en activité;7/30/22;7/30/21;34,40;178,00;109,00;116;130;80;Apte
+;DIRECTION;;90176;49;Apte;Visite de maintien en activité;12/6/24;Visite de maintien en activité;6/6/25;1/27/25;34,88;180,00;113,00;;;;Apte
+;DIRECTION;;90509;58;Apte avec restriction;Visite de contrôle;11/7/24;Visite de maintien en activité;5/22/25;5/27/24;35,50;185,00;121,50;118;170;85;Inapte
+;Cie Saverne;UT Saverne;90658;42;Apte;Visite de maintien en activité;12/3/24;Visite de maintien en activité;12/3/25;12/3/24;35,86;167,00;100,00;109;130;80;Apte
+;DIRECTION;;90020;53;Apte;Visite de maintien en activité;8/27/24;Visite de maintien en activité;8/27/25;8/27/24;35,98;178,00;114,00;116;138;89;Apte
+;Cie EMS Nord;UT Strasbourg Nord;38634;26;Apte;Visite de maintien en activité;10/24/24;Visite de contrôle;2/28/25;12/20/24;36,41;169,00;104,00;;;;Apte
+;Cie Sélestat;;90123;45;Apte avec restriction;Visite de maintien en activité;12/12/24;Visite de contrôle;3/12/25;12/12/24;39,97;174,00;121,00;116;139;96;Inapte
+;Cie CTA-CODIS;;90126;44;Apte;Visite de maintien en activité;4/30/24;Visite de maintien en activité;4/30/25;4/30/24;41,97;176,00;130,00;122;135;81;Apte
+;Cie EMS Centre;UT Strasbourg Ouest;91066;21;Apte;Visite de recrutement;6/17/24;Visite administrative;6/17/25;6/17/24;110,82;85,02;80,10;82;130;70;Apte
+;;Nombre :;710;;;;;;;;;;;;;;

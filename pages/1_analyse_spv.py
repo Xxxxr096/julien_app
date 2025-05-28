@@ -87,7 +87,7 @@ df["vo2max_leger"] = (5.857 * df["vitesse"]).fillna(0) - 19.458
 df["vo2max_leger"] = df["vo2max_leger"].clip(lower=0)
 
 
-st.title("Application d'Analyse de la Condition Physique et de la Santé")
+st.title("Analyse de la Condition Physique et de la Santé(spv)")
 with st.expander("📘 Guide d'utilisation de l'application", expanded=False):
     st.markdown(
         """
