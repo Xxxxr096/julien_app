@@ -880,12 +880,17 @@ def load_geojson():
         return json.load(f)
 
 
+generer_carte = st.button("🗺️ Générer la carte avec les filtres actuels")
+
 try:
     geojson_data = load_geojson()
 
     # Nettoyage des noms d’UT
     ut_mapping = {
         "UT STRASBOURG OUEST": "STRASBOURG-3",
+        "UT STRASBOURG NORD": "STRASBOURG-3",
+        "UT STRASBOURG FINKWI": "STRASBOURG-3",
+        "UT STRASBOURG SUD": "STRASBOURG-3",
         "UT HAGUENAU": "HAGUENAU",
         "UT MOLSHEIM": "MOLSHEIM",
         "UT INGWILLER": "INGWILLER",
@@ -893,14 +898,40 @@ try:
         "UT LINGOLSHEIM": "LINGOLSHEIM",
         "UT BISCHWILLER": "BISCHWILLER",
         "UT SÉLESTAT": "SÉLESTAT",
-        "UT STRASBOURG NORD": "STRASBOURG-3",
         "UT SAVERNE": "SAVERNE",
         "UT BRUMATH": "BRUMATH",
         "UT ERSTEIN": "ERSTEIN",
-        "UT STRASBOURG FINKWI": "STRASBOURG-3",
         "UT WISSEMBOURG": "WISSEMBOURG",
-        "UT STRASBOURG SUD": "STRASBOURG-3",
         "UT BOUXWILLER": "BOUXWILLER",
+        "UT BENFELD": "ERSTEIN",
+        "UT BOOFZHEIM": "ERSTEIN",
+        "UT BARR": "OBERNAI",
+        "UT DRULINGEN": "SAVERNE",
+        "UT DIEMERINGEN": "SAVERNE",
+        "UT FEGERSHEIM": "ILLKIRCH-GRAFFENSTADEN",
+        "UT GAMBSHEIM": "BRUMATH",
+        "UT HOENHEIM": "HŒNHEIM",
+        "UT HOCHFELDEN": "BOUXWILLER",
+        "UT LAUTERBOURG": "WISSEMBOURG",
+        "UT MARCKOLSHEIM": "SÉLESTAT",
+        "UT MARMOUTIER": "SAVERNE",
+        "UT NIEDERBRONN-LES-B": "REICHSHOFFEN",
+        "UT PETERSBACH": "SAVERNE",
+        "UT SAALES": "SÉLESTAT",
+        "UT SARRE-UNION": "SAVERNE",
+        "UT SCHIRMECK": "SÉLESTAT",
+        "UT SELTZ": "WISSEMBOURG",
+        "UT SOUFFLENHEIM": "BISCHWILLER",
+        "UT SOULTZ-SOUS-FORÊT": "WISSEMBOURG",
+        "UT SUNDHOUSE": "SÉLESTAT",
+        "UT TRUCHTERSHEIM": "STRASBOURG-2",
+        "UT URMATT": "MOLSHEIM",
+        "UT VAL-DE-MODER": "BOUXWILLER",
+        "UT VENDENHEIM": "SCHILTIGHEIM",
+        "UT VILLE": "STRASBOURG-1",
+        "UT WASSELONNE": "MOLSHEIM",
+        "UT WINGEN-SUR-MODER": "INGWILLER",
+        "UT WOERTH": "WISSEMBOURG",
     }
 
     df_filtered["UT_clean"] = (
