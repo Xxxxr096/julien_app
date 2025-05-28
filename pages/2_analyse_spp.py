@@ -9,12 +9,17 @@ import branca.colormap as cm
 from folium.plugins import MiniMap
 import numpy as np
 from streamlit_folium import folium_static
+import os
 
 
 # --- Chargement des données ---
 @st.cache_data()
 def load_data():
-    df = pd.read_csv("../merged_spp_data.csv")
+    data_path = os.path.abspath(
+        os.path.join(os.path.dirname(__file__), "..", "merged_spp_data.csv")
+    )
+    st.write("📄 Chargement du fichier :", data_path)
+    df = pd.read_csv(data_path)
 
     # Standardiser les noms de colonnes : minuscules, sans espace
     df.columns = df.columns.str.strip().str.lower()
@@ -797,7 +802,10 @@ st.subheader("Carte Interactive des UT")
 
 @st.cache_data
 def load_geojson():
-    with open("../alsace_map.geojson", "r", encoding="utf-8") as f:
+    geo_path = os.path.abspath(
+        os.path.join(os.path.dirname(__file__), "..", "alsace_map.geojson")
+    )
+    with open(geo_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
