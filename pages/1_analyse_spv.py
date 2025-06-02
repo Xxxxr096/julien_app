@@ -287,6 +287,8 @@ age_category = st.sidebar.multiselect(
         "plus de 57",
     ],
 )
+
+
 st.sidebar.markdown("**imc - Catégories**")
 imc_category = st.sidebar.multiselect(
     "Sélectionnez une catégorie d'imc :",
@@ -299,6 +301,20 @@ imc_category = st.sidebar.multiselect(
         "Obésité massive (>40)",
     ],
 )
+# --- Filtre Tour de Taille (périmètre abdominal) ---
+
+if "périmètre abdominal" in df.columns:
+    tour_min, tour_max = st.sidebar.slider(
+        "Tour de taille (cm) :",
+        min_value=float(df["périmètre abdominal"].min()),
+        max_value=float(df["périmètre abdominal"].max()),
+        value=(
+            float(df["périmètre abdominal"].min()),
+            float(df["périmètre abdominal"].max()),
+        ),
+        step=1.0,
+    )
+
 poids_min, poids_max = st.sidebar.slider(
     "poids:", float(df["poids"].min()), float(df["poids"].max()), (0.0, 144.0)
 )
@@ -331,6 +347,11 @@ df_filtered["score_moyen"] = df_filtered[
 df_filtered["couleur_globale"] = df_filtered["score_moyen"].apply(score_to_couleur)
 df_filtered["tranche_age"] = df_filtered["age_x"].apply(age_to_categorie)
 
+if "périmètre abdominal" in df_filtered.columns:
+    df_filtered = df_filtered[
+        (df_filtered["périmètre abdominal"] >= tour_min)
+        & (df_filtered["périmètre abdominal"] <= tour_max)
+    ]
 
 # Application des filtres de tension artérielle
 if "tension artérielle systol" in df_filtered.columns:
