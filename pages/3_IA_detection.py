@@ -47,6 +47,11 @@ def charger_modele():
     X = df[features]
     y = df["Risque"]
 
+    # 🔧 Nettoyage des données avant apprentissage
+    X = X.apply(pd.to_numeric, errors="coerce")
+    X = X.fillna(X.median())
+    y = y.fillna(0)
+
     X_train, _, y_train, _ = train_test_split(X, y, test_size=0.3, random_state=42)
     smote = SMOTE(random_state=42)
     X_resampled, y_resampled = smote.fit_resample(X_train, y_train)
