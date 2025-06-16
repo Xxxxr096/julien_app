@@ -51,7 +51,15 @@ def charger_modele():
     X = X.apply(pd.to_numeric, errors="coerce")
     X = X.fillna(X.median())
     y = y.fillna(0)
+    X = X.apply(pd.to_numeric, errors="coerce")
+    y = pd.to_numeric(y, errors="coerce")
 
+    df_model = pd.concat(
+        [X, y], axis=1
+    ).dropna()  # supprime toutes les lignes contenant des NaN
+
+    X = df_model[features]
+    y = df_model["Risque"].astype(int)
     X_train, _, y_train, _ = train_test_split(X, y, test_size=0.3, random_state=42)
     smote = SMOTE(random_state=42)
     X_resampled, y_resampled = smote.fit_resample(X_train, y_train)
