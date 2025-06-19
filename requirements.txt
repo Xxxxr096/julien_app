@@ -4,7 +4,5 @@ matplotlib>=3.5.0
 seaborn>=0.12.0
 folium>=0.14.0
 streamlit-folium>=0.10.0
-scikit-learn==1.2.2
-imbalanced-learn==0.10.1
 numpy>=1.23.0
 
